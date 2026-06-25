@@ -16,7 +16,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="hover:text-[#c9a84c] transition-colors duration-150"
             >
-              Alarkius Elvya Jay · contact@alarkiusej.com
+              Alarkius Elvya Jay
             </a>
           </p>
           <div className="gold-rule hidden sm:block" aria-hidden="true" />
@@ -35,6 +35,7 @@ export default function Footer() {
             <a href="/characters" target="_self">Zohl</a>, or{' '}
             <a href="/characters" target="_self">Kydel Rhunes</a>.
             {' '}Or any of our characters. They will obliterate you to smithereens!
+            For More Information, contact the author with this: contact@alarkiusej.com
           </p>
         </div>
       </div>
