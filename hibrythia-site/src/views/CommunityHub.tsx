@@ -16,7 +16,7 @@ export default function CommunityHub() {
         <p className="font-body text-xs tracking-[0.25em] text-[#c9a84c] uppercase mb-3">The Hibrythian Saga</p>
         <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">Community Hub</h1>
         <p className="font-body text-base text-[#7a746e] leading-relaxed max-w-[600px]">
-          A space for readers, worldbuilders, and fans of The Hibrythian Saga. Discussion, comments, and community features coming soon!
+          A space for Readers, Worldbuilders, and fans of The Hibrythian Saga. Discussion, comments, and Threads go here!!
         </p>
       </div>
 
