@@ -16,7 +16,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="hover:text-[#c9a84c] transition-colors duration-150"
             >
-              Alarkius Elvya Jay
+              Alarkius Elvya Jay · contact@alarkiusej.com
             </a>
           </p>
           <div className="gold-rule hidden sm:block" aria-hidden="true" />
