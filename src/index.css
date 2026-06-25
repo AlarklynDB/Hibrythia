@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Content protection ── */
+*, *::before, *::after {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+button, a, span, p, h1, h2, h3, h4, h5, h6, div, li, ul, ol, label {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* ── Disable drag on links & media (no ghost drag) ── */
+a, a * {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+img, svg, video {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  font-size: 16.1px; /* was 14px — scaled up 15% */
+}
+
+body {
+  min-height: 100dvh;
+  background-color: #0e0d0b;
+  color: #f2ebeb;
+  font-family: 'Alegreya Sans', system-ui, sans-serif;
+  font-size: clamp(1rem, 0.975rem + 0.23vw, 1.15rem); /* was clamp(0.875rem, 0.85rem + 0.2vw, 1rem) */
+  line-height: 1.7;
+}
+
+img, picture, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; color: inherit; }
+
+h1,h2,h3,h4,h5,h6 {
+  text-wrap: balance;
+  line-height: 1.15;
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+h1 { font-size: clamp(1.725rem, 1.38rem + 1.725vw, 2.59rem); } /* was clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem) */
+h2 { font-size: clamp(1.265rem, 1.15rem + 0.86vw, 1.725rem); } /* was clamp(1.1rem, 1rem + 0.75vw, 1.5rem) */
+h3 { font-size: clamp(1.09rem, 1.035rem + 0.46vw, 1.38rem); }  /* was clamp(0.95rem, 0.9rem + 0.4vw, 1.2rem) */
+h4 { font-size: 1.15rem; }                                      /* was 1rem */
+h5, h6 { font-size: 1rem; }                                     /* was 0.875rem */
+
+p, li { text-wrap: pretty; max-width: 72ch; }
+
+/* ── Selection ── */
+::selection {
+  background: rgba(201, 168, 76, 0.2);
+  color: #f2ebeb;
+}
+
+/* ── Focus ── */
+:focus-visible {
+  outline: 1px solid rgba(201, 168, 76, 0.6);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0e0d0b; }
+::-webkit-scrollbar-thumb { background: #2e2b26; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #c9a84c; }
+
+/* ── Gold rule divider ── */
+.gold-rule {
+  width: 2.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a84c, transparent);
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Utility: Cinzel headings ── */
+.font-display { font-family: 'Cinzel', Georgia, serif; }
+.font-body    { font-family: 'Alegreya Sans', system-ui, sans-serif; }
+
+/* ── Hetrix currency symbol (Ħ) ── */
+.font-hetrix  { font-family: 'Merriweather', Georgia, serif; }
+.hetrix-mark  {
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 700;
+  color: #c9a84c;
+  letter-spacing: 0.03em;
+}
+
+/* ── Anti-piracy notice ── */
+.piracy-notice {
+  border: 1px solid rgba(139, 20, 20, 0.4);
+  background: rgba(80, 10, 10, 0.25);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+.piracy-notice-title {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 0.69rem; /* was 0.6rem */
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c0392b;
+  margin-bottom: 0.4rem;
+}
+.piracy-notice-body {
+  font-family: 'Alegreya Sans', system-ui, sans-serif;
+  font-size: 0.69rem; /* was 0.6rem */
+  line-height: 1.6;
+  color: #a04040;
+  max-width: none;
+}
+.piracy-notice-body em {
+  font-style: italic;
+  color: #c0392b;
+}
+.piracy-notice-body a {
+  color: #c0392b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.piracy-notice-body a:hover {
+  color: #e05050;
+}

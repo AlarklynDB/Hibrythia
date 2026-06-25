@@ -1,0 +1,285 @@
+---
+// ============================================================
+// BaseLayout — the shared HTML shell for every page.
+// Replaces index.html (head/GA/OG/splash/Fort Knox) AND the old
+// App.tsx + Layout.tsx shell (Navbar + grid-bg <main> + Footer +
+// PWADevTools).
+//
+// Per-page props let each of the 149 routes set its own <title>,
+// description and canonical URL — so crawlers get unique, real
+// metadata per page (the whole point of going SSG).
+// ============================================================
+import '../index.css'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import PWADevTools from '../components/PWADevTools'
+
+interface Props {
+  title?: string
+  description?: string
+  /** Path of this page, e.g. "/world/locales" — canonical URL + og:url */
+  path?: string
+  image?: string
+}
+
+const DEFAULT_DESC =
+  'The Official Website for The Hibrythian Saga. An Adventure Fantasy Series by Alarkius Elvya Jay (AlarkiusEJ). This world comes with worldbuilding, lore, and interactive media!'
+
+const {
+  title = 'The Hibrythian Saga | An Adventure Fantasy Series',
+  description = DEFAULT_DESC,
+  path = '/',
+  image = 'https://i.ibb.co/HLW3Gx6d/hibrythian-banner.png',
+} = Astro.props
+
+const canonical = new URL(path, 'https://www.thehibrythiansaga.com').href
+---
+
+<!doctype html>
+<html lang="en" class="dark" style="background:#100908">
+  <head>
+    <!-- ═══════════════════════════════════════════════════════════
+         CRITICAL: FOUD defense — paint dark BEFORE anything else.
+         This <style> must remain the FIRST child of <head>.
+         ═══════════════════════════════════════════════════════════ -->
+    <style>
+      :root { color-scheme: dark; }
+      html, body { background-color: #100908; }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNWX9XF6JD"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LNWX9XF6JD');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#0e0d0b" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <!-- PWA manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Open Graph / Discord -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="The Hibrythian Saga" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonical} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <!-- Fonts: Cinzel (display) + Raleway (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+
+    <!-- Splash screen: dark overlay, fades out on hard load only -->
+    <style>
+      /* color-scheme + body bg moved to critical <style> above */
+      html, body { margin: 0; padding: 0; }
+      #splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background-color: #100908;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        transition: opacity 0.5s ease-out;
+      }
+      #splash-logo {
+        font-family: 'Georgia', 'Times New Roman', serif;
+        font-size: 1.1rem;
+        letter-spacing: 0.3em;
+        color: #c9a84c;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+        transform: translateY(6px);
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════════════════════════════════════
+         ANTI-FOUD SHIELD: Full-viewport cover in page bg color.
+         This <div> MUST remain the FIRST child of <body>.
+         Blocks ANY flash (white/gray) by covering the viewport
+         with #100908 before the browser paints. The inline script
+         immediately below removes it — if rendering is delayed
+         (stylesheet/hydration gap) the shield stays visible and
+         the flash never reaches the user.
+         ═══════════════════════════════════════════════════════════ -->
+    <div id="af" style="position:fixed;inset:0;z-index:2147483647;background:#100908;"></div>
+    <script is:inline>(function(){var d=document.getElementById('af');if(d)d.remove();})();</script>
+
+    <!-- Splash overlay — pure HTML/CSS, removes itself via animation -->
+    <div id="splash" aria-hidden="true">
+      <span id="splash-logo">The Hibrythian Saga</span>
+    </div>
+
+    <!-- Splash gate: lives AFTER #splash so getElementById works immediately -->
+    <script is:inline>
+      (function () {
+        try {
+          var nav = performance.getEntriesByType('navigation')[0];
+          var isReload = nav ? nav.type === 'reload'
+                             : (performance.navigation && performance.navigation.type === 1);
+          if (isReload) sessionStorage.removeItem('splashSeen');
+
+          var seen = sessionStorage.getItem('splashSeen') === '1';
+          var splash = document.getElementById('splash');
+
+          if (seen) {
+            // Already seen — hide immediately, no animation
+            if (splash) splash.style.display = 'none';
+          } else {
+            // First load — animate logo in, then fade out
+            if (splash) {
+              var logo = splash.querySelector('#splash-logo');
+              requestAnimationFrame(function () {
+                if (logo) {
+                  logo.style.opacity = '1';
+                  logo.style.transform = 'translateY(0)';
+                }
+                setTimeout(function () {
+                  splash.style.opacity = '0';
+                  setTimeout(function () {
+                    splash.style.display = 'none';
+                  }, 500);
+                }, 1200);
+              });
+            }
+            try { sessionStorage.setItem('splashSeen', '1'); } catch (e) {}
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         NAV-FLASH-COVER: FOUD defense for SPA navigation.
+         The splash (z-index 9999) only covers hard reloads.
+         This cover (z-index 9998) briefly flashes during
+         pushState/popState route transitions to prevent a gray
+         gap while the new page content hydrates.
+         ═══════════════════════════════════════════════════════════ -->
+    <div
+      id="nav-flash-cover"
+      aria-hidden="true"
+      style="position:fixed;inset:0;z-index:9998;background-color:#100908;opacity:0;pointer-events:none;transition:opacity 120ms ease-out;"
+    ></div>
+    <script is:inline>
+      (function () {
+        var cover = document.getElementById('nav-flash-cover');
+        if (!cover) return;
+
+        function flashCover() {
+          cover.style.opacity = '1';
+          clearTimeout(cover._t);
+          cover._t = setTimeout(function () {
+            cover.style.opacity = '0';
+          }, 180);
+        }
+
+        // Back / forward button navigation
+        window.addEventListener('popstate', flashCover);
+
+        // Programmatic navigation (router.tsx pushState)
+        var _push = history.pushState;
+        history.pushState = function () {
+          flashCover();
+          return _push.apply(this, arguments);
+        };
+        var _replace = history.replaceState;
+        history.replaceState = function () {
+          flashCover();
+          return _replace.apply(this, arguments);
+        };
+      })();
+    </script>
+
+    <!-- App shell (was App.tsx + Layout.tsx). Navbar/Footer hydrate. -->
+    <PWADevTools client:load />
+    <div class="min-h-dvh flex flex-col bg-[#100908]">
+      <Navbar client:load />
+
+      <main class="flex-1" style="position: relative; background-color: #100908;">
+        {/* Grid background with blur — absolute so footer is untouched */}
+        <div
+          aria-hidden="true"
+          style="position:absolute; inset:0; z-index:0; pointer-events:none; background-image: linear-gradient(rgba(46,16,0,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(46,16,0,0.8) 1px, transparent 1px); background-size:40px 40px; filter: blur(0.6px); -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 100%); mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 100%);"
+        >
+        </div>
+        <div style="position: relative; z-index: 1;">
+          <slot />
+        </div>
+      </main>
+
+      <Footer client:load />
+    </div>
+
+    <!-- Fort Knox — content protection + Devtools chaos -->
+    <script is:inline>
+      // Block right-click, copy/cut/paste, selection, drag
+      document.addEventListener('contextmenu',  function(e) { e.preventDefault(); });
+      document.addEventListener('copy',         function(e) { e.preventDefault(); });
+      document.addEventListener('cut',          function(e) { e.preventDefault(); });
+      document.addEventListener('paste',        function(e) { e.preventDefault(); });
+      document.addEventListener('selectstart',  function(e) { e.preventDefault(); });
+      document.addEventListener('dragstart',    function(e) { e.preventDefault(); });
+
+      // Devtools chaos (debugger trap + console flood)
+      // Skips on localhost and when ?dev=1 is in the URL
+      (function devtoolsChaos() {
+        var params = new URLSearchParams(window.location.search);
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') return;
+        if (params.get('dev') === '1') return;
+        setInterval(function() { debugger; }, 100);
+        setInterval(function() {
+          console.clear();
+          console.log('%c ACCESS DENIED ', 'background:#100908;color:#c9a84c;font-size:14px;font-weight:bold;padding:4px 12px;border:1px solid #c9a84c;letter-spacing:0.2em;');
+          console.log('%c This site is protected. Unauthorized inspection is not permitted. ', 'color:#7a746e;font-size:11px;');
+          console.log('%c Hunter Noxx will be coming for you in your dreams. Hope your pillow is hot tonight. ', 'color:#c9a84c;font-size:11px;font-style:italic;');
+        }, 100);
+      })();
+
+      // Block F12, Ctrl+Shift+I/J/C/K, Ctrl+U (view source), Ctrl+P (print)
+      document.addEventListener('keydown', function(e) {
+        if (
+          e.key === 'F12' ||
+          (e.ctrlKey && e.shiftKey && ['I','i','J','j','C','c','K','k'].includes(e.key)) ||
+          (e.ctrlKey && ['u','U'].includes(e.key)) ||
+          (e.ctrlKey && ['p','P'].includes(e.key))
+        ) { e.preventDefault(); e.stopPropagation(); return false; }
+      });
+    </script>
+
+
+    <script is:inline src="/lightbox-controls.js"></script>
+
+</body>
+</html>

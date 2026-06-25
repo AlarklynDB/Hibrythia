@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Home from '../views/Home'
+---
+
+<BaseLayout
+  title={'The Hibrythian Saga | An Adventure Fantasy Series'}
+  description={'The Official Website for The Hibrythian Saga. An Adventure Fantasy Series by Alarkius Elvya Jay (AlarkiusEJ). This world comes with worldbuilding, lore, and interactive media!'}
+  path={'/'}
+>
+  <Home client:load />
+</BaseLayout>

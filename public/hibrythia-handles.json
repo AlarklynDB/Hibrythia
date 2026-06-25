@@ -1,0 +1,22 @@
+{
+  "_description": {
+    "file": "hibrythia-handles.json",
+    "purpose": "Official registry of brand handle identifiers associated with The Hibrythian Saga and properties under the HAXL umbrella. These handles serve as keyword identifiers for SEO entity recognition, linking searches across platforms back to thehibrythiansaga.com.",
+    "usage": "Reference this file when registering handles on new platforms, updating schema markup, or verifying official handle ownership across The Hibrythian Saga brand ecosystem.",
+    "maintained_by": "Alarkius Elvya Jay",
+    "last_updated": "2026-06-11"
+  },
+  "name": "hibrythia-handles",
+  "version": "1.0.0",
+  "description": "Official brand handle identifiers for The Hibrythian Saga and associated properties.",
+  "owner": "Alarkius Elvya Jay",
+  "url": "https://www.thehibrythiansaga.com",
+  "handles": {
+    "the-hibrythian-saga": [
+      "@TheHibrythianSaga",
+      "@HibrythianSaga",
+      "@HibrydsAXL",
+      "@HibrydsCinematicUniverse"
+    ]
+  }
+}
