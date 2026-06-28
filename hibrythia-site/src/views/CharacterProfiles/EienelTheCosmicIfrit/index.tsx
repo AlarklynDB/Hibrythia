@@ -73,13 +73,18 @@ export default function EienelTheCosmicIfrit() {
       </div>
 
       {/* ── Story Info ── */}
-      <div>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Story Info</h2>
-        <div className="space-y-2 font-body text-base text-[#c8c2ba] leading-relaxed">
-          <p><span className="text-[#f2ebeb]">Story Role:</span> Supporter Antagonist in &ldquo;Hibryds &mdash; A Grand Voyage&rdquo; (Book 1); Main Antagonist in &ldquo;Hibryds &mdash; The Entity of Doubt&rdquo; (Book 2)</p>
+      <div className="p-5 rounded-xl bg-[#13110e] border border-[#2e2b26] space-y-3">
+        <p className="font-display text-sm text-[#c9a84c] uppercase tracking-widest mb-2">Story Information</p>
+        <p className="font-body text-xs text-[#8a6c6c] italic">Information on this page contains Spoilers for Book 1!</p>
+        <div className="border-t border-[#2e2b26] pt-3 space-y-2 font-body text-base text-[#c8c2ba] leading-relaxed">
+          <p><span className="text-[#f2ebeb]">Story Role:</span></p>
+          <ul className="list-disc list-inside space-y-1 pl-2 text-[#c8c2ba]">
+            <li>Supporter Antagonist in &ldquo;Hibryds &mdash; A Grand Voyage&rdquo; (Book 1)</li>
+            <li>Main Antagonist in &ldquo;Hibryds &mdash; The Entity of Doubt&rdquo; (Book 2)</li>
+          </ul>
           <p><span className="text-[#f2ebeb]">Story Presence:</span> In Episode 0 of Book 1 (&ldquo;Before Time&rdquo;), he was introduced as a gluttonous character who was exiled deep into space.</p>
           <p><span className="text-[#f2ebeb]">Point of Origin:</span> The Stygian Realm</p>
-          <p><span className="text-[#f2ebeb]">Character Type:</span> Round</p>
+          <p><span className="text-[#f2ebeb]">Character Type:</span> Flat, Round &amp; Dynamic</p>
         </div>
       </div>
 
@@ -105,12 +110,12 @@ export default function EienelTheCosmicIfrit() {
         <div className="space-y-4 font-body text-base text-[#c8c2ba] leading-relaxed">
           <p>After losing to both of the supernatural and cosmic beings, Eienel was imprisoned in a Black Stone&mdash;which is one of his weaknesses. The Black Stone is an interstellar cosmic void prison that has no escape&mdash;that&apos;s only on the inside. The stone suppresses all powers. The outside is a pillar like stone. This said stone was casted and exiled to the Skull Zakar. This prison is made from the material from the core on his chest, which is called a Stygian Core, or a Stygianite. The only thing that can release Eienel from this prison is with a specific light: Stygian Gray. This prison like asteroid is about the size of a truck</p>
         </div>
-      </div>
 
-      {/* ── Stygian Gray ── */}
-      <div>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Stygian Gray</h2>
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Stygian Gray is a type of infrared like light that is both faster than the speed of light and darkness. It happens once in every phenomena when planets form a straight line before and after the sun. It doesn&apos;t matter which solar system it happens in.</p>
+        {/* ── Stygian Gray ── */}
+        <div className="mt-6 pl-4 border-l-2 border-[#c9a84c]/40">
+          <p className="font-display text-sm text-[#c9a84c] mb-2">&#9135;&#9135;&#9135;&#9135;&#9135;&#10096; Stygian Gray Infrared</p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Stygian Gray is a type of infrared like light that is both faster than the speed of light and darkness. It happens once in every phenomena when planets form a straight line before and after the sun. It doesn&apos;t matter which solar system it happens in.</p>
+        </div>
       </div>
 
       {/* ── Personality ── */}
@@ -129,8 +134,12 @@ export default function EienelTheCosmicIfrit() {
               <p>This is a long term vice of Eienel. He is extremely greedy and does not like sharing his portion of respect and pride. Ever since he was forged in the Empty Void of The Stygian Realm, all he could ever want is to destroy &mdash;nothing else.</p>
             </div>
             <div>
-              <p className="font-display text-sm text-[#f2ebeb] mb-1">3. Gluttonous</p>
+              <p className="font-display text-sm text-[#f2ebeb] mb-1">3. Gluttony</p>
               <p>His hunger for energy and power is unsatiable. He quells for dominance and authority over lesser beings, and he thinks highly of himself.</p>
+            </div>
+            <div>
+              <p className="font-display text-sm text-[#f2ebeb] mb-1">4. Wrath</p>
+              <p>Quick tempered and won&apos;t stop. Wrath is what makes him full of hatred and how his power rises.</p>
             </div>
           </div>
           <p>The rest of his cardinal vices don&apos;t really have much of a personality toll on him. Even though he has them he chooses not to act on those extra vices except for those three.</p>
@@ -168,9 +177,9 @@ export default function EienelTheCosmicIfrit() {
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Travels at the speed of light, near FTL (but not enough to break it).</p>
           </PowerToggle>
           <PowerToggle title="Hyper-strength">
-            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">just super strong!</p>
+            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Just super strong!</p>
           </PowerToggle>
-          <PowerToggle title="Resilience">
+          <PowerToggle title="Hyper Resilience">
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Super durable, not easy to land a critical punch or hit.</p>
           </PowerToggle>
           <PowerToggle title="Reflexes">
@@ -183,45 +192,77 @@ export default function EienelTheCosmicIfrit() {
       <div>
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Supernatural Powers</h2>
         <div className="space-y-3">
+
           <PowerToggle title="Energy Manipulation">
-            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Eienel can manipulate many different forms of energy. These types of energy become that of galactical dust that shrouds his body, and when he absorbs more, it becomes more dangerous and powerful. Eienel can also control how powerful each hit can be, from 1 to 100. However there are two types of energies that he can&apos;t absorb: Dark Matter and Divine Energy. Dark Matter, or Dark Energy, is the type of matter that he was born from. Give him that and it would weaken him. Divine Energy is extremely pure and potent, it can cause major burns.</p>
+            <div className="space-y-3">
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Eienel can manipulate many different forms of energy. These types of energy become that of galactical dust that shrouds his body, and when he absorbs more, it becomes more dangerous and powerful. Eienel can also control how powerful each hit can be, from 1 to 100.</p>
+              <div className="pl-4 border-l border-[#c9a84c]/30">
+                <p className="font-display text-sm text-[#c9a84c] mb-2">&#9135;&#9135;&#9135;&#9135;&#9135;&#10096; Other Forms of Energy Manipulation</p>
+                <ul className="space-y-2 font-body text-base text-[#c8c2ba] leading-relaxed">
+                  <li><span className="text-[#f2ebeb]">Temporal Energy</span> &mdash; another type of energy Eienel can manipulate. It is the essence of time. He can use this to manipulate time dilation.</li>
+                </ul>
+              </div>
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">There are two types of energies that he can&apos;t absorb: Dark Matter and Divine Energy.</p>
+              <ul className="space-y-2 font-body text-base text-[#c8c2ba] leading-relaxed pl-2">
+                <li><span className="text-[#f2ebeb]">Dark Matter</span>, also known as <span className="text-[#f2ebeb]">Dark Energy</span>, is the type of matter that he was born from. Give him that and it would weaken him significantly, but not too much.</li>
+                <li>Divine Energy is extremely pure and potent, it can cause major burns.</li>
+              </ul>
+            </div>
           </PowerToggle>
+
           <PowerToggle title="Gamma Ray Bursts">
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed">If this is combined with Energy Manipulation, it becomes deadly 100 fold times. He can only use this two times and can&apos;t use it for two weeks.</p>
           </PowerToggle>
+
           <PowerToggle title="Stellarkinesis">
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Cosmic manipulation based telekinesis. Eienel can freely manipulate the energy of cosmic stars and turn it into his own.</p>
           </PowerToggle>
-          <PowerToggle title="Space Manipulation">
-            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Teleporting, manipulating spatial dimensions, or even creating or destroying entire universes.</p>
-          </PowerToggle>
-          <PowerToggle title="Gravity Manipulation">
+
+          <PowerToggle title="Spatial (Space) & Gravity Manipulation">
             <div className="space-y-3">
-              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Eienel can manipulate gravity at will, even with magnetic forces and other unknown gravity-related areas. He can even manipulate a Black Hole&apos;s gravitational pull.</p>
-              <div>
-                <p className="font-display text-sm text-[#c9a84c] mb-1">Forms of Gravity Manipulation</p>
-                <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><span className="text-[#f2ebeb]">Magnetic Manipulation</span> &mdash; magnetic properties that can be manipulated, which includes perfect north, neutral, and south</p>
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Teleporting, manipulating spatial dimensions, or even creating or destroying entire universes. This also includes Gravity Manipulation (GravM) because it can be combined together, along with Magnetic Manipulation (MagM)</p>
+              <div className="pl-4 border-l border-[#c9a84c]/30 space-y-3">
+                <div>
+                  <p className="font-display text-sm text-[#c9a84c] mb-1">&#9135;&#9135;&#9135;&#9135;&#9135;&#10096; Domain Manipulation</p>
+                  <p className="font-body text-base text-[#c8c2ba] leading-relaxed">A subsidiary of Spatial Manipulation. It is not as strong as it is because most of this power goes towards GM and MagM.</p>
+                </div>
+                <div>
+                  <p className="font-display text-sm text-[#c9a84c] mb-1">&#9135;&#9135;&#9135;&#9135;&#9135;&#10096; Gravity Manipulation (GravM)</p>
+                  <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Eienel can manipulate gravity at will, even with magnetic forces and other unknown gravity-related areas. He can even manipulate a Black Hole&apos;s gravitational pull.</p>
+                </div>
+                <div>
+                  <p className="font-display text-sm text-[#c9a84c] mb-1">&#9135;&#9135;&#9135;&#9135;&#9135;&#10096; Magnetic Manipulation (MagM)</p>
+                  <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Magnetic properties that can be manipulated, which includes perfect north, neutral, and south</p>
+                </div>
               </div>
             </div>
           </PowerToggle>
+
           <PowerToggle title="Hyper Regeneration">
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Eienel can regenerate his wounds and injuries at excessive speeds. Though in order to inflict actual damage before he could regen, it needs to be slowed down with a cold temperature at sub-zero, which is its only weakness.</p>
           </PowerToggle>
+
         </div>
       </div>
 
       {/* ── Trump Cards ── */}
       <div>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Trump Cards</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Supernatural Trump Cards</h2>
         <div className="space-y-3">
           <TrumpCard name="Cosmic Meteor">
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed">A massive powerful energy pulse in the form of a cosmic meteor. There&apos;s no cooldown for this trump card.</p>
           </TrumpCard>
           <TrumpCard name="Nova Burst Implosion X (NbIX)">
-            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Takes energy from an exploding super nova and a gamma ray burst which is combined with Stellarkinesis and turns the energy output by inverting it inwards into their vertex mass of distribution of a frenzy state. It then implodes inwards and shoots out a massive GRB from the center of where it was sucked in.</p>
+            <div className="space-y-2">
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Takes energy from an exploding super nova and a gamma ray burst which is combined with Stellarkinesis and turns the energy output by inverting it inwards into their vertex mass of distribution of a frenzy state. It then implodes inwards and shoots out a massive GRB from the center of where it was sucked in.</p>
+              <p className="font-body text-sm text-[#7a746e] leading-relaxed italic">This Trump Move is inspired by IDIB(s).</p>
+            </div>
           </TrumpCard>
           <TrumpCard name="Reigning Void">
-            <p className="font-body text-base text-[#c8c2ba] leading-relaxed">This power combines Dark Matter and Stellarkinesis, because one day, he found a loophole. Using Stellarkinesis, he can place-swap dark matter from the place he was forged from and combine it into one deadly attack which he calls Reigning Void. Using an infinite energy of it can cause a huge supernova explosion, capable of wiping out a single timeline, a super-star or a super-planet. Reigning Void takes the most stress out of Eienel&apos;s body and can render him immobile for seventeen hours, so he only uses this trump card as a last resort.</p>
+            <div className="space-y-2">
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">This power combines Dark Matter and Stellarkinesis, because one day, he found a loophole. Using Stellarkinesis, he can place-swap dark matter from the place he was forged from and combine it into one deadly attack which he calls Reigning Void. Using an infinite energy of it can cause a huge supernova explosion, capable of wiping out a single timeline, a super-star or a super-planet.</p>
+              <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Reigning Void takes the most stress out of Eienel&apos;s body and can render him immobile for seventeen hours, so he only uses this trump card as a last resort.</p>
+            </div>
           </TrumpCard>
         </div>
       </div>
@@ -234,8 +275,10 @@ export default function EienelTheCosmicIfrit() {
       {/* ── Forms and Appearances ── */}
       <div>
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Forms and Appearances &mdash; Cosmic Ifrit</h2>
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">Eienel in this form closely resembles an Ifrit and a Metaphysical Spirit, otherwise known as a Cosmic Ifrit. A Cosmic Ifrit is not your daily average demon ifrit you see everyday. Instead, a Cosmic Ifrit has a very defined body tone, muscle mass, and looks like a soul or a spirit. Though spirits aren&apos;t solid, they have the choice to become solid or not. For Eienel, he rather has a solid spirit composition as a Cosmic Ifrit.</p>
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed mt-4">He has three eyes, with red sharp pupils while his corneas are dyed black. Very long burn-ash red hair and it glows a very faint orange. He wears a type of armor that allows him to harness and controls his powers.</p>
+        <div className="space-y-4 font-body text-base text-[#c8c2ba] leading-relaxed">
+          <p>Eienel in this form closely resembles an Ifrit and a Metaphysical Spirit, otherwise known as a Cosmic Ifrit. A Cosmic Ifrit is not your daily average demon ifrit you see everyday. Instead, a Cosmic Ifrit has a very defined body tone, muscle mass, and looks like a soul or a spirit. Though spirits aren&apos;t solid, they have the choice to become solid or not. For Eienel, he rather has a solid spirit composition as a Cosmic Ifrit.</p>
+          <p>He has three eyes, with red sharp pupils while his corneas are dyed black. Very long burn-ash red hair and it glows a very faint orange. He wears a type of armor that allows him to harness and controls his powers.</p>
+        </div>
       </div>
 
       {/* ── Fighting Style ── */}
