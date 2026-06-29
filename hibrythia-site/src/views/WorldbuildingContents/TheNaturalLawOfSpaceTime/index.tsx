@@ -23,6 +23,48 @@ const darkBubbleConditions = [
   "Carbon based elements are present.",
 ];
 
+function WhiteBufferArt() {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <div
+        onClick={() => setOpen(true)}
+        className="relative group cursor-pointer w-full overflow-hidden rounded-sm border border-[#2e2b26]"
+      >
+        <img
+          src="https://i.ibb.co/TD6Gw3zJ/White-Buffer.png"
+          alt="White Buffer"
+          className="w-full h-auto rounded-sm transition-transform duration-300 group-hover:scale-[1.01]"
+        />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+          <span className="opacity-0 group-hover:opacity-100 text-[#f2ebeb] text-xs tracking-widest uppercase border border-[#f2ebeb]/40 px-3 py-1 rounded-sm transition-opacity duration-300">
+            Click to expand
+          </span>
+        </div>
+      </div>
+      {open && (
+        <div
+          style={{ zIndex: 9999 }}
+          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center pt-24 pb-12 px-10"
+        >
+          <button
+            aria-label="Close"
+            onClick={() => setOpen(false)}
+            className="absolute top-16 right-6 text-[#f2ebeb]/70 hover:text-[#f2ebeb] text-xl font-light transition-colors"
+          >
+            &#x2715;
+          </button>
+          <img
+            src="https://i.ibb.co/TD6Gw3zJ/White-Buffer.png"
+            alt="White Buffer — fullscreen"
+            className="max-w-[95vw] max-h-[95vh] h-auto rounded-sm object-contain"
+          />
+        </div>
+      )}
+    </>
+  );
+}
+
 function AqualiviaArt() {
   const [open, setOpen] = useState(false);
   return (
@@ -318,9 +360,7 @@ export default function TheNaturalLawOfSpaceTime() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]">Cosmic Phenomena</p>
         <h2 className="font-display text-lg text-[#f2ebeb]">White Buffers</h2>
 
-        <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center">
-          <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ White Buffer &mdash; Image Placeholder ]</p>
-        </div>
+        <WhiteBufferArt />
 
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
           They&apos;re the opposite of Black Holes. Black holes themselves are popular, since they suck in light, matter, and any of the sort. But since White Buffers are the opposite of these dangerous volatile objects, they serve as a fundamental part of the Space-Time Continuum. These objects help rejuvenate all the periodic elements of the table which helps balance the elements naturally without causing a disturbance.
