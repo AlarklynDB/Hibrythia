@@ -1,5 +1,5 @@
 # LoreImageRules.md
-> Last updated: June 26, 2026
+> Last updated: June 28, 2026
 
 Rules for all art images on thehibrythiansaga.com. Applies to character profiles, worldbuilding pages, locales, and any page that receives an imgbb link.
 
@@ -49,7 +49,7 @@ function MyPageArt() {
       {open && (
         <div
           style={{ zIndex: 9999 }}
-          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-start justify-center pt-24 pb-12 px-10"
+          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center pt-24 pb-12 px-10"
         >
           <button
             aria-label="Close"
@@ -93,6 +93,7 @@ Define a separate helper component for each image (e.g. `MyPageMainArt`, `MyPage
 |---|---|---|
 | `zIndex` | `style={{ zIndex: 9999 }}` inline | Tailwind `z-[9999]` can be purged; inline always wins |
 | ✕ button position | `absolute top-16 right-6` | Clears the navbar height, stays within overlay stacking context |
+| Flex alignment | `items-center justify-center` | Centers image in viewport — never use `items-start` (causes top-left pinning) |
 | Padding | `pt-24 pb-12 px-10` | `pt-24` clears the navbar; rest gives breathing room |
 | Backdrop | `bg-black/90 backdrop-blur-sm` | Dark enough to read art clearly |
 | Image sizing | `max-w-[95vw] max-h-[95vh] h-auto object-contain` | Fills screen without overflow |
@@ -155,6 +156,7 @@ When an imgbb link is provided:
 - `useState` called inside JSX or an IIFE — **breaks hooks rules**, will crash
 - `z-[9999]` via Tailwind class — can be purged by the build
 - `aspect-video` on real art images — distorts non-16:9 art
+- `items-start` on the overlay — pins image to top-left instead of centering it in the viewport
 - Backdrop `onClick` to close — disabled globally by `lightbox-controls.js`, don't add it
 - Keeping both placeholder AND real image — remove placeholder entirely
 - `aria-label` missing on ✕ button — `lightbox-controls.js` won't find the button and ESC/touch won't work
