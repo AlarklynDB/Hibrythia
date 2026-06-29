@@ -45,7 +45,7 @@ function AqualiviaArt() {
       {open && (
         <div
           style={{ zIndex: 9999 }}
-          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-start justify-center pt-24 pb-12 px-10"
+          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center pt-24 pb-12 px-10"
         >
           <button
             aria-label="Close"
@@ -87,7 +87,7 @@ function IDIBsArt() {
       {open && (
         <div
           style={{ zIndex: 9999 }}
-          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-start justify-center pt-24 pb-12 px-10"
+          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center pt-24 pb-12 px-10"
         >
           <button
             aria-label="Close"
