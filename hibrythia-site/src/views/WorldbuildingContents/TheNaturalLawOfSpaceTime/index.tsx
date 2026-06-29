@@ -23,6 +23,48 @@ const darkBubbleConditions = [
   "Carbon based elements are present.",
 ];
 
+function AqualiviaArt() {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <div
+        onClick={() => setOpen(true)}
+        className="relative group cursor-pointer w-full overflow-hidden rounded-sm border border-[#2e2b26]"
+      >
+        <img
+          src="https://i.ibb.co/ynk1C67y/Aqualivia-Sun.png"
+          alt="The Aqualivia Sun"
+          className="w-full h-auto rounded-sm transition-transform duration-300 group-hover:scale-[1.01]"
+        />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+          <span className="opacity-0 group-hover:opacity-100 text-[#f2ebeb] text-xs tracking-widest uppercase border border-[#f2ebeb]/40 px-3 py-1 rounded-sm transition-opacity duration-300">
+            Click to expand
+          </span>
+        </div>
+      </div>
+      {open && (
+        <div
+          style={{ zIndex: 9999 }}
+          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-start justify-center pt-24 pb-12 px-10"
+        >
+          <button
+            aria-label="Close"
+            onClick={() => setOpen(false)}
+            className="absolute top-16 right-6 text-[#f2ebeb]/70 hover:text-[#f2ebeb] text-xl font-light transition-colors"
+          >
+            &#x2715;
+          </button>
+          <img
+            src="https://i.ibb.co/ynk1C67y/Aqualivia-Sun.png"
+            alt="The Aqualivia Sun — fullscreen"
+            className="max-w-[95vw] max-h-[95vh] h-auto rounded-sm object-contain"
+          />
+        </div>
+      )}
+    </>
+  );
+}
+
 function IDIBsArt() {
   const [open, setOpen] = useState(false);
   return (
@@ -216,9 +258,7 @@ export default function TheNaturalLawOfSpaceTime() {
 
         {/* Aqualivia Sun */}
         <div className="space-y-4">
-          <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center">
-            <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ Aqualivia Sun &mdash; Image Placeholder ]</p>
-          </div>
+          <AqualiviaArt />
           <h3 className="font-display text-sm text-[#f2ebeb]">The Aqualivia Sun</h3>
           <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
             Every solar system has a sun that burns immense heat. And as we know in general, the sun is a star. This said star is in the center of the Nhumela Cluster, where 5 Planets orbit around! The Sun is roughly 178,270 Heunix (miles) in size. The sun&apos;s gravitational waves launches themselves at both horizontal, diagonal, vertical heunixs, allowing planets to orbit around the sun at different angles, or at different orbital rings. This sun isn&apos;t your average typical yellow sun. The sun is actually a Passion Star.
