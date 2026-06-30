@@ -9,7 +9,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default defineConfig({
   site: 'https://www.thehibrythiansaga.com',
 
-  // Static Site Generation — every one of the 149 pages outputs real
+  // Static Site Generation — every one of the 149 pages outputs real information
   // HTML at build time. This is the whole point of the migration:
   // crawlable, individually-indexable inner lore pages.
   output: 'static',
