@@ -95,6 +95,65 @@ const canonical = new URL(path, 'https://www.thehibrythiansaga.com').href
     />
     <title>{title}</title>
 
+    <!-- JSON-LD: Structured Data (hibrythian_schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://www.alarkiusej.com/#author"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.alarkiusej.com/#brand"
+        },
+        {
+          "@type": "CreativeWorkSeries",
+          "@id": "https://www.thehibrythiansaga.com/#series",
+          "name": "The Hibrythian Saga",
+          "url": "https://www.thehibrythiansaga.com/",
+          "description": "An Adventure Fantasy Book Series created by Alarkius Elvya Jay.",
+          "author":    { "@id": "https://www.alarkiusej.com/#author" },
+          "creator":   { "@id": "https://www.alarkiusej.com/#author" },
+          "publisher": { "@id": "https://www.alarkiusej.com/#brand" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.thehibrythiansaga.com/#website",
+          "url": "https://www.thehibrythiansaga.com/",
+          "name": "The Hibrythian Saga",
+          "description": "The Official Website for The Hibrythian Saga by Alarkius Elvya Jay.",
+          "about":     { "@id": "https://www.thehibrythiansaga.com/#series" },
+          "creator":   { "@id": "https://www.alarkiusej.com/#author" },
+          "publisher": { "@id": "https://www.alarkiusej.com/#brand" }
+        },
+        {
+          "@type": "Book",
+          "@id": "https://www.thehibrythiansaga.com/#book-0",
+          "name": "Hibryds, The Hibrythian Genesis of Everything",
+          "bookEdition": "First Edition",
+          "isbn": "9798994097687",
+          "numberOfPages": 50,
+          "inSeries": { "@id": "https://www.thehibrythiansaga.com/#series" },
+          "author": { "@id": "https://www.alarkiusej.com/#author" },
+          "url": "https://www.thehibrythiansaga.com/bookshelf/vol0"
+        },
+        {
+          "@type": "Book",
+          "@id": "https://www.thehibrythiansaga.com/#book-1",
+          "name": "Hibryds - A Grand Voyage",
+          "bookEdition": ["First Edition", "Hardcover"],
+          "isbn": ["9798994097663", "9798994097670"],
+          "numberOfPages": 542,
+          "inSeries": { "@id": "https://www.thehibrythiansaga.com/#series" },
+          "author": { "@id": "https://www.alarkiusej.com/#author" },
+          "url": "https://www.barnesandnoble.com/search?attributes.mfield_bnb__seriesTitle=The%20Hibrythian%20Saga"
+        }
+      ]
+    }
+    </script>
+
     <!-- Splash screen: dark overlay, fades out on hard load only -->
     <style>
       /* color-scheme + body bg moved to critical <style> above */
