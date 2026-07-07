@@ -42,14 +42,16 @@ const SECTIONS = [
     ],
   },
   {
-    title: 'Background Characters',
-    description: 'Allies, companions, and figures who shape the world around our main cast.',
+    title: 'Worldbuilding Characters',
+    description: 'Allies, companions, historical figures, and beings who shape the world around our main cast.',
     characters: [
-      { to: '/characters/TheSpiritWardens',   label: 'The Spirit Wardens' },
-      { to: '/characters/LeonTheEulerianOwl', label: 'Leon, Eulerian Owl' },
-      { to: '/characters/AviaRemyls',         label: 'Avia Remyls' },
-      { to: '/characters/PhilstraRhys',        label: 'Philstra Rhys' },
-      { to: '/characters/SkullZakar',         label: 'Skull Zakar' },
+      { to: '/characters/TheSpiritWardens',      label: 'The Spirit Wardens' },
+      { to: '/characters/LeonTheEulerianOwl',    label: 'Leon, Eulerian Owl' },
+      { to: '/characters/AviaRemyls',            label: 'Avia Remyls' },
+      { to: '/characters/PhilstraRhys',          label: 'Philstra Rhys' },
+      { to: '/characters/SkullZakar',            label: 'Skull Zakar' },
+      { to: '/characters/QueenEiraValthorne',    label: 'Queen Eira Valthorne' },
+      { to: '/characters/XylaAndArzo',           label: 'Xyla & Arzo' },
     ],
   },
 ];
