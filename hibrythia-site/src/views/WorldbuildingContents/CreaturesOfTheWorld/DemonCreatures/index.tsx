@@ -26,6 +26,14 @@ export default function DemonCreatures() {
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
             They're beautiful creatures that have the ability to understand others even past those surface-level rumors and stereotypes.
           </p>
+          <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-4 mt-4">
+            <p className="font-body text-sm text-[#7a746e] leading-[1.85] mb-2">Hibryd Demons like:</p>
+            <ul className="list-disc list-inside font-body text-sm text-[#c8c2ba] leading-[1.85] space-y-1 mb-3">
+              <li>Draconic-Demon Wizards (Dragon Demon)</li>
+              <li>Merfolk Serpents (Merfolk Cross Serpents)</li>
+            </ul>
+            <p className="font-body text-sm text-[#7a746e] leading-[1.85] italic">are not listed here because they are crossbreeds between two different species.</p>
+          </div>
         </section>
 
         <div className="border-t border-[#1e1c1a]" />
@@ -42,9 +50,13 @@ export default function DemonCreatures() {
                 desc: "A direct demon-descendant from Khalfvyskov himself. They look like a combination of minotaurs, onis, and chimeras. As the closest living relatives to the Demon Grandfather's bloodline, Khnavkiers are among the most commanding of all demon-kind. Their composite form carries the horned bulk of a minotaur, the fierce and fearsome spirit of an oni, and the chimeric unpredictability of a creature that refuses to be defined by a single nature. They are rare, and their presence alone demands acknowledgment.",
               },
               {
-                name: 'Lesser Demon Witches / Demon Witches',
-                note: 'different than Mages and Witches',
-                desc: "Among the creatures, comes Lesser Demon Witches. They all come in different appearances, but that's their main form. They can fully evolve into a full demon witch through countless bloodshed. This evolution is not a gift — it is earned through survival and the slow accumulation of power that only comes from enduring the worst the world can offer. What they look like before that evolution varies wildly; no two Lesser Witches share the same face or form.",
+                name: 'Full Demon Witches & Wizards',
+                note: 'different than Demon Mages and Witches (see below)',
+                desc: "Among the creatures, comes Demon Witches. And they have a Lesser counterpart called a Lesser Demon. They all come in different appearances, but that's their main form. They can fully evolve into a full demon witch through countless bloodshed. This evolution is not a gift — it is earned through survival and the slow accumulation of power that only comes from enduring the worst the world can offer. What they look like before that evolution varies wildly; no two Lesser Witches share the same face or form. There are other ways to evolve without bloodshed like contributions or drinking demon blood.",
+                extra: [
+                  'Lesser Demon Witches are female',
+                  'Lesser Demon Wizards are male',
+                ],
               },
               {
                 name: 'Devil/Demon Angels — Fallen Angels',
@@ -67,9 +79,9 @@ export default function DemonCreatures() {
                 desc: "Djinns are among the most arcane of demon beings — creatures of will, bound to no single form and no single place. Their power is tied to intent, and their presence in any space tends to shift the atmosphere in ways that are difficult to articulate. Whether that shift registers as warmth or unease depends entirely on the Djinn in question. They are ancient in manner, deliberate in action, and deeply aware of the weight their kind carries in the cultural imagination of Hetra.",
               },
               {
-                name: 'Demon Mages / Witches',
-                note: 'Lesser, Half, Demi kinds of Demon Mages',
-                desc: "Demon Mages and Witches represent the scholarly and magical spine of demon-kind. Where other subraces lead with physicality, Demon Mages lead with knowledge — deep, studied, and often inherited through bloodline as much as it is learned. They come in three recognized sub-classifications: Lesser, Half, and Demi kinds, each distinguished by the concentration of demon lineage in their blood and the ceiling of power available to them. A Demi-class Demon Mage, at full development, is considered among the most formidable magic-users in the known world.",
+                name: 'Demon Magefolk',
+                note: 'Half, Lesser, Demi kinds of Demon Mages',
+                desc: "Demon Magefolk represent the scholarly and magical spine of demon-kind. Where other subraces lead with physicality, Demon Mages lead with knowledge — deep, studied, and often inherited through bloodline as much as it is learned. They come in three recognized sub-classifications: Lesser, Half, and Demi kinds, each distinguished by the concentration of demon lineage in their blood and the ceiling of power available to them. A Demi-class Demon Mage, at full development, is considered among the most formidable magic-users in the known world.",
               },
               {
                 name: 'Tainted Serpents',
@@ -79,11 +91,18 @@ export default function DemonCreatures() {
                 name: 'Devil Snakes',
                 desc: "Distinct from Tainted Serpents in origin and temperament, Devil Snakes are a sleeker and more aggressive class of demon serpent. Where Tainted Serpents are methodical, Devil Snakes are driven — fast, direct, and difficult to predict. Their demon lineage is expressed less through magic and more through sheer biological intensity: heightened senses, rapid regeneration, and a ferocity that belies their frame.",
               },
-            ].map(({ name, note, desc }) => (
+            ].map(({ name, note, desc, extra }: { name: string; note?: string; desc: string; extra?: string[] }) => (
               <div key={name} className="border-l-2 border-[#2e2b26] pl-5">
                 <h3 className="font-display text-base text-[#f2ebeb] mb-1">{name}</h3>
                 {note && <p className="font-body text-xs text-[#7a746e] italic mb-2">({note})</p>}
                 <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">{desc}</p>
+                {extra && (
+                  <ul className="list-disc list-inside mt-2 space-y-1">
+                    {extra.map((item) => (
+                      <li key={item} className="font-body text-sm text-[#c8c2ba]">{item}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
 
@@ -217,6 +236,11 @@ export default function DemonCreatures() {
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               It takes 975 years for a demon to reach 155 years old (biological age). The oldest age they can live up to is 9,000 years old. The ages of baby-23 needs to be dismissed, because those years are when they age much like how humans age.
             </p>
+            <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-4 mt-3 space-y-1 font-body text-sm">
+              <p className="font-mono text-[#c9a84c]">975 - 23 = 952</p>
+              <p className="font-mono text-[#c9a84c]">952 / 23 = 41</p>
+              <p className="text-[#c8c2ba] mt-2">41 years of life is equivalent to 1 year. In order to become 26 years of age, a demon has to wait for 41 years.</p>
+            </div>
           </div>
 
           {/* Formula */}
