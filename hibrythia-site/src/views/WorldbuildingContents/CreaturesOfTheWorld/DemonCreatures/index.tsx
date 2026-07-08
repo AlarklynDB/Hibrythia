@@ -260,13 +260,30 @@ export default function DemonCreatures() {
 
           {/* Quick Death */}
           <div className="mt-6">
-            <h3 className="font-display text-base text-[#f2ebeb] mb-3">The Quick Death</h3>
+            <h3 className="font-display text-base text-[#f2ebeb] mb-3">The Quick Death&#x2122;</h3>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
               Demons die a horrible death, even if it means the exception of getting themselves killed by external factors. 8,999 is their oldest age until they die off into the age of 9,000. All demon abilities and powers deteriorate their health in a span of one year, which causes them to die by the hands of too much power.
             </p>
             <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
               The fires of power will decrease due to low minerals in their body, and the depletion of Black Blood Cells. The Demon Core Cells will fight over the whole body, which causes their Black Cells to die off in matter of seconds. And in a span of 6.5 months, their powers will be gone, and all that left is their ability of regeneration. The power of regeneration will obviously fight back, but with little Demon Core Cell and Black Blood Cells left, that ability is left to waste and all you get is a rotten, smelly husk in their 9k years of age.
             </p>
+          </div>
+
+          <div className="mt-6">
+            <h3 className="font-display text-base text-[#f2ebeb] mb-3">The Quick Death can be stopped.</h3>
+            <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-4">
+              There are other ways to revert The Quick Death via Sorcery or Witchcraft (or potentially more), which are long lost forgotten magic. Most notable figures who figured it out are:
+            </p>
+            <ul className="space-y-3">
+              <li className="border-l-2 border-[#2e2b26] pl-4">
+                <Link to="/characters/AviaRemyls" className="font-display text-sm text-[#c9a84c] hover:underline">Avia Remyls</Link>
+                <span className="font-body text-sm text-[#c8c2ba]"> &mdash; who has Sorcery and Witchcraft</span>
+              </li>
+              <li className="border-l-2 border-[#2e2b26] pl-4">
+                <Link to="/characters/PhilstraRhys" className="font-display text-sm text-[#c9a84c] hover:underline">Philstra Rhys</Link>
+                <span className="font-body text-sm text-[#c8c2ba]"> &mdash; The World&apos;s First Multi-Sextillionaire. He is a Demon Dragon Wizard crossbreed. 75% dragon, 25% demon. The Dragon cells override his demon cells in which he does not have The Quick Death.</span>
+              </li>
+            </ul>
           </div>
         </section>
 
