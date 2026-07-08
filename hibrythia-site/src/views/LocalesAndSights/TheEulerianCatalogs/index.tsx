@@ -26,6 +26,7 @@ export default function TheEulerianCatalogs() {
           Its architecture has been dated to 235 Oldendaye. Built for Giants. Books of all sizes, different aisles, and magic books.
           Texts on Eulerian Martial Arts and Hethurgism. Open to the public. Surface entrance found at the Euriel Town ruins (Euriel Ruins).
           Closes during the Month of Mulumber and Griselmber due to heavy snowstorms.
+          This library is underneath all cave systems since the cave systems live near the crust.
         </p>
 
         <section className="mb-10">
