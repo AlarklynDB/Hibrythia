@@ -32,7 +32,7 @@ export default function TheNhuemynDB() {
           <h2 className="font-display text-lg text-[#f2ebeb] mb-5">Terminology</h2>
           <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5 mb-6">
             <p className="font-display text-sm text-[#f2ebeb] mb-1">Nhuemyns</p>
-            <p className="font-body text-xs text-[#7a746e] italic mb-4">Scientific Name: Nheuma Sapherius</p>
+            <p className="font-body text-xs text-[#7a746e] italic mb-4">Scientific Name: Nhuema Sapherius</p>
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
               Humans, Elves, Sylphs...etc of the kind are all related and bunched into one specific category; Nhuemyns. This is an umbrella term for humans that adopt similarities to each other despite the species. These types of humans can live up to 350 years of age. However, Sylphs can live longer than 350 years. Any kin of kind, that has almost human-like features are grouped in this classification.
             </p>
