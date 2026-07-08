@@ -198,7 +198,7 @@ export default function TheMultiverseOfMultitudes() {
               {
                 shard: "DEMS-24",
                 chars: [
-                  { name: "Hunter Noxx", desc: "A recurring nemesis within the continuity. He is a lifelong nemesis of Tydel Nova." },
+                  { name: "Hunter Noxx", desc: "A recurring nemesis within the continuity. He is a lifelong nemesis of Llyndel Nova." },
                   { name: "Llyndel Nova", desc: "The Original Variant of Kydel from the Original Planet of Gaia-666." },
                 ],
               },
