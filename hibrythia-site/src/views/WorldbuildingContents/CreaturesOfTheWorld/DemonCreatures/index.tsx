@@ -51,8 +51,8 @@ export default function DemonCreatures() {
               },
               {
                 name: 'Full Demon Witches & Wizards',
-                note: 'different than Demon Mages and Witches (see below)',
-                desc: "Among the creatures, comes Demon Witches. And they have a Lesser counterpart called a Lesser Demon. They all come in different appearances, but that's their main form. They can fully evolve into a full demon witch through countless bloodshed. This evolution is not a gift — it is earned through survival and the slow accumulation of power that only comes from enduring the worst the world can offer. What they look like before that evolution varies wildly; no two Lesser Witches share the same face or form. There are other ways to evolve without bloodshed like contributions or drinking demon blood.",
+                note: 'different than Demon Magefolk (see below)',
+                desc: "Among the creatures, comes Demon Witches. And they have a Lesser counterpart called a Lesser Demon. They all come in different appearances, but that's their main form. They can fully evolve into a full demon witch through countless bloodshed. This evolution is not a gift; it is earned through survival and the slow accumulation of power that only comes from enduring the worst the world can offer. What they look like before that evolution varies wildly; no two Lesser Witches share the same face or form. There are other ways to evolve without bloodshed like contributions or drinking demon blood.",
                 extra: [
                   'Lesser Demon Witches are female',
                   'Lesser Demon Wizards are male',
@@ -60,36 +60,36 @@ export default function DemonCreatures() {
               },
               {
                 name: 'Devil/Demon Angels — Fallen Angels',
-                desc: "Once beings of a higher order, Fallen Angels occupy a strange and sorrowful place within demon-kind. They retain the wings and luminous structure of their former selves, but the light that once defined them has been replaced by something darker and more volatile. They are not fully demon in the traditional sense — their origin sets them apart — yet they fall under Khalfvyskov's domain all the same. Among all demon beings, Fallen Angels are perhaps the most conflicted, carrying the memory of what they were alongside the reality of what they have become.",
+                desc: "Once beings of a higher order, Fallen Angels occupy a strange and sorrowful place within demon-kind. They retain the wings and luminous structure of their former selves, but the light that once defined them has been replaced by something darker and more volatile. They are not fully demon in the traditional sense, as their origin sets them apart, yet they fall under Khalfvyskov's domain all the same. Among all demon beings, Fallen Angels are perhaps the most conflicted, carrying the memory of what they were alongside the reality of what they have become.",
               },
               {
                 name: 'Demon Ogres',
-                desc: "Large, brutish, and deceptively durable, Demon Ogres are a heavy-bodied class of demon-kind known for their physical endurance above all else. Unlike more magically inclined demon subraces, Demon Ogres lead with sheer force and resilience. Their size puts them well above most creatures in a confrontation, and their demon lineage — Black Blood Cells, Demon Core Cells and all — makes them far more dangerous than a surface read would suggest.",
+                desc: "Large, brutish, and deceptively durable, Demon Ogres are a heavy-bodied class of demon-kind known for their physical endurance above all else. Unlike more magically inclined demon subraces, Demon Ogres lead with sheer force and resilience. Their size puts them well above most creatures in a confrontation, and their demon lineage (Black Blood Cells, Demon Core Cells and all) makes them far more dangerous than a surface read would suggest.",
               },
               {
                 name: 'Gorgons',
-                desc: "Gorgons are demon beings defined by their petrifying presence — not always literally, but the effect they have on those who encounter them is rarely comfortable. Serpentine features, an unsettling gaze, and a commanding stillness mark the Gorgon as one of the more ancient and eerie presences within demon-kind. Their connection to Khalfvyskov's original ten types is well-established, and their reputation, however distorted by myth, has spread far beyond the demon communities that know them best.",
+                desc: "Gorgons are demon beings defined by their petrifying presence, not always literally, but the effect they have on those who encounter them is rarely comfortable. Serpentine features, an unsettling gaze, and a commanding stillness mark the Gorgon as one of the more ancient and eerie presences within demon-kind. Their connection to Khalfvyskov's original ten types is well-established, and their reputation, however distorted by myth, has spread far beyond the demon communities that know them best.",
               },
               {
                 name: 'Imps',
-                desc: "Small, quick, and mischievous by nature, Imps are the most numerous and arguably the most underestimated of demon-kind. What they lack in raw power, they compensate for in cunning, agility, and an uncanny ability to appear exactly where they are least wanted. Despite their diminutive stature, Imps carry the same Demon Core Cell biology as every other member of Khalfvyskov's lineage — meaning that once Demonization occurs at age 23, an Imp is nothing to take lightly.",
+                desc: "Small, quick, and mischievous by nature, Imps are the most numerous and arguably the most underestimated of demon-kind. What they lack in raw power, they compensate for in cunning, agility, and an uncanny ability to appear exactly where they are least wanted. Despite their diminutive stature, Imps carry the same Demon Core Cell biology as every other member of Khalfvyskov's lineage, meaning that once Demonization occurs at age 23, an Imp is nothing to take lightly.",
               },
               {
                 name: 'Djinns',
-                desc: "Djinns are among the most arcane of demon beings — creatures of will, bound to no single form and no single place. Their power is tied to intent, and their presence in any space tends to shift the atmosphere in ways that are difficult to articulate. Whether that shift registers as warmth or unease depends entirely on the Djinn in question. They are ancient in manner, deliberate in action, and deeply aware of the weight their kind carries in the cultural imagination of Hetra.",
+                desc: "Djinns are among the most arcane of demon beings: creatures of will, bound to no single form and no single place. Their power is tied to intent, and their presence in any space tends to shift the atmosphere in ways that are difficult to articulate. Whether that shift registers as warmth or unease depends entirely on the Djinn in question. They are ancient in manner, deliberate in action, and deeply aware of the weight their kind carries in the cultural imagination of Hetra.",
               },
               {
                 name: 'Demon Magefolk',
                 note: 'Half, Lesser, Demi kinds of Demon Mages',
-                desc: "Demon Magefolk represent the scholarly and magical spine of demon-kind. Where other subraces lead with physicality, Demon Mages lead with knowledge — deep, studied, and often inherited through bloodline as much as it is learned. They come in three recognized sub-classifications: Lesser, Half, and Demi kinds, each distinguished by the concentration of demon lineage in their blood and the ceiling of power available to them. A Demi-class Demon Mage, at full development, is considered among the most formidable magic-users in the known world.",
+                desc: "Demon Magefolk represent the scholarly and magical spine of demon-kind. Where other subraces lead with physicality, Demon Mages lead with knowledge: deep, studied, and often inherited through bloodline as much as it is learned. They come in three recognized sub-classifications: Lesser, Half, and Demi kinds, each distinguished by the concentration of demon lineage in their blood and the ceiling of power available to them. A Demi-class Demon Mage, at full development, is considered among the most formidable magic-users in the known world.",
               },
               {
                 name: 'Tainted Serpents',
-                desc: "Tainted Serpents are large, venomous, and deeply unsettling — serpentine beings whose demon corruption has pushed them well beyond the natural scope of any ordinary beast. Their scales carry a dark, iridescent quality, and the venom they produce is not merely physical in its effects. They are territorial and precise, preferring patience over aggression, and that patience is as much a weapon as anything they carry physically.",
+                desc: "Tainted Serpents are large, venomous, and deeply unsettling: serpentine beings whose demon corruption has pushed them well beyond the natural scope of any ordinary beast. Their scales carry a dark, iridescent quality, and the venom they produce is not merely physical in its effects. They are territorial and precise, preferring patience over aggression, and that patience is as much a weapon as anything they carry physically.",
               },
               {
                 name: 'Devil Snakes',
-                desc: "Distinct from Tainted Serpents in origin and temperament, Devil Snakes are a sleeker and more aggressive class of demon serpent. Where Tainted Serpents are methodical, Devil Snakes are driven — fast, direct, and difficult to predict. Their demon lineage is expressed less through magic and more through sheer biological intensity: heightened senses, rapid regeneration, and a ferocity that belies their frame.",
+                desc: "Distinct from Tainted Serpents in origin and temperament, Devil Snakes are a sleeker and more aggressive class of demon serpent. Where Tainted Serpents are methodical, Devil Snakes are driven; fast, direct, and difficult to predict. Their demon lineage is expressed less through magic and more through sheer biological intensity: heightened senses, rapid regeneration, and a ferocity that belies their frame.",
               },
             ].map(({ name, note, desc, extra }: { name: string; note?: string; desc: string; extra?: string[] }) => (
               <div key={name} className="border-l-2 border-[#2e2b26] pl-5">
@@ -118,10 +118,10 @@ export default function DemonCreatures() {
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Society</p>
           <h2 className="font-display text-lg text-[#f2ebeb] mb-6">Demon Culture</h2>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-4">
-            The Demon Race is one of the most misunderstood — and most underestimated — cultures on Planet Hetra. Where other races might see power and assume danger, those who look closer find a people defined by beauty, knowledge, and a deep capacity for emotional understanding. Demons are not frowned upon by the world at large. Other cultures regard them with respectful autonomy, recognizing them as beings who see past surface-level rumors and stereotypes with remarkable clarity.
+            The Demon Race is one of the most misunderstood and most underestimated cultures on Planet Hetra. Where other races might see power and assume danger, those who look closer find a people defined by beauty, knowledge, and a deep capacity for emotional understanding. Demons are not frowned upon by the world at large. Other cultures regard them with respectful autonomy, recognizing them as beings who see past surface-level rumors and stereotypes with remarkable clarity.
           </p>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
-            At their cultural core, demons are a personification of beauty, wealth, and knowledge — not merely the raw strength that places them at the top of the Beast Hierarchy Kingdom. That strength exists, but it is not what defines them.
+            At their cultural core, demons are a personification of beauty, wealth, and knowledge, not merely the raw strength that places them at the top of the Beast Hierarchy Kingdom. That strength exists, but it is not what defines them.
           </p>
 
           <div className="space-y-8 mt-8">
@@ -130,18 +130,18 @@ export default function DemonCreatures() {
             <div>
               <h3 className="font-display text-base text-[#f2ebeb] mb-4">Cultural Dishes</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-5">
-                Food is one of the quieter but more telling expressions of demon culture. Where other races develop cuisine around abundance or trade, demon cooking tends to emerge from necessity, magic, and personal craft — dishes that are difficult to replicate outside of demon hands because their preparation often requires an active use of demonic energy as much as it does heat or technique.
+                Food is one of the quieter but more telling expressions of demon culture. Where other races develop cuisine around abundance or trade, demon cooking tends to emerge from necessity, magic, and personal craft: dishes that are difficult to replicate outside of demon hands because their preparation often requires an active use of demonic energy as much as it does heat or technique.
               </p>
               <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
                 <h4 className="font-display text-sm text-[#f2ebeb] mb-3">Dàema Énchil Curry</h4>
                 <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
-                  One of the most well-known dishes made by Lesser Demons, Dàema Énchil Curry is a slow-prepared curry with roots in the culinary traditions of demon communities that lived across Varleqe and its surrounding territories. It is not a simple meal — most of its preparation processes require magic to complete correctly, and the full recipe is typically passed down within demon communities rather than recorded formally.
+                  One of the most well-known dishes made by Lesser Demons, Dàema Énchil Curry is a slow-prepared curry with roots in the culinary traditions of demon communities that lived across Varleqe and its surrounding territories. It is not a simple meal; most of its preparation processes require magic to complete correctly, and the full recipe is typically passed down within demon communities rather than recorded formally.
                 </p>
                 <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
-                  The dish is known for its deceptively light texture offset by a rich, layered spiciness that builds gradually on the palate. The spice is never described as harsh or overwhelming — it sits at a precise threshold that warms without punishing, enriched with depth that most non-demon cooks struggle to replicate. Those who have tried it describe the taste as something close to aged fermentation meeting warm earth: complex, full-bodied, and unmistakably alive.
+                  The dish is known for its deceptively light texture offset by a rich, layered spiciness that builds gradually on the palate. The spice is never described as harsh or overwhelming; it sits at a precise threshold that warms without punishing, enriched with depth that most non-demon cooks struggle to replicate. Those who have tried it describe the taste as something close to aged fermentation meeting warm earth: complex, full-bodied, and unmistakably alive.
                 </p>
                 <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
-                  The scent of Dàema Énchil Curry cooking outdoors is said to carry far enough to attract wildlife, which is considered a quiet mark of quality in demon culinary tradition — that even the natural world recognizes something worth gathering for. It is a dish made to be shared, and in demon culture, the act of sharing it holds weight beyond the meal itself.
+                  The scent of Dàema Énchil Curry cooking outdoors is said to carry far enough to attract wildlife, which is considered a quiet mark of quality in demon culinary tradition, as even the natural world recognizes something worth gathering for. It is a dish made to be shared, and in demon culture, the act of sharing it holds weight beyond the meal itself.
                 </p>
               </div>
             </div>
@@ -150,10 +150,10 @@ export default function DemonCreatures() {
             <div>
               <h3 className="font-display text-base text-[#f2ebeb] mb-3">Identity & Social Standing</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
-                Despite being classified as Rank 1, No. 2 in the Beast Hierarchy Kingdom — just below The Dregalosaurus Zaratan — demons carry themselves with a dignity that extends well beyond combat. Their cultural identity is rooted in the understanding that power alone does not make a race worthy of respect. What earns that respect is the way they treat others: with patience, autonomy, and a willingness to look beyond what is said on the surface.
+                Despite being classified as Rank 1, No. 2 in the Beast Hierarchy Kingdom, just below The Dregalosaurus Zaratan, demons carry themselves with a dignity that extends well beyond combat. Their cultural identity is rooted in the understanding that power alone does not make a race worthy of respect. What earns that respect is the way they treat others: with patience, autonomy, and a willingness to look beyond what is said on the surface.
               </p>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mt-3">
-                This reputation is hard-earned. Demon culture places strong value on emotional intelligence, self-governance, and the bonds formed through shared lineage — all tracing back to the one bloodline that started it all: The Demon Grandfather, Khalfvyskov.
+                This reputation is hard-earned. Demon culture places strong value on emotional intelligence, self-governance, and the bonds formed through shared lineage, all tracing back to the one bloodline that started it all: The Demon Grandfather, Khalfvyskov.
               </p>
             </div>
 
@@ -161,10 +161,10 @@ export default function DemonCreatures() {
             <div>
               <h3 className="font-display text-base text-[#f2ebeb] mb-3">The Varnæn Dialect — Language as Cultural Identity</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
-                The spoken language of demon culture is Varnæn, the Demonic dialect of ancient Ghrenglish. Its tone is harsh, clipped, and guttural — built for declarations, curses, abyssal rituals, and dark sorcery. Verbs carry endings like -nuhl, -aem, and -farg, and the dialect is heavy with glottal breaks and sounds like "sk," "dr," "gh," and "kh."
+                The spoken language of demon culture is Varnæn, the Demonic dialect of ancient Ghrenglish. Its tone is harsh, clipped, and guttural, built for declarations, curses, abyssal rituals, and dark sorcery. Verbs carry endings like -nuhl, -aem, and -farg, and the dialect is heavy with glottal breaks and sounds like "sk," "dr," "gh," and "kh."
               </p>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
-                But language carries culture, and Varnæn is no exception. Embedded within it are strong cultural taboos — most notably the phrase Skærøl Ǧhrün'pæarou, a deeply offensive insult that loosely translates to "a deformed child from their mother's womb." Its use is widely frowned upon, even in the modern era, because of what it targets: orphans, survivors of false breedings, and those who came from toxic or abusive origins. The fact that this taboo exists and persists speaks volumes about demon values.
+                But language carries culture, and Varnæn is no exception. Embedded within it are strong cultural taboos, most notably the phrase Skærøl Ǧhrün'pæarou, a deeply offensive insult that loosely translates to "a deformed child from their mother's womb." Its use is widely frowned upon, even in the modern era, because of what it targets: orphans, survivors of false breedings, and those who came from toxic or abusive origins. The fact that this taboo exists and persists speaks volumes about demon values.
               </p>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 Varnæn is also mutually respected by Sylphic Ghrenglish (Aeþerlen) speakers. Scholars from both language traditions have long been friends, and both dialects borrow from each other in moments of raw emotional honesty.
@@ -175,10 +175,10 @@ export default function DemonCreatures() {
             <div>
               <h3 className="font-display text-base text-[#f2ebeb] mb-3">The Chant of Beasts — A Cultural Anthem</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
-                Perhaps the most iconic expression of demon culture is "Þa Hræven'þa Býest" — The Chant of Beasts. Originally sung by demons in the Varnæn dialect, the chant is not about dominance or war. It is about courage, self-esteem, and emotional resilience — about refusing to let destruction breach the heart.
+                Perhaps the most iconic expression of demon culture is "Þa Hræven'þa Býest" — The Chant of Beasts. Originally sung by demons in the Varnæn dialect, the chant is not about dominance or war. It is about courage, self-esteem, and emotional resilience, refusing to let destruction breach the heart.
               </p>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
-                The chant spread far beyond the demon race because its message resonated across cultures universally. It is sung near mountains, played with heavy drums and raw vocals, and carries a tone described as primal and fierce — yet deeply protective of the inner self.
+                The chant spread far beyond the demon race because its message resonated across cultures universally. It is sung near mountains, played with heavy drums and raw vocals, and carries a tone described as primal and fierce, yet deeply protective of the inner self.
               </p>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 Not everyone embraces it. Werebels and Moonbels are known to actively hate the chant, as they break the very codes it stands for. But that opposition only reinforces what the chant represents: a cultural anthem that endures because of what it asks people to protect.
@@ -192,10 +192,10 @@ export default function DemonCreatures() {
                 On the supercontinent of Varleqe, built into ancient ruins rather than constructed anew, stands the Yhursian Demon Church — the only Architect church ever built for a non-human race. Its builder, Yhursa, chose to honor rather than replace the ruins that demons already called home. The result is a structure that grows from its surroundings rather than standing apart from them.
               </p>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
-                Its entrance pillars are carved in Varnæn — not with prayers, but with declarations of welcome and belonging. Below ground, the church opens into a wide hall lit by deep red eternal flames, with a polished floor bearing an ancient Greungerian symbol of sanctuary at its center.
+                Its entrance pillars are carved in Varnæn, not with prayers, but with declarations of welcome and belonging. Below ground, the church opens into a wide hall lit by deep red eternal flames, with a polished floor bearing an ancient Greungerian symbol of sanctuary at its center.
               </p>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
-                The church has served for millennia as a neutral territorial zone — a space where demon factions, often in conflict with one another, could gather for rites of passage, truces, and communal ceremony. Attacking within its walls is considered a serious violation of demon cultural law, a status that has held — imperfectly but consistently — since the Greungerian Era. Yhursa's work was so significant that the Five Giants named Yhursday — the fifth day of the Hetranian week — in her honor. Demon culture is, in that small way, written into the very calendar of the world.
+                The church has served for millennia as a neutral territorial zone, a space where demon factions, often in conflict with one another, could gather for rites of passage, truces, and communal ceremony. Attacking within its walls is considered a serious violation of demon cultural law, a status that has held, imperfectly but consistently, since the Greungerian Era. Yhursa's work was so significant that the Five Giants named Yhursday (the fifth day of the Hetranian week) in her honor. Demon culture is, in that small way, written into the very calendar of the world.
               </p>
             </div>
 
@@ -205,10 +205,10 @@ export default function DemonCreatures() {
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
                 Demon society is not monolithic. Within its broader culture exist distinct sub-classifications documented in the{' '}
                 <Link to="/world/databases/TheNhuemynDB" className="text-[#c9a84c] hover:underline">Nhuemyn DB</Link>
-                : Half-Demons and Lesser Demons are recognized nhuemyn types of their own. These sub-kinds are not hostile or violent — they specialize in magic and dark magic, and carry their own identities within the wider demon cultural framework.
+                : Half-Demons and Lesser Demons are recognized nhuemyn types of their own. These sub-kinds are not hostile or violent; they specialize in magic and dark magic, and carry their own identities within the wider demon cultural framework.
               </p>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mt-3">
-                This internal taxonomy reflects a culture that is organized, self-aware, and layered — not a single bloc, but a lineage with branches.
+                This internal taxonomy reflects a culture that is organized, self-aware, and layered: not a single bloc, but a lineage with branches.
               </p>
             </div>
 
@@ -216,7 +216,7 @@ export default function DemonCreatures() {
             <div>
               <h3 className="font-display text-base text-[#f2ebeb] mb-3">Varleqe — The Cultural Homeland</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
-                The majority of demon culture finds its home on Varleqe, a supercontinent of ruins, lush river lands, and scorched territorial zones. Human settlement has largely declined or collapsed here, leaving the land primarily to demons, direwolves, and beasts. Demons have a deep, ancestral relationship with Varleqe's ancient structures — living in and around them, treating them as home territory in a way that is cultural as much as it is practical. For those who know where to look, Varleqe is not a wasteland. It is a homeland.
+                The majority of demon culture finds its home on Varleqe, a supercontinent of ruins, lush river lands, and scorched territorial zones. Human settlement has largely declined or collapsed here, leaving the land primarily to demons, direwolves, and beasts. Demons have a deep, ancestral relationship with Varleqe's ancient structures, living in and around them and treating them as home territory in a way that is cultural as much as it is practical. For those who know where to look, Varleqe is not a wasteland. It is a homeland.
               </p>
             </div>
 
