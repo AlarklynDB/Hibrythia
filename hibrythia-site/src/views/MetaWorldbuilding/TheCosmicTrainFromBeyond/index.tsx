@@ -36,7 +36,7 @@ export default function TheCosmicTrainFromBeyond() {
           His entire body is semi-transparent, making it harder to see him in the vast vacuum of space. His own body is colored and designed like a universe with stars. Calypso currently resides in The Hibryoverse, around the gaps of the Divine Realm. He became friends with King Nhavah and Queen Laeyana, as the two knew of its presence. Whenever Calypso travels, he would leave behind trails of cosmic starclouds, in which those starclouds will give birth to new solar systems, suns, and planets.
         </p>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          Calypso has Seven <strong className="text-[#f2ebeb]">Omnis</strong> to his powers.
+          Calypso has Six <strong className="text-[#f2ebeb]">Omnis</strong> to his powers.
         </p>
         <ul className="space-y-2 pl-4">
           {[
@@ -77,7 +77,7 @@ export default function TheCosmicTrainFromBeyond() {
         </div>
 
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          With all seven Omnis held by Calypso, he dubs and calls himself an <strong className="text-[#f2ebeb]">Exeterius</strong>.
+          With all six Omnis held by Calypso, he dubs and calls himself an <strong className="text-[#f2ebeb]">Exeterius</strong>.
         </p>
       </section>
 
