@@ -422,6 +422,16 @@ export default function EconomyOfPlanetHetra() {
           <p className="font-body text-base text-[#c8c2ba] mt-4">
             The HetraID will need to be re-registered which costs around <span className="text-[#c9a84c] font-semibold">Ħ357 Hetrix</span>. Which is a lot. But it&apos;s a mandated price so that nothing can go in and out. TSA security will need to do a hard session to bring you back inside.
           </p>
+          <ul className="space-y-2 mt-3">
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span>The AQTFC offers different tiers of comfort and jobs based on region or confinement. It is a lenient system outside. Anyone can choose which position they want for maximum contributions to the society outside.</span>
+            </li>
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span>The HetraID outside isn&apos;t just mandatory for protection. You can retire it at any point inside any AQTFC. Some people don&apos;t need jobs from the AQTFC, since life can also be lived normally.</span>
+            </li>
+          </ul>
           <p className="font-body text-base text-[#c8c2ba] mt-3">
             It is deemed illegal to bring outside weapons (of any type) inside. You&apos;ll be charged the same price for reregistry if you somehow sneak in a real world weapon. And your in-system rank will be <span className="text-[#f2ebeb] font-semibold">reset back to normal</span>.
           </p>
