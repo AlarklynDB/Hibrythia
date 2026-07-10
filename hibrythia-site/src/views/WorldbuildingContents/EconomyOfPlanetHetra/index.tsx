@@ -184,6 +184,7 @@ export default function EconomyOfPlanetHetra() {
             <li>A product that <span className="text-[#f2ebeb] font-semibold">degrades quickly</span> drives inflation upward because demand cycles faster</li>
             <li>Producers are economically rewarded for making <span className="text-[#f2ebeb] font-semibold">durable, high-quality goods</span></li>
             <li>Planned obsolescence is the real world&apos;s corporate nightmare. It would be <span className="text-[#f2ebeb] font-semibold">economically punished</span> on Hetra—partially because of Hexicules and Magic being abundant here.</li>
+          <li>Gambling (in any form) is deemed illegal due to unhealthy practices like obsession and addiction. If caught, a person will be served a <span className="text-[#f2ebeb] font-semibold">20 year sentence</span>. BUT one caveat is that it&apos;s legal in the Skypeak Obelisk, since is an MMO System that used in-system coins and rewards instead of real Hetrix.</li>
           </ul>
         </div>
 
