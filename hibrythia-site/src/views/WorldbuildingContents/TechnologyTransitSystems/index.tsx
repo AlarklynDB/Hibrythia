@@ -225,10 +225,10 @@ export default function TechnologyTransitSystems() {
         {/* Land */}
         <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Land Transportation</h3>
         <p className="font-body text-sm text-[#c8c2ba] mb-3">
-          Within walled cities on Lynneria and Varleqe, inner roads lead in and around the area. And there are many vehicles people use to get around. The roads are with with iron and magnets that uses dry-ice magnetic levitation and hovering. It allows hover vehicles to get around quickly.
+          Within walled cities on Lynneria and Varleqe, inner roads lead in and around the area. And there are many vehicles people use to get around. The roads are made with iron and magnets that uses dry-ice magnetic levitation. It allows hover vehicles to get around quickly.
         </p>
         <p className="font-body text-sm text-[#c8c2ba] mb-3">
-          One caveat is that vehicles are not allowed to go past the city walls, because the wilds are unpredictable and there are often monsters lurking about. Are contained inside the city and nowhere else.
+          One caveat is that vehicles are not allowed to go past the city walls, because the wilds are unpredictable and there are often monsters lurking about. Transportation are contained inside the city and nowhere else.
         </p>
 
         <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
