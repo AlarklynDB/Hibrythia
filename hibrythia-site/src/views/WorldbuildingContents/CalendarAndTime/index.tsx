@@ -594,7 +594,7 @@ export default function CalendarAndTime() {
       </section>
 
       {/* ── View Calendar card ── */}
-      <Link to="/32-16TimeSystem" className="group flex items-center justify-between w-full border border-[#2e2b26] rounded-xl px-5 py-4 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200 mb-6">
+      <Link to="/multimedia/32-16TimeSystem" className="group flex items-center justify-between w-full border border-[#2e2b26] rounded-xl px-5 py-4 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200 mb-6">
         <div>
           <p className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1">Interactive</p>
           <p className="font-display text-sm text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">View Calendar</p>
