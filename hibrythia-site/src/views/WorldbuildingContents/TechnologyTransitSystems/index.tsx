@@ -227,6 +227,9 @@ export default function TechnologyTransitSystems() {
         <p className="font-body text-sm text-[#c8c2ba] mb-3">
           Within walled cities on Lynneria and Varleqe, inner roads lead in and around the area. And there are many vehicles people use to get around. The roads are with with iron and magnets that uses dry-ice magnetic levitation and hovering. It allows hover vehicles to get around quickly.
         </p>
+        <p className="font-body text-sm text-[#c8c2ba] mb-3">
+          One caveat is that vehicles are not allowed to go past the city walls, because the wilds are unpredictable and there are often monsters lurking about. Are contained inside the city and nowhere else.
+        </p>
 
         <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
           <h4 className="font-display text-base text-[#f2ebeb] mb-2">Hover Vehicles</h4>
@@ -236,8 +239,8 @@ export default function TechnologyTransitSystems() {
           <p className="font-body text-[10px] tracking-widest uppercase text-[#7a746e] mb-2">Most common around Lynneria&apos;s cities</p>
           <ul className="space-y-1 mb-4">
             {[
-              "Country of Riverchnaut: Eldreule and Kharphan",
-              "Country of Nharvenile: Ironbark, Grelladore, and Quentyn City Harbor.",
+              "Country of Riverchnaut: Eldreule, Kharphan, Lenoria",
+              "Country of Nharvenile: Ironbark, Grelladore, Quentyn (East) City Harbor, and Amberwick.",
             ].map((city, i) => (
               <li key={i} className="flex gap-2 font-body text-base text-[#c8c2ba]">
                 <span className="text-[#c9a84c]">—</span>
@@ -245,9 +248,18 @@ export default function TechnologyTransitSystems() {
               </li>
             ))}
           </ul>
-          <p className="font-body text-sm text-[#c8c2ba]">
-            There are cars that look sleek and futuristic, with varying shapes. And these cars are full on electric vehicles that solely rely on the power of hexicules.
+          <p className="font-body text-sm text-[#c8c2ba] mb-3">
+            There are cars that look sleek and futuristic, with varying shapes. And these cars are full on electric vehicles that solely rely on the power of Hexicules.
           </p>
+          <p className="font-body text-sm text-[#c8c2ba] mb-3">
+            Gas and steam powered vehicles are still a thing, but are now rare due to the influx of Hexicules being installed in cars. These vehicles are now rare, which became collectibles.
+          </p>
+          <ul className="space-y-1">
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span>Gas and Steam Vehicles can be auctioned, sold, and traded around for different vehicles.</span>
+            </li>
+          </ul>
         </div>
       </section>
 
