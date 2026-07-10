@@ -366,6 +366,61 @@ export default function EconomyOfPlanetHetra() {
           The Obelisk can hold up to <span className="text-[#f2ebeb] font-semibold">2.3 million individuals</span> at one time, making it one of the most economically active single locations on the planet. The Worth of this attraction goes up to <span className="text-[#f2ebeb] font-semibold">60 Trillion Hetrix</span>.
         </p>
 
+        {/* The Adventurer's Quarters */}
+        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">The Adventurer&apos;s Quarters (AQ)</h3>
+        <p className="font-body text-base text-[#c8c2ba] mb-3">
+          The AQ is a prominent part of any MMO/RPG System where you can spend rewards at, not just getting quests and bounty jobs to earn coins and rewards. Each Floor in the Obelisk will have at least one or two per entrance, usually among the west or east sides.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] mb-6">
+          The AQ has a conversion shop where you can exchange your rewards for real Hetrix that can be used outside of the system. There are even items you can purchase and take it out of the system into the real world. This is all done by a Tether System.
+        </p>
+
+        {/* Tether System */}
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-3">Tether System</h4>
+          <p className="font-body text-base text-[#c8c2ba] mb-3">
+            Most products purchased with rewards are <span className="text-[#f2ebeb] font-semibold">tethered</span> to the Obelisk itself, which is to prevent <span className="text-[#f2ebeb] font-semibold">theft</span> from happening. Think of it like an alert. If you try to leave the Obelisk with an unauthorized purchase, it will force your finger back by &ldquo;yanking&rdquo; you back to the Obelisk.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] mb-3">
+            Products that can be purchased can taken out of The Obelisk. It comes to a few things.
+          </p>
+          <ul className="space-y-3">
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span>
+                <span className="text-[#f2ebeb] font-semibold">Portable Treehouses</span> — They are made out in the real world before miniaturized and given to the system. They come with different builds. You need a Rainbow Ticket to purchase ONE.
+                <span className="block mt-1 text-[#7a746e] text-sm">In-system housing can&apos;t be moved outside. They rely on the Obelisk&apos;s system.</span>
+              </span>
+            </li>
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span><span className="text-[#f2ebeb] font-semibold">Weapons</span> — mostly swords and shields for defense and offense. Guns are banned inside the system since they are loud and too lethal.</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Another Cool Thing */}
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-8">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-3">Another Cool Thing</h4>
+          <p className="font-body text-base text-[#c8c2ba] mb-3">
+            A person&apos;s AQ Status and Rank can be taken outside. It is more of an ID that serves both in-system function and outside. A secondary identification. The World outside also has real Adventurer Quarters, which gives you REAL Hetrix for completing missions and bounties. When your outside, your rank will not rise. It will be strictly tied to your in-system status.
+          </p>
+          <ul className="space-y-3">
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span>The Adventurer Quarters outside are called the <span className="text-[#f2ebeb] font-semibold">Adventurer Quarter Task Force Center (AQTFC)</span> outside the system. This helps people traverse safely among in the wilds.</span>
+            </li>
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span>Taking your Status and ID out requires you to register with the AQTFC. It is not optional. With a world overridden with dangerous beasts and monsters, protection needs to be given to those who live outside of the Skypeak Obelisk. Your current in system rank will be set accordingly to what it is for the real world. This is called <span className="text-[#f2ebeb] font-semibold">HetraID</span>, which is different from a plain real world ID Card.</span>
+            </li>
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span>If you wish to raise your in-system rank, it will need to be tethered back to the Obelisk&apos;s function. The <span className="text-[#f2ebeb] font-semibold">HetraRank</span> cannot be raised, because now it belongs to the outside world&apos;s ID system. You can only raise your in-system rank further.</span>
+            </li>
+          </ul>
+        </div>
+
         {/* In-System Economy */}
         <h3 className="font-display text-sm text-[#f2ebeb] mb-2">In-System Economy</h3>
         <h3 className="font-display text-sm text-[#c9a84c] mb-4">Rewards via Conversion Received in Hetrix</h3>
@@ -373,7 +428,7 @@ export default function EconomyOfPlanetHetra() {
           The Skypeak Obelisk&apos;s in-system economy is one of a kind and is easily translatable into Real World Hetrix, due to the fact it can be converted into real money.
         </p>
         <p className="font-body text-base text-[#c8c2ba] mb-4">
-          It Runs on Gems and Coins as Rewards—Each item you get from completing any domain will reward you with treasure. As in gems, diamonds, rare stones, and gold coins. Gold Coins are different than a standard Hetryl Coin since it is not designed like those. It&apos;s a gold coin with a hollow cross center in the middle.
+          It runs on Gems and Coins as Rewards—Each item you get from completing any domain will reward you with treasure. As in gems, diamonds, rare stones, and gold coins. Gold Coins are different than a standard Hetryl Coin since it is not designed like those. It&apos;s a gold coin with a hollow cross center in the middle.
         </p>
         <p className="font-body text-base text-[#c8c2ba] mb-4">
           Anything lower than its base minimum can still pool you a good decent amount of money if converted properly based on reward types you get. Many in-system players often complain about how broken this system is, but they still acknowledge the good effects this gives to the economy for Planet Hetra.
