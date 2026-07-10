@@ -350,7 +350,7 @@ export default function EconomyOfPlanetHetra() {
           The Skypeak Obelisk — A Secondary Economy
         </h2>
         <p className="font-body text-base text-[#c8c2ba] mb-4">
-          Within the floating mega-structure known as <span className="text-[#f2ebeb] font-semibold">The Skypeak Obelisk</span> in Grelladore, Nharvenile, a completely separate internal economy operates.
+          Within the floating mega-structure known as <span className="text-[#f2ebeb] font-semibold">The Skypeak Obelisk</span> (in Grelladore, Nharvenile), this system operates in a completely separate internal economy.
         </p>
         <p className="font-body text-base text-[#c8c2ba] mb-4">
           While the outside world uses <span className="text-[#f2ebeb] font-semibold">Hetrix</span> as its standard currency, the Obelisk runs on <span className="text-[#f2ebeb] font-semibold">gems and system coins</span> — a fantasy video game-like economy where citizens farm ExP, complete quests, and earn rewards. However, the two economies are <span className="text-[#f2ebeb] font-semibold">not isolated from each other:</span>
