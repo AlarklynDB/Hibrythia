@@ -382,7 +382,7 @@ export default function EconomyOfPlanetHetra() {
             Most products purchased with rewards are <span className="text-[#f2ebeb] font-semibold">tethered</span> to the Obelisk itself, which is to prevent <span className="text-[#f2ebeb] font-semibold">theft</span> from happening. Think of it like an alert. If you try to leave the Obelisk with an unauthorized purchase, it will force your finger back by &ldquo;yanking&rdquo; you back to the Obelisk.
           </p>
           <p className="font-body text-base text-[#c8c2ba] mb-3">
-            Products that can be purchased can taken out of The Obelisk. It comes to a few things.
+            Products that can be purchased can be taken out of The Obelisk. It comes to a few things.
           </p>
           <ul className="space-y-3">
             <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
@@ -420,7 +420,10 @@ export default function EconomyOfPlanetHetra() {
             </li>
           </ul>
           <p className="font-body text-base text-[#c8c2ba] mt-4">
-            The HetraID will need to be re-registered which costs around <span className="text-[#c9a84c] font-semibold">Ħ357 Hetrix</span>. Which is a lot. But it&apos;s a mandated price so that nothing can go in and out. TSA security will need to do a hard session to bring you back inside.
+            The HetraID will need to be re-registered which costs around <span className="text-[#c9a84c] font-semibold">Ħ357 Hetrix</span>. Which is a lot. But it&apos;s a mandated price so that nothing can go in and out. OTSA security will need to do a hard session to bring you back inside.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] mt-2">
+            OTSA is an abbreviation of the <span className="text-[#f2ebeb] font-semibold">Obelisk Transportation Security Administration</span>. This is just for The Skypeak Obelisk.
           </p>
           <ul className="space-y-2 mt-3">
             <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
@@ -433,7 +436,7 @@ export default function EconomyOfPlanetHetra() {
             </li>
           </ul>
           <p className="font-body text-base text-[#c8c2ba] mt-3">
-            It is deemed illegal to bring outside weapons (of any type) inside. You&apos;ll be charged the same price for reregistry if you somehow sneak in a real world weapon. And your in-system rank will be <span className="text-[#f2ebeb] font-semibold">reset back to normal</span>.
+            It is deemed illegal to bring outside weapons (of any type) inside. You&apos;ll be charged the same price for reregistry if you somehow sneak in a real world weapon. And your in-system rank will be <span className="text-[#f2ebeb] font-semibold">reset back to normal</span>. You can re-register if you want. After all, the Skypeak Obelisk is a community-based system, not just inside, but also outside.
           </p>
         </div>
 
