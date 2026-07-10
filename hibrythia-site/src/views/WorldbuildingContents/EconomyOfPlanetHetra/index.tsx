@@ -454,7 +454,7 @@ export default function EconomyOfPlanetHetra() {
         </p>
         <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm px-5 py-4 mb-6 space-y-2 font-body text-base text-[#c8c2ba]">
           <p>Below 1 Unit is physically impossible for most rewards because some are RARE and not easily pooled.</p>
-          <p>Prince Rupert&apos;s Drop is the RAREST gem that in indestructible from both ends.</p>
+          <p>Prince Rupert&apos;s Drop is the RAREST gem that is indestructible from both ends.</p>
         </div>
 
         {/* Conversion Table */}
