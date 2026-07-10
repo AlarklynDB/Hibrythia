@@ -419,6 +419,12 @@ export default function EconomyOfPlanetHetra() {
               <span>If you wish to raise your in-system rank, it will need to be tethered back to the Obelisk&apos;s function. The <span className="text-[#f2ebeb] font-semibold">HetraRank</span> cannot be raised, because now it belongs to the outside world&apos;s ID system. You can only raise your in-system rank further.</span>
             </li>
           </ul>
+          <p className="font-body text-base text-[#c8c2ba] mt-4">
+            The HetraID will need to be re-registered which costs around <span className="text-[#c9a84c] font-semibold">Ħ357 Hetrix</span>. Which is a lot. But it&apos;s a mandated price so that nothing can go in and out. TSA security will need to do a hard session to bring you back inside.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] mt-3">
+            It is deemed illegal to bring outside weapons (of any type) inside. You&apos;ll be charged the same price for reregistry if you somehow sneak in a real world weapon. And your in-system rank will be <span className="text-[#f2ebeb] font-semibold">reset back to normal</span>.
+          </p>
         </div>
 
         {/* In-System Economy */}
