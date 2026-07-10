@@ -178,14 +178,39 @@ export default function EconomyOfPlanetHetra() {
         </p>
 
         {/* Tax/Inflation callout */}
-        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm px-5 py-4 mb-8 space-y-2">
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm px-5 py-4 mb-8">
           <ul className="space-y-2 font-body text-base text-[#c8c2ba]">
             <li>A product built to <span className="text-[#f2ebeb] font-semibold">last longer</span> holds its price value — it doesn&apos;t inflate</li>
             <li>A product that <span className="text-[#f2ebeb] font-semibold">degrades quickly</span> drives inflation upward because demand cycles faster</li>
             <li>Producers are economically rewarded for making <span className="text-[#f2ebeb] font-semibold">durable, high-quality goods</span></li>
-            <li>Planned obsolescence is the real world&apos;s corporate nightmare. It would be <span className="text-[#f2ebeb] font-semibold">economically punished</span> on Hetra—partially because of Hexicules and Magic being abundant here.</li>
-          <li>Gambling (in any form) is deemed illegal due to unhealthy practices like obsession and addiction. If caught, a person will be served a <span className="text-[#f2ebeb] font-semibold">20 year sentence</span>. BUT one caveat is that it&apos;s legal in the Skypeak Obelisk, since is an MMO System that used in-system coins and rewards instead of real Hetrix.</li>
+            <li>Planned obsolescence is the real world&apos;s corporate nightmare. It would be <span className="text-[#f2ebeb] font-semibold">economically punished</span> on Hetra—partially because of Hexicules and Magic being abundant here</li>
           </ul>
+        </div>
+
+        {/* Gambling Laws */}
+        <div className="mb-8">
+          <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Gambling Laws</h3>
+          <p className="font-body text-base text-[#c8c2ba] mb-3">
+            Gambling (in any form) is deemed illegal due to unhealthy practices like obsession and addiction. If caught, a person will be served a <span className="text-[#f2ebeb] font-semibold">20 year sentence</span>.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] mb-3">
+            BUT one caveat is that it&apos;s legal in the <span className="text-[#f2ebeb] font-semibold">Skypeak Obelisk</span>, since it is an MMO System that uses in-system coins and rewards instead of real Hetrix. It&apos;s a legal loophole, but, everything is moderated, even for random loot boxes.
+          </p>
+          <ul className="space-y-2 mb-3">
+            {[
+              "Boss Level Domains will steal your entry fees. You can't get them back.",
+              "Luck Machines have 50/50s with a pity system, but are capped beyond 200 rewards.",
+              "Trade Systems are lenient.",
+            ].map((item, i) => (
+              <li key={i} className="flex gap-2 font-body text-base text-[#c8c2ba]">
+                <span className="text-[#c9a84c] shrink-0">—</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="font-body text-base text-[#c8c2ba]">
+            The Obelisk is NOT about winning or being better. It&apos;s about community and having fun. More can be read below for the Skypeak Obelisk&apos;s Economy.
+          </p>
         </div>
 
         {/* New Rynels */}
@@ -203,7 +228,7 @@ export default function EconomyOfPlanetHetra() {
             <p><span className="text-[10px] tracking-widest uppercase text-[#7a746e] mr-2">Founded by</span><span className="text-[#c8c2ba]">Philstra Rhys</span></p>
           </div>
           <div className="mt-3 pt-3 border-t border-[#2e2b26] space-y-1 font-body text-base text-[#c8c2ba]">
-            <p>Philstra Rhys is the world&apos;s first Multi-Sextillionaire, with a worth of 55 Sextillion. He is a founder of many things.</p>
+            <p>Philstra Rhys is the world&apos;s first Multi-Sextillionaire, with a worth 55 Sextillion. He is a founder of many things.</p>
             <p>HetraSEAP is backed by Philstra and has a worth around 25 quintillion Hetrix.</p>
           </div>
         </div>
@@ -220,7 +245,7 @@ export default function EconomyOfPlanetHetra() {
           <div className="space-y-1 font-body text-base">
             <p><span className="text-[10px] tracking-widest uppercase text-[#7a746e] mr-2">Average Wage</span><span className="text-[#f2ebeb]">Ħ22.45 Hetrix (~$7.48 USD)</span></p>
             <p><span className="text-[10px] tracking-widest uppercase text-[#7a746e] mr-2">Key Industries</span><span className="text-[#c8c2ba]">Trading, Fine Goods, Governance</span></p>
-            <p><span className="text-[10px] tracking-widest uppercase text-[#7a746e] mr-2">Notable</span><span className="text-[#c8c2ba]">High job availability — employers continue hiring even during layoffs or vacations</span></p>
+            <p><span className="text-[10px] tracking-widest uppercase text-[#7a746e] mr-2">Notable</span><span className="text-[#c8c2ba]">High job availability — employers continue hiring even during layoffs or vacations.</span></p>
           </div>
           <div className="mt-3 pt-3 border-t border-[#2e2b26]">
             <p className="font-body text-base text-[#c8c2ba]">King Briehale and Queen Anika Briehale&apos;s total worth sits at roughly 650 quadrillion Hetrix.</p>
@@ -247,92 +272,6 @@ export default function EconomyOfPlanetHetra() {
           <div className="mt-3 pt-3 border-t border-[#2e2b26]">
             <p className="font-body text-base text-[#c8c2ba]">The Eckhart&apos;s worth notably stands around 550 quadrillion Hetrix, just 100 short of the Briehale&apos;s.</p>
           </div>
-        </div>
-      </section>
-
-      <div className="border-t border-[#2e2b26] mb-10" />
-
-      {/* ── Skypeak Obelisk ── */}
-      <section className="mb-12">
-        <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
-          Secondary Economy
-        </p>
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
-          The Skypeak Obelisk — A Secondary Economy
-        </h2>
-        <p className="font-body text-base text-[#c8c2ba] mb-4">
-          Within the floating mega-structure known as <span className="text-[#f2ebeb] font-semibold">The Skypeak Obelisk</span> in Grelladore, Nharvenile, a completely separate internal economy operates.
-        </p>
-        <p className="font-body text-base text-[#c8c2ba] mb-4">
-          While the outside world uses <span className="text-[#f2ebeb] font-semibold">Hetrix</span> as its standard currency, the Obelisk runs on <span className="text-[#f2ebeb] font-semibold">gems and system coins</span> — a fantasy video game-like economy where citizens farm ExP, complete quests, and earn rewards. However, the two economies are <span className="text-[#f2ebeb] font-semibold">not isolated from each other:</span>
-        </p>
-
-        <div className="bg-[#0f0d0c] border-l-2 border-[#6ab4e0] pl-5 pr-4 py-4 mb-4">
-          <p className="font-body text-base text-[#c8c2ba]">
-            System coins earned inside the Skypeak Obelisk can be <span className="text-[#f2ebeb] font-semibold">converted into real-world Hetrix</span> at coin-conversion shops located on every floor near the entrance. This creates a direct pipeline between the Obelisk&apos;s internal economy and the broader global market.
-          </p>
-        </div>
-
-        <p className="font-body text-base text-[#c8c2ba] mb-10">
-          The Obelisk can hold up to <span className="text-[#f2ebeb] font-semibold">2.3 million individuals</span> at one time, making it one of the most economically active single locations on the planet. The Worth of this attraction goes up to <span className="text-[#f2ebeb] font-semibold">60 Trillion Hetrix</span>.
-        </p>
-
-        {/* In-System Economy */}
-        <h3 className="font-display text-sm text-[#f2ebeb] mb-2">In-System Economy</h3>
-        <h3 className="font-display text-sm text-[#c9a84c] mb-4">Rewards via Conversion Received in Hetrix</h3>
-        <p className="font-body text-base text-[#c8c2ba] mb-4">
-          The Skypeak Obelisk&apos;s in-system economy is one of a kind and is easily translatable into Real World Hetrix, due to the fact it can be converted into real money.
-        </p>
-        <p className="font-body text-base text-[#c8c2ba] mb-4">
-          It Runs on Gems and Coins as Rewards—Each item you get from completing any domain will reward you with treasure. As in gems, diamonds, rare stones, and gold coins. Gold Coins are different than a standard Hetryl Coin since it is not designed like those. It&apos;s a gold coin with a hollow cross center in the middle.
-        </p>
-        <p className="font-body text-base text-[#c8c2ba] mb-4">
-          Anything lower than its base minimum can still pool you a good decent amount of money if converted properly based on reward types you get. Many in-system players often complain about how broken this system is, but they still acknowledge the good effects this gives to the economy for Planet Hetra.
-        </p>
-        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm px-5 py-4 mb-6 space-y-2 font-body text-base text-[#c8c2ba]">
-          <p>Below 1 Unit is physically impossible for most rewards because some are RARE and not easily pooled.</p>
-          <p>Prince Rupert&apos;s Drop is the RAREST gem that is indestructible from both ends.</p>
-        </div>
-
-        {/* Conversion Table */}
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm border-collapse">
-            <thead>
-              <tr className="border-b border-[#2e2b26]">
-                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Reward Type</th>
-                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Hetrix Value</th>
-                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Batch Min</th>
-                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Batch Max</th>
-                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Ħ Conversion (Min)</th>
-                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2">Ħ Conversion (Max)</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                { type: "Gold Coins",                                val: "Ħ 20.50",    min: "50 Units",  max: "150 Units", cMin: "~Ħ 1,025",      cMax: "~Ħ 3,075" },
-                { type: "Diamonds",                                  val: "Ħ 55.75",    min: "75 Units",  max: "175 Units", cMin: "~Ħ 4,181.25",   cMax: "~Ħ 9,756.25" },
-                { type: "Rubies",                                    val: "Ħ 60.00",    min: "100 Units", max: "200 Units", cMin: "~Ħ 6,000.00",   cMax: "~Ħ 12,000.00" },
-                { type: "Opals",                                     val: "Ħ 75.45",    min: "75 Units",  max: "95 Units",  cMin: "~Ħ 5,658.75",   cMax: "~Ħ 7,167.75" },
-                { type: "Obsidianite",                               val: "Ħ 79.85",    min: "65 Units",  max: "85 Units",  cMin: "~Ħ 5,190.25",   cMax: "~Ħ 6,787.25" },
-                { type: "White Crystals",                            val: "Ħ 120.50",   min: "30 Units",  max: "60 Units",  cMin: "~Ħ 3,615.00",   cMax: "~Ħ 7,230.00" },
-                { type: "Quartz Marbles",                            val: "Ħ 200.00",   min: "20 Units",  max: "25 Units",  cMin: "~Ħ 4,000.00",   cMax: "~Ħ 5,000.00" },
-                { type: "Iron Crystalline Ore",                      val: "Ħ 258.85",   min: "13 Units",  max: "20 Units",  cMin: "~Ħ 3,365.05",   cMax: "~Ħ 5,177.00" },
-                { type: "Tanzanite",                                 val: "Ħ 455.00",   min: "1 Unit",    max: "2 Units",   cMin: "Ħ 455.00",      cMax: "Ħ 910.00" },
-                { type: "Lava-soaked Tempered Opal",                 val: "Ħ 2,310.36", min: "1 Unit",    max: "3 Units",   cMin: "Ħ 2,310.36",    cMax: "~Ħ 6,930.00" },
-                { type: "Prince Rupert's Drop (Glass Obsidian Diamond)", val: "Ħ 5,596.55", min: "3 Units", max: "7 Units", cMin: "Ħ 16,789.65",  cMax: "Ħ 39,175.85" },
-                { type: "Rainbow Ticket",                            val: "Item Reward ONLY — used in system to purchase housing", min: "1 Unit", max: "1 Unit", cMin: "not negotiable", cMax: "not negotiable" },
-              ].map((row, i) => (
-                <tr key={i} className="border-b border-[#2e2b26]/50 hover:bg-[#0f0d0c] transition-colors">
-                  <td className="font-body text-base text-[#f2ebeb] py-2 pr-3">{row.type}</td>
-                  <td className="font-display text-base text-[#c9a84c] py-2 pr-3">{row.val}</td>
-                  <td className="font-body text-base text-[#c8c2ba] py-2 pr-3">{row.min}</td>
-                  <td className="font-body text-base text-[#c8c2ba] py-2 pr-3">{row.max}</td>
-                  <td className="font-body text-base text-[#c8c2ba] py-2 pr-3">{row.cMin}</td>
-                  <td className="font-body text-base text-[#c8c2ba] py-2">{row.cMax}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
         </div>
       </section>
 
@@ -397,6 +336,92 @@ export default function EconomyOfPlanetHetra() {
               <span className="font-display text-base text-[#c9a84c] shrink-0 ml-4">{item.val}</span>
             </div>
           ))}
+        </div>
+      </section>
+
+      <div className="border-t border-[#2e2b26] mb-10" />
+
+      {/* ── Skypeak Obelisk ── */}
+      <section className="mb-12">
+        <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
+          Secondary Economy
+        </p>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
+          The Skypeak Obelisk — A Secondary Economy
+        </h2>
+        <p className="font-body text-base text-[#c8c2ba] mb-4">
+          Within the floating mega-structure known as <span className="text-[#f2ebeb] font-semibold">The Skypeak Obelisk</span> in Grelladore, Nharvenile, a completely separate internal economy operates.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] mb-4">
+          While the outside world uses <span className="text-[#f2ebeb] font-semibold">Hetrix</span> as its standard currency, the Obelisk runs on <span className="text-[#f2ebeb] font-semibold">gems and system coins</span> — a fantasy video game-like economy where citizens farm ExP, complete quests, and earn rewards. However, the two economies are <span className="text-[#f2ebeb] font-semibold">not isolated from each other:</span>
+        </p>
+
+        <div className="bg-[#0f0d0c] border-l-2 border-[#6ab4e0] pl-5 pr-4 py-4 mb-4">
+          <p className="font-body text-base text-[#c8c2ba]">
+            System coins earned inside the Skypeak Obelisk can be <span className="text-[#f2ebeb] font-semibold">converted into real-world Hetrix</span> at coin-conversion shops located on every floor near the entrance. This creates a direct pipeline between the Obelisk&apos;s internal economy and the broader global market.
+          </p>
+        </div>
+
+        <p className="font-body text-base text-[#c8c2ba] mb-10">
+          The Obelisk can hold up to <span className="text-[#f2ebeb] font-semibold">2.3 million individuals</span> at one time, making it one of the most economically active single locations on the planet. The Worth of this attraction goes up to <span className="text-[#f2ebeb] font-semibold">60 Trillion Hetrix</span>.
+        </p>
+
+        {/* In-System Economy */}
+        <h3 className="font-display text-sm text-[#f2ebeb] mb-2">In-System Economy</h3>
+        <h3 className="font-display text-sm text-[#c9a84c] mb-4">Rewards via Conversion Received in Hetrix</h3>
+        <p className="font-body text-base text-[#c8c2ba] mb-4">
+          The Skypeak Obelisk&apos;s in-system economy is one of a kind and is easily translatable into Real World Hetrix, due to the fact it can be converted into real money.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] mb-4">
+          It Runs on Gems and Coins as Rewards—Each item you get from completing any domain will reward you with treasure. As in gems, diamonds, rare stones, and gold coins. Gold Coins are different than a standard Hetryl Coin since it is not designed like those. It&apos;s a gold coin with a hollow cross center in the middle.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] mb-4">
+          Anything lower than its base minimum can still pool you a good decent amount of money if converted properly based on reward types you get. Many in-system players often complain about how broken this system is, but they still acknowledge the good effects this gives to the economy for Planet Hetra.
+        </p>
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm px-5 py-4 mb-6 space-y-2 font-body text-base text-[#c8c2ba]">
+          <p>Below 1 Unit is physically impossible for most rewards because some are RARE and not easily pooled.</p>
+          <p>Prince Rupert&apos;s Drop is the RAREST gem that in indestructible from both ends.</p>
+        </div>
+
+        {/* Conversion Table */}
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="border-b border-[#2e2b26]">
+                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Reward Type</th>
+                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Hetrix Value</th>
+                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Batch Min</th>
+                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Batch Max</th>
+                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Ħ Conversion (Min)</th>
+                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2">Ħ Conversion (Max)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { type: "Gold Coins",                                    val: "Ħ 20.50",    min: "50 Units",  max: "150 Units", cMin: "~Ħ 1,025",      cMax: "~Ħ 3,075" },
+                { type: "Diamonds",                                      val: "Ħ 55.75",    min: "75 Units",  max: "175 Units", cMin: "~Ħ 4,181.25",   cMax: "~Ħ 9,756.25" },
+                { type: "Rubies",                                        val: "Ħ 60.00",    min: "100 Units", max: "200 Units", cMin: "~Ħ 6,000.00",   cMax: "~Ħ 12,000.00" },
+                { type: "Opals",                                         val: "Ħ 75.45",    min: "75 Units",  max: "95 Units",  cMin: "~Ħ 5,658.75",   cMax: "~Ħ 7,167.75" },
+                { type: "Obsidianite",                                   val: "Ħ 79.85",    min: "65 Units",  max: "85 Units",  cMin: "~Ħ 5,190.25",   cMax: "~Ħ 6,787.25" },
+                { type: "White Crystals",                                val: "Ħ 120.50",   min: "30 Units",  max: "60 Units",  cMin: "~Ħ 3,615.00",   cMax: "~Ħ 7,230.00" },
+                { type: "Quartz Marbles",                                val: "Ħ 200.00",   min: "20 Units",  max: "25 Units",  cMin: "~Ħ 4,000.00",   cMax: "~Ħ 5,000.00" },
+                { type: "Iron Crystalline Ore",                          val: "Ħ 258.85",   min: "13 Units",  max: "20 Units",  cMin: "~Ħ 3,365.05",   cMax: "~Ħ 5,177.00" },
+                { type: "Tanzanite",                                     val: "Ħ 455.00",   min: "1 Unit",    max: "2 Units",   cMin: "Ħ 455.00",      cMax: "Ħ 910.00" },
+                { type: "Lava-soaked Tempered Opal",                     val: "Ħ 2,310.36", min: "1 Unit",    max: "3 Units",   cMin: "Ħ 2,310.36",    cMax: "~Ħ 6,930.00" },
+                { type: "Prince Rupert's Drop (Glass Obsidian Diamond)", val: "Ħ 5,596.55", min: "3 Units",   max: "7 Units",   cMin: "Ħ 16,789.65",   cMax: "Ħ 39,175.85" },
+                { type: "Rainbow Ticket",                                val: "Item Reward ONLY used in system to purchase housing", min: "1 Unit", max: "1 Unit", cMin: "not negotiable", cMax: "not negotiable" },
+              ].map((row, i) => (
+                <tr key={i} className="border-b border-[#2e2b26]/50 hover:bg-[#0f0d0c] transition-colors">
+                  <td className="font-body text-base text-[#f2ebeb] py-2 pr-3">{row.type}</td>
+                  <td className="font-display text-base text-[#c9a84c] py-2 pr-3">{row.val}</td>
+                  <td className="font-body text-base text-[#c8c2ba] py-2 pr-3">{row.min}</td>
+                  <td className="font-body text-base text-[#c8c2ba] py-2 pr-3">{row.max}</td>
+                  <td className="font-body text-base text-[#c8c2ba] py-2 pr-3">{row.cMin}</td>
+                  <td className="font-body text-base text-[#c8c2ba] py-2">{row.cMax}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 
