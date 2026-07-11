@@ -84,7 +84,7 @@ export default function EienelTheCosmicIfrit() {
           </ul>
           <p><span className="text-[#f2ebeb]">Story Presence:</span> In Episode 0 of Book 1 (&ldquo;Before Time&rdquo;), he was introduced as a gluttonous character who was exiled deep into space.</p>
           <p><span className="text-[#f2ebeb]">Point of Origin:</span> The Stygian Realm</p>
-          <p><span className="text-[#f2ebeb]">Character Type:</span> Flat, [Square](https://alarkiusej.medium.com/the-square-character-taxonomy-alarkiusej-45f469704264), Round &amp; Dynamic</p>
+          <p><span className="text-[#f2ebeb]">Character Type:</span> Flat, Square, Round &amp; Dynamic</p>
         </div>
       </div>
 
