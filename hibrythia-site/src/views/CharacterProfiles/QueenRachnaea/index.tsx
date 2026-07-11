@@ -110,7 +110,7 @@ export default function QueenRachnaea() {
             </div>
             <div>
               <p className="font-display text-sm text-[#f2ebeb] mb-1">Character Type</p>
-              <p>Round</p>
+              <p><span className="text-[#f2ebeb]">Character Type:</span> <a href="https://alarkiusej.medium.com/the-square-character-taxonomy-alarkiusej-45f469704264" target="_blank" rel="noopener noreferrer" className="text-[#c9a84c] hover:underline">Square</a>, Round &amp; Dynamic</p>
             </div>
           </div>
           <p className="italic text-[#c9a84c]">Wanna dive into my profile?! Let me, Rachnaea, guide you!</p>
