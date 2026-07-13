@@ -34,8 +34,14 @@ export default function EconomyOfPlanetHetra() {
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
           The Currency System — Hetrix &amp; Hetryl
         </h2>
-        <p className="font-body text-base text-[#c8c2ba] mb-8">
+        <p className="font-body text-base text-[#c8c2ba] mb-4">
           Hetra operates on a two-tier currency system: <span className="text-[#f2ebeb] font-semibold">Bills (Hetrix)</span> and <span className="text-[#f2ebeb] font-semibold">Coins (Hetryl)</span>. The global symbol stamped on every single denomination is the <span className="text-[#f2ebeb] font-semibold">Erbgeroger Flower</span> — the world&apos;s emblem of Unity — ensuring that every transaction across the planet is a quiet reminder that prosperity is built on togetherness.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] mb-4">
+          Each bill&apos;s sides have a security label embedded vertically on the horizontal length of the bill. The colored security labels are made with special Hetranium-laced polymers. This makes it hard to counterfeit a bill, no matter the denomination. There are two badges on the front, one that says &ldquo;Hetranian Federal Hetrix System,&rdquo; and, &ldquo;Eira Vahla, Sólrenn mæra&apos;naum vahr,&rdquo; which is a modern religion prayer to the <Link to="/world/databases/HibrythianReligions" className="text-[#c9a84c] hover:underline">Winter Moon</Link>. The back design reflects the front.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] mb-8">
+          Hetryl Coins has its number denomination on the front, and the Erbgeroger Flower on the back.
         </p>
 
         {/* Bills */}
