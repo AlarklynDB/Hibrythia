@@ -62,11 +62,12 @@ export default function EconomyOfPlanetHetra() {
             <tbody>
               {[
                 { bill: "Ħ3",   usd: "$1.00 USD",              note: "Base denomination" },
+                { bill: "Ħ5",   usd: "No equivalent",          note: "Custom Hetrix" },
                 { bill: "Ħ7",   usd: "$5.00 USD",              note: "—" },
                 { bill: "Ħ15",  usd: "$10.00 USD",             note: "—" },
                 { bill: "Ħ35",  usd: "$20.00 USD",             note: "—" },
                 { bill: "Ħ55",  usd: "$50.00 USD",             note: "—" },
-                { bill: "Ħ75",  usd: 'Earth\'s rare "$2" Bill', note: "Custom Hetrix" },
+                { bill: "Ħ75",  usd: 'Earth\'s rare "$2" Bill', note: "Custom Hetrix. rare circulatory" },
                 { bill: "Ħ150", usd: "$100.00 USD",            note: "Highest standard denomination" },
               ].map((row, i) => (
                 <tr key={i} className="border-b border-[#2e2b26]/50 hover:bg-[#0f0d0c] transition-colors">
@@ -79,11 +80,9 @@ export default function EconomyOfPlanetHetra() {
           </table>
         </div>
 
-        <blockquote className="border-l-2 border-[#c9a84c] pl-4 mb-8">
-          <p className="font-body text-base text-[#c9a84c] italic">
-            Every bill, from the humble Ħ3 to the prestigious Ħ150, bears the intricate engraving of the Erbgeroger Flower — forever present in the daily lives of every Hetranian.
-          </p>
-        </blockquote>
+        <p className="font-body text-base text-[#c8c2ba] mb-8">
+          Every bill, from the humble Ħ3 to the prestigious Ħ150, bears the intricate engraving of the Erbgeroger Flower — forever present in the daily lives of every Hetranian. Ħ75 are rarely made, and if they do, they are also legal tender. You don&apos;t get to see if often though.
+        </p>
 
         {/* Coins */}
         <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Coins — Hetryl(s)</h3>
