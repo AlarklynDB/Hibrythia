@@ -73,8 +73,11 @@ export default function EconomyOfPlanetHetra() {
           <p className="font-body text-base text-[#c8c2ba] mb-3">
             Known as an <span className="text-[#f2ebeb] font-semibold">EBL</span>, this Encryption Bit Layer will stay the same and the pattern of it won&apos;t change. The EBL is a very hard process to make and also to counterfeit, as it requires sturdy precision and application because it is very fragile. The slightest movement will tear it, since the EBL is embedded into the grid itself.
           </p>
-          <p className="font-body text-base text-[#c8c2ba]">
+          <p className="font-body text-base text-[#c8c2ba] mb-3">
             It is visible to the naked eye if viewed up close. But from afar, the bill itself will look like a regular bill, hidden in plain sight.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba]">
+            Genuine bills are made by AI automated machines. Super stable. The EBL and the Polyhetral, along with the EBLGrid won&apos;t be torn this way. Nhuemyns cannot control gyroscopic stability, which is why machines are used to mint these bills — Artificial Intelligent Bill Minting Automation. Produced in New Rynels.
           </p>
         </div>
 
