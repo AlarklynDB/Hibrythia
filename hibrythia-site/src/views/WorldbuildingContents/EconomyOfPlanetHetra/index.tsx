@@ -34,11 +34,70 @@ export default function EconomyOfPlanetHetra() {
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
           The Currency System — Hetrix &amp; Hetryl
         </h2>
-        <p className="font-body text-base text-[#c8c2ba] mb-4">
+        <p className="font-body text-base text-[#c8c2ba] mb-8">
           Hetra operates on a two-tier currency system: <span className="text-[#f2ebeb] font-semibold">Bills (Hetrix)</span> and <span className="text-[#f2ebeb] font-semibold">Coins (Hetryl)</span>. The global symbol stamped on every single denomination is the <span className="text-[#f2ebeb] font-semibold">Erbgeroger Flower</span> — the world&apos;s emblem of Unity — ensuring that every transaction across the planet is a quiet reminder that prosperity is built on togetherness.
         </p>
+
+        {/* Counterfeit is Impossible */}
+        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Counterfeit is Impossible</h3>
+
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-2">Security Feature 1</h4>
+          <p className="font-body text-base text-[#c8c2ba] mb-3">
+            Each bill&apos;s sides have a security label embedded vertically on the horizontal length of the bill. The colored security labels are made with special Hetranium-laced polymers — and it appears as pink, violet, aqua, and navy. Hetranium-laced polymers go by another name: <span className="text-[#f2ebeb] font-semibold">Polyhetral Labels</span>.
+          </p>
+          <ul className="space-y-2 mb-3">
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span>If the Polyhetral Labels are perfected as fake&hellip; use an infrared laser to shine it through. Infrared will pass through them.</span>
+            </li>
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span>Real Polyhetral labels bounce back all visible and invisible colors of the light spectrum.</span>
+            </li>
+          </ul>
+          <p className="font-body text-base text-[#c8c2ba]">
+            Infrared Laser Pens are mandatory for all retailers or cash-only stores.
+          </p>
+        </div>
+
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-2">Security Feature 2</h4>
+          <p className="font-body text-base text-[#c8c2ba]">
+            The entire bill is covered with a very <span className="text-[#7fb3d5]">light blue grid</span>. This is called an <span className="text-[#f2ebeb] font-semibold">EBLGrid</span> — an Encryption Bit Layer Grid. This is applied second to the end of the minting process. After that, a 3812-bit Encryption Layer near the left Polyhetral Label is applied.
+          </p>
+        </div>
+
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-8">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-2">Security Feature 3</h4>
+          <p className="font-body text-base text-[#c8c2ba] mb-3">
+            Known as an <span className="text-[#f2ebeb] font-semibold">EBL</span>, this Encryption Bit Layer will stay the same and the pattern of it won&apos;t change. The EBL is a very hard process to make and also to counterfeit, as it requires sturdy precision and application because it is very fragile. The slightest movement will tear it, since the EBL is embedded into the grid itself.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba]">
+            It is visible to the naked eye if viewed up close. But from afar, the bill itself will look like a regular bill, hidden in plain sight.
+          </p>
+        </div>
+
+        {/* Materials used in Minting Bills */}
+        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Materials used in Minting Bills</h3>
+        <p className="font-body text-base text-[#c8c2ba] mb-3">
+          The paper material of each bill is made up of the following things:
+        </p>
+        <ul className="space-y-3 mb-8">
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span><span className="text-[#f2ebeb] font-semibold">Hetrium Paper</span>: Nitinol infused cotton, linen, and <Link to="/world/databases/CreaturesOfTheWorld" className="text-[#c9a84c] hover:underline">Buffalosaurus Silk</Link> from Buffalosaurus Ants. Heat Reformative. When folded or shaped, it stays in place unless heat is applied to turn it back to normal.</span>
+          </li>
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span><span className="text-[#f2ebeb] font-semibold">Built In Security Labels</span>: Made with Polyhetral. An advanced tech and process ever since Philstra Rhys became the richest man alive.</span>
+          </li>
+        </ul>
+
+        {/* Hetrix and Hetryl Designs */}
+        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Hetrix and Hetryl Designs</h3>
         <p className="font-body text-base text-[#c8c2ba] mb-4">
-          Each bill&apos;s sides have a security label embedded vertically on the horizontal length of the bill. The colored security labels are made with special Hetranium-laced polymers. This makes it hard to counterfeit a bill, no matter the denomination. There are two badges on the front, one that says &ldquo;Hetranian Federal Hetrix System,&rdquo; and, &ldquo;Eira Vahla, Sólrenn mæra&apos;naum vahr,&rdquo; which is a modern religion prayer to the <Link to="/world/databases/HibrythianReligions" className="text-[#c9a84c] hover:underline">Winter Moon</Link>. The back design reflects the front.
+          There are two badges on the front, one that says &ldquo;Hetranian Federal Hetrix System,&rdquo; and the Erbgeroger Flower as the centre piece. On the top, above the flower&apos;s design, it says: &ldquo;<em>Eira Vahla, hæve Zenya&apos;nahl. Sólrenn mæra&apos;næum vahr</em>,&rdquo; which is a modern religion prayer to the <Link to="/world/databases/HibrythianReligions" className="text-[#c9a84c] hover:underline">Winter Moon</Link>. The back design reflects the front.
         </p>
         <p className="font-body text-base text-[#c8c2ba] mb-8">
           Hetryl Coins has its number denomination on the front, and the Erbgeroger Flower on the back.
