@@ -86,7 +86,7 @@ export default function EconomyOfPlanetHetra() {
         <ul className="space-y-3 mb-8">
           <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
             <span className="text-[#c9a84c] shrink-0">—</span>
-            <span><span className="text-[#f2ebeb] font-semibold">Hetrium Paper</span>: Nitinol infused cotton, linen, and <Link to="/world/databases/CreaturesOfTheWorld" className="text-[#c9a84c] hover:underline">Buffalosaurus Silk</Link> from Buffalosaurus Ants. Heat Reformative. When folded or shaped, it stays in place unless heat is applied to turn it back to normal.</span>
+            <span><span className="text-[#f2ebeb] font-semibold">Hetrium Paper</span>: Nitinol infused cotton, linen, and <Link to="/world/databases/CreaturesOfTheWorld#buffalosaurus-ants" className="text-[#c9a84c] hover:underline">Buffalosaurus Silk</Link> from Buffalosaurus Ants. Heat Reformative. When folded or shaped, it stays in place unless heat is applied to turn it back to normal.</span>
           </li>
           <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
             <span className="text-[#c9a84c] shrink-0">—</span>

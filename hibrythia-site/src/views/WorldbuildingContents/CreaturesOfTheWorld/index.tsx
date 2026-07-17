@@ -221,10 +221,10 @@ export default function CreaturesOfTheWorld() {
             </p>
           </div>
 
-          <div className="border-l-2 border-[#2e2b26] pl-5">
+          <div id="buffalosaurus-ants" className="border-l-2 border-[#2e2b26] pl-5">
             <h3 className="font-display text-sm text-[#f2ebeb] mb-2">Buffalosaurus Ants</h3>
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-              Buffaolusaurus Ants are giant lizard-like insects. They have the size of a buffalo's body, scales of a lizard, and six legs. Buffaolusaurus Ants are cousins of Buffalosauruses and are found in the Oelen Kingdom in Eulerich. The citizens of Eulerich use Buffaolusaurus Ants as transportation since these ants can carry weights that surpass their mass. You can find these ants in giant caves they have made. They climb walls so watch out!
+              Buffaolusaurus Ants are giant lizard-like insects. They have the size of a buffalo's body, scales of a lizard, and six legs. Buffaolusaurus Ants are cousins of Buffalosauruses and are found in the Oelen Kingdom in Eulerich. The citizens of Eulerich use Buffaolusaurus Ants as transportation since these ants can carry weights that surpass their mass. You can find these ants in giant caves they have made. They climb walls so watch out! Buffalosaurus Ants secrete a type of silk that is used to make Hetrix Bills. It comes out from their limbs&apos; sweat glands.
             </p>
           </div>
         </div>
