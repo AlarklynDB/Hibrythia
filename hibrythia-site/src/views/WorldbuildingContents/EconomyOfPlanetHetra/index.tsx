@@ -94,6 +94,53 @@ export default function EconomyOfPlanetHetra() {
           </li>
         </ul>
 
+        {/* Emergency Use: Fire Starting Property */}
+        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Emergency Use: Fire Starting Property</h3>
+        <p className="font-body text-base text-[#c8c2ba] mb-3">
+          Since Polyhetral Labels reflect all colors of the light spectrum, visible and invisible, this gives Hetrix bills an unexpected survival function. If a person&apos;s infrared laser pen dies or isn&apos;t available, any ambient light source can still be used to verify a bill, but it can also be used for something far more practical.
+        </p>
+        <ul className="space-y-2 mb-3">
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span>Flames like a lighter or a lit match won&apos;t work. It produces heat, but not enough light.</span>
+          </li>
+        </ul>
+        <p className="font-body text-base text-[#c8c2ba] mb-3">
+          By angling a Hetrix bill toward a light source and using a magnifying glass (or any curved glass surface) to concentrate the reflected light into a single point, the bundled visible and infrared energy is enough to ignite tinder or kindling. This works because Polyhetral Labels don&apos;t just reflect light, they reflect the full spectrum, meaning the concentrated beam carries more energy than a standard reflective surface would.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] mb-3">
+          Since Hetrix bills are made from Nitinol infused, heat reformative paper, a bill can be folded into a curved or parabolic shape to help focus the reflected light even further. Because the material holds its folded shape naturally, no external frame or tool is needed to keep the fold in place while aiming it.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] mb-4">
+          This means Hetrix bills double as a renewable, no battery, zero fuel fire starting tool. No matches, lighters, or flint are required. Just the bill itself, a light source, and something to concentrate the beam.
+        </p>
+        <ul className="space-y-2 mb-4">
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span>This is considered common survivalist knowledge across Hetra, often taught informally or through the AQTFC.</span>
+          </li>
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span>Adventurers and travelers without proper gear can still start a fire using nothing but currency they already carry.</span>
+          </li>
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span>This property is treated as a feature, not a flaw. Hetranian mints have never attempted to remove it, since Hetranium&apos;s full spectrum reflection is inseparable from the anti-counterfeit design itself.</span>
+          </li>
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span>This ties directly into Hetra&apos;s broader economic philosophy, where durable, multi-use design is rewarded rather than punished.</span>
+          </li>
+        </ul>
+        <blockquote className="border-l-2 border-[#c9a84c] pl-4 mb-4">
+          <p className="font-body text-base text-[#c9a84c] italic">
+            Money that can start a fire in an emergency is the kind of detail that quietly says a lot about how Hetra builds things. Nothing here is made for a single purpose only.
+          </p>
+        </blockquote>
+        <p className="font-body text-base text-[#c8c2ba] mb-8">
+          Fake bills however, cannot do this.
+        </p>
+
         {/* Hetrix and Hetryl Designs */}
         <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Hetrix and Hetryl Designs</h3>
         <p className="font-body text-base text-[#c8c2ba] mb-4">
