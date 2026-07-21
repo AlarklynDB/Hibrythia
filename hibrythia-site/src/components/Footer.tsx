@@ -31,9 +31,15 @@ export default function Footer() {
             All Lore &amp; Worldbuilding Are Rights Reserved.
           </p>
         </div>
-        <p className="font-body text-[0.6rem] text-[#c9a84c] tracking-wider uppercase">
-          Total Lore: {loreStats.totalWords.toLocaleString('en-US')} Words Across {loreStats.totalPages.toLocaleString('en-US')} Pages
-        </p>
+        <div className="lore-stats-card w-full" role="note" aria-label="Lore word count tracker">
+          <p className="lore-stats-title">[ Lore Word Count Tracker ]</p>
+          <p className="lore-stats-body">
+            Total Lore: {loreStats.totalWords.toLocaleString('en-US')} Words Across {loreStats.totalPages.toLocaleString('en-US')} Pages.<br />
+            Special Characters Counted: {loreStats.specialCharacterCount.toLocaleString('en-US')}.<br />
+            Excluded From Count: Bookshelf ({loreStats.excluded.Bookshelf.toLocaleString('en-US')} Pages), Multimedia ({loreStats.excluded.Multimedia.toLocaleString('en-US')} Pages) —{' '}
+            {loreStats.excluded.total.toLocaleString('en-US')} Pages Not Counted.
+          </p>
+        </div>
         <div className="piracy-notice w-full" role="note" aria-label="Anti-piracy notice">
           <p className="piracy-notice-title">[The Dead Shard Continuity Notice — Class C Piracy Violation]</p>
           <p className="piracy-notice-body">

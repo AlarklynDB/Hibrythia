@@ -36,6 +36,13 @@ const LORE_DIRS = [
   'views/MetaWorldbuilding',
 ]
 
+// Folders intentionally left OUT of the tally, shown in the footer
+// card so it's transparent about what "Total Lore" does NOT include.
+const EXCLUDED_DIRS = [
+  { label: 'Bookshelf', dir: 'views/Bookshelf' },
+  { label: 'Multimedia', dir: 'views/Multimedia' },
+]
+
 // ---- entity decode -----------------------------------------
 const ENTITY_MAP = {
   '&apos;': "'",
@@ -114,10 +121,16 @@ function countWords(text) {
     .length
 }
 
+// ---- special character count (punctuation/symbols, not letters/digits/whitespace) ----
+function countSpecialChars(text) {
+  return (text.match(/[^a-zA-Z0-9\s]/g) || []).length
+}
+
 // ---- main -----------------------------------------------------
 function main() {
   let totalWords = 0
   let totalPages = 0
+  let specialCharacterCount = 0
 
   for (const relDir of LORE_DIRS) {
     const absDir = join(SRC_ROOT, relDir)
@@ -125,11 +138,20 @@ function main() {
     for (const file of files) {
       const source = readFileSync(file, 'utf-8')
       const text = extractRenderedText(source)
-      const words = countWords(text)
-      totalWords += words
+      totalWords += countWords(text)
+      specialCharacterCount += countSpecialChars(text)
       totalPages += 1
     }
   }
+
+  const excluded = {}
+  let excludedTotal = 0
+  for (const { label, dir } of EXCLUDED_DIRS) {
+    const count = findIndexFiles(join(SRC_ROOT, dir)).length
+    excluded[label] = count
+    excludedTotal += count
+  }
+  excluded.total = excludedTotal
 
   const outDir = join(SRC_ROOT, 'data')
   mkdirSync(outDir, { recursive: true })
@@ -137,12 +159,14 @@ function main() {
   const payload = {
     totalWords,
     totalPages,
+    specialCharacterCount,
+    excluded,
     generatedAt: new Date().toISOString(),
   }
   writeFileSync(outPath, JSON.stringify(payload, null, 2) + '\n')
 
   console.log(
-    `[count-lore-words] ${totalWords.toLocaleString('en-US')} words across ${totalPages.toLocaleString('en-US')} lore pages -> ${outPath}`
+    `[count-lore-words] ${totalWords.toLocaleString('en-US')} words, ${specialCharacterCount.toLocaleString('en-US')} special chars, across ${totalPages.toLocaleString('en-US')} lore pages (${excludedTotal} pages excluded) -> ${outPath}`
   )
 }
 

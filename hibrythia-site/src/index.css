@@ -155,3 +155,28 @@ p, li { text-wrap: pretty; max-width: 72ch; }
 .piracy-notice-body a:hover {
   color: #e05050;
 }
+
+/* ── Lore word count card ── */
+.lore-stats-card {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(120, 120, 120, 0.22);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+.lore-stats-title {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+.lore-stats-body {
+  font-family: 'Alegreya Sans', system-ui, sans-serif;
+  font-size: 0.69rem;
+  line-height: 1.6;
+  color: #ffffff;
+  max-width: none;
+}
