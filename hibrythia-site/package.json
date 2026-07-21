@@ -4,10 +4,11 @@
   "version": "2.0.0",
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "node scripts/count-lore-words.mjs && astro dev",
+    "build": "node scripts/count-lore-words.mjs && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "count-words": "node scripts/count-lore-words.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^3.6.2",
