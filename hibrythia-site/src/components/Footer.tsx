@@ -36,8 +36,8 @@ export default function Footer() {
           <p className="lore-stats-body">
             Total Lore: {loreStats.totalWords.toLocaleString('en-US')} Words Across {loreStats.totalPages.toLocaleString('en-US')} Pages.<br />
             Special Characters Counted: {loreStats.specialCharacterCount.toLocaleString('en-US')}.<br />
-            Excluded From Count: Bookshelf ({loreStats.excluded.Bookshelf.toLocaleString('en-US')} Pages), Multimedia ({loreStats.excluded.Multimedia.toLocaleString('en-US')} Pages) —{' '}
-            {loreStats.excluded.total.toLocaleString('en-US')} Pages Not Counted.
+            Not Yet Tallied: Bookshelf ({loreStats.excluded.Bookshelf.toLocaleString('en-US')} Pages, Mostly TBD) &amp; Multimedia ({loreStats.excluded.Multimedia.toLocaleString('en-US')} Pages) —{' '}
+            {loreStats.excluded.total.toLocaleString('en-US')} Pages In Total.
           </p>
         </div>
         <div className="piracy-notice w-full" role="note" aria-label="Anti-piracy notice">
