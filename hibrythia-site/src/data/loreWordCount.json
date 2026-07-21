@@ -1,11 +1,11 @@
 {
-  "totalWords": 90475,
-  "totalPages": 95,
-  "specialCharacterCount": 18284,
+  "totalWords": 92147,
+  "totalPages": 103,
+  "specialCharacterCount": 18535,
   "excluded": {
-    "Bookshelf": 39,
     "Multimedia": 6,
-    "total": 45
+    "Bookshelf": 31,
+    "total": 37
   },
-  "generatedAt": "2026-07-21T20:26:45.967Z"
+  "generatedAt": "2026-07-21T20:52:36.401Z"
 }

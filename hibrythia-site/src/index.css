@@ -158,8 +158,8 @@ p, li { text-wrap: pretty; max-width: 72ch; }
 
 /* ── Lore word count card ── */
 .lore-stats-card {
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(120, 120, 120, 0.22);
+  border: 1px solid rgba(200, 196, 190, 0.14);
+  background: rgba(110, 108, 104, 0.16);
   border-radius: 0.25rem;
   padding: 0.75rem 1rem;
   width: 100%;
@@ -170,13 +170,13 @@ p, li { text-wrap: pretty; max-width: 72ch; }
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #f2ebeb;
   margin-bottom: 0.4rem;
 }
 .lore-stats-body {
   font-family: 'Alegreya Sans', system-ui, sans-serif;
   font-size: 0.69rem;
   line-height: 1.6;
-  color: #ffffff;
+  color: #c8c2ba;
   max-width: none;
 }

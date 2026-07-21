@@ -26,8 +26,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const SRC_ROOT = join(__dirname, '..', 'src')
 
 // Folders that count as "lore" for this tally.
-// Bookshelf (book blurbs) and Multimedia (interactive pages) are
-// intentionally excluded — everything else is in scope.
+// Bookshelf (book blurbs/TBD placeholders) and Multimedia (interactive
+// pages) are intentionally excluded — everything else is in scope.
 const LORE_DIRS = [
   'views/WorldbuildingContents',
   'views/LocalesAndSights',
@@ -36,10 +36,17 @@ const LORE_DIRS = [
   'views/MetaWorldbuilding',
 ]
 
+// Vol 0 - HTHGOE lives inside Bookshelf, but it's real published lore
+// (not a TBD placeholder like the other volumes), so it's counted
+// separately and added into the total alongside LORE_DIRS.
+const BOOKSHELF_DIR = 'views/Bookshelf'
+const VOL0_HTHGOE_DIR = 'views/Bookshelf/Vol0HTHGOE'
+
 // Folders intentionally left OUT of the tally, shown in the footer
 // card so it's transparent about what "Total Lore" does NOT include.
+// (Bookshelf's excluded count below excludes Vol 0 - HTHGOE, since that
+// volume is counted as lore.)
 const EXCLUDED_DIRS = [
-  { label: 'Bookshelf', dir: 'views/Bookshelf' },
   { label: 'Multimedia', dir: 'views/Multimedia' },
 ]
 
@@ -56,7 +63,10 @@ const ENTITY_MAP = {
   '&gt;': '>',
 }
 function decodeEntities(str) {
-  return str.replace(/&[a-z]+;/gi, (m) => ENTITY_MAP[m.toLowerCase()] ?? m)
+  let out = str.replace(/&[a-z]+;/gi, (m) => ENTITY_MAP[m.toLowerCase()] ?? m)
+  // Numeric entities, e.g. &#39; (used throughout Vol 0 - HTHGOE prose)
+  out = out.replace(/&#(\d+);/g, (_, code) => String.fromCharCode(parseInt(code, 10)))
+  return out
 }
 
 // ---- recursive .tsx finder -----------------------------------
@@ -86,6 +96,16 @@ function extractRenderedText(source) {
   let cleaned = source.replace(/\{\/\*[\s\S]*?\*\/\}/g, ' ')
 
   const chunks = []
+
+  // 1b. dangerouslySetInnerHTML={{__html: `...`}} template-literal prose
+  //     (used by Vol 0 - HTHGOE's episodes) — pulled out FIRST and blanked
+  //     from `cleaned` so the raw HTML tags inside these backtick strings
+  //     (e.g. <em>) don't also get picked up by the generic >text< pass
+  //     below, which would double-count that text.
+  cleaned = cleaned.replace(/dangerouslySetInnerHTML=\{\{\s*__html:\s*`([\s\S]*?)`\s*\}\}/g, (_, inner) => {
+    chunks.push(inner.replace(/<[^>]+>/g, ' '))
+    return ' '
+  })
 
   // 2a. Plain text nodes between tags: >text<   (no nested { } or < > inside)
   for (const m of cleaned.matchAll(/>([^<>{}]+)</g)) {
@@ -132,7 +152,7 @@ function main() {
   let totalPages = 0
   let specialCharacterCount = 0
 
-  for (const relDir of LORE_DIRS) {
+  for (const relDir of [...LORE_DIRS, VOL0_HTHGOE_DIR]) {
     const absDir = join(SRC_ROOT, relDir)
     const files = findIndexFiles(absDir)
     for (const file of files) {
@@ -151,6 +171,13 @@ function main() {
     excluded[label] = count
     excludedTotal += count
   }
+  // Bookshelf excluded count = everything in Bookshelf MINUS Vol 0 - HTHGOE
+  // (which is counted as lore above).
+  const bookshelfAll = findIndexFiles(join(SRC_ROOT, BOOKSHELF_DIR)).length
+  const vol0Count = findIndexFiles(join(SRC_ROOT, VOL0_HTHGOE_DIR)).length
+  const bookshelfExcluded = bookshelfAll - vol0Count
+  excluded.Bookshelf = bookshelfExcluded
+  excludedTotal += bookshelfExcluded
   excluded.total = excludedTotal
 
   const outDir = join(SRC_ROOT, 'data')
