@@ -71,6 +71,22 @@ export default function TheContinentOfVarleqe() {
         </section>
 
         <section className="mb-10">
+          <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Varleqe is a Beast Territory</h2>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-4">
+            This continent is riddled with beasts of different species and sizes. They all live in different regions within this territory. In smaller areas, animals live in a condensed area within their own respective kingdom. However, there are two different genres of Kingdoms: Animals and Beasts. The Animal Kingdom is just basic animal life. The Beast Kingdom classifies as a hierarchy of powerful creatures.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-4">
+            <Link to="/world/databases/CreaturesOfTheWorld/DemonCreatures" className="text-[#c9a84c] hover:underline">Demons</Link> are considered a Beast. They are Rank 1, Tier 2 of the <Link to="/world/databases/CreaturesOfTheWorld/BeastHierarchyKingdom" className="text-[#c9a84c] hover:underline">Beast Hierarchy</Link>. Demons here are not evil, nor are they villains. Their strength, not just power, comes from wealth, wisdom, and knowledge.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-4">
+            <Link to="/world/databases/CreaturesOfTheWorld/HetraDirectWolves" className="text-[#c9a84c] hover:underline">Direwolves</Link> is a Beast within this place. They&apos;re powerful and agile. Come in many different variations. They rival <Link to="/world/databases/CreaturesOfTheWorld/KillerRabbits" className="text-[#c9a84c] hover:underline">Killer Rabbits</Link>. These two are quarreling species that compete over territory and food.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            <Link to="/world/databases/CreaturesOfTheWorld" className="text-[#c9a84c] hover:underline">Dragons</Link> are also considered beasts and live in this territory. There are elemental dragons and more! They are Rank 3 of the Beast Hierarchy.
+          </p>
+        </section>
+
+        <section className="mb-10">
           <h2 className="font-display text-lg text-[#f2ebeb] mb-6">Ruins</h2>
           <div className="space-y-6">
             <div>
