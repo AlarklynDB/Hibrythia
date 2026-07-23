@@ -1,59 +1,60 @@
 import { Link } from "react-router-dom";
 
-// NOTE: Repo-structure scaffold — not yet wired into live routing/nav.
-// Title pulled word-for-word from the Notion Table of Contents; full
-// episode prose is TBD.
-
 export default function Ministory1EpisodeI() {
   return (
-    <div className="max-w-[960px] mx-auto px-6 py-20 space-y-16">
+    <div className="max-w-[720px] mx-auto px-6 py-20">
+      <div className="gold-rule mb-6" aria-hidden="true" />
+      <Link
+        to="/bookshelf/ministories/damsellete-of-the-wind"
+        className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] hover:text-[#c9a84c] transition-colors duration-200 inline-block mb-6"
+      >
+        ← Back to Damsellete of The Wind (Raeya&#39;s Ministory)
+      </Link>
+      <p className="font-body text-xs tracking-[0.25em] text-[#c9a84c] uppercase mb-2">Hibryds · Damsellete of The Wind</p>
+      <h1 className="font-display text-[clamp(1.3rem,1rem+1.25vw,2rem)] text-[#f2ebeb] mb-3 leading-tight">Episode I — The Caged Wind</h1>
+      <p className="font-body text-xs text-[#7a7670] italic mb-12">Raeya&#39;s Life Growing Up | Raeya POV.</p>
 
-      {/* Breadcrumb + Title */}
-      <div>
-        <Link
-          to="/bookshelf/ministories/damsellete-of-the-wind"
-          className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] hover:text-[#c9a84c] transition-colors duration-200 inline-block mb-6"
-        >
-          &#8592; Back to Damsellete of The Wind (Raeya's Ministory)
-        </Link>
-        <p className="font-body text-xs tracking-[0.25em] text-[#c9a84c] uppercase mb-3">
-          Hibryds · Damsellete of The Wind
-        </p>
-        <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">
-          Episode I — The Caged Wind
-        </h1>
+      <div className="my-8 flex items-center gap-4"><div className="flex-1 h-px bg-[#2e2b26]" /><span className="text-[#c9a84c]/40 text-xs">✦</span><div className="flex-1 h-px bg-[#2e2b26]" /></div>
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `My name is Raeya Flutters.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `And if you ask anyone back in the Sylphrelm what they thought of me, they&#39;d probably lower their voice, glance away, and say something like: <em>&quot;Oh. Her. The Highland one.&quot;</em>`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `That&#39;s what I was to them. Not a name. A footnote. A bloodline no one could explain, wrapped in wings that weren&#39;t supposed to exist the way mine did.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `I was born somewhere between the Westward and Eastward Provinces of the Sylphrelm, on a flat stretch of sky-ground where the Rainbow Funnels hummed their quiet, traveling songs in the distance. The Cloud Abode was beautiful, I won&#39;t pretend otherwise. There&#39;s nowhere in all of Hibrytheia that sits so still above the world, where the air smells like celestial dew and the stars are close enough to feel like neighbors. Nahfia herself shaped this place into something living, breathing, and sacred.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `But beauty doesn&#39;t always mean safety. I learned that very early.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `My mother and father were Highland Sylphs. That alone was enough to mark us. The Southwings, the Sunpikes, they had histories. Records. Lineages anyone could trace back to the founders of the Sylph Council. We didn&#39;t. No one knew how Highland Sylphs came to be, and rather than sit with that mystery with any kind of grace, most chose to make it a wound they could press against us whenever they wanted.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `They whispered about it constantly. About us. About <em>me.</em>`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `I still remember how their voices carried through the crystalline walls of our home, the words sliding under the door like cold drafts in Wintervahle. <em>Strange wings. Strange blood. No one knows where they come from. You&#39;d think they&#39;d have the decency to stay quiet about it.</em>`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `And then, when I was still small enough that my wings hadn&#39;t fully settled into their shape, the elves came.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `I don&#39;t talk about that night often. I&#39;m not sure I have the right words for it, even now. The Sylphrelm had one sacred rule, engraved into every wall of the Central Abode, passed from parent to child like breathing: <em>do not interact with elves.</em> My parents knew this. They lived by it. But rules don&#39;t stop the cruel from crossing lines, and the elves who came that night weren&#39;t looking for conversation.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `I don&#39;t remember what I did when it happened. I think I made a sound. I think I ran. I think some part of me shattered so cleanly in that moment that I didn&#39;t even feel it break.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `What I do remember is the silence after.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `And then, the voice of a someone who cared came.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `She didn&#39;t ask me what I was. Didn&#39;t look at my wings with that particular kind of pity that&#39;s really just dressed-up contempt. She just took me in, wrapped something warm around me, and said, <em>&quot;You&#39;re safe now.&quot;</em>`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `She became my mother in every way that mattered. Under her care, I learned how to read the frequency channels in my ears, how to filter sound until I could hear a heartbeat three rooms away. She taught me Sylph Magic, Healing first, then Tranquil, how to soothe a panicked creature, how to hum someone into a dreamless sleep when the world had been too loud for too long. She gave me a pink gemstone earring before I ever set foot off the Abode, pressed it into my hand and said it was a promise. That I belonged to something. That I wasn&#39;t as alone as I felt.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `But she also saw what I tried to hide from myself.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `I was afraid. Of people. Of being left. Of reaching out and having my hand go unmet. Autophobia settled into me like it had always lived there, and Anthropophobia built walls around it to keep everything else out. I smiled when I was supposed to. I was pleasant. Quiet. Careful.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `A caged wind, dressed up like something tame.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `When I was older, she told me to go down to Midtheltra. To see what Planet Hetra actually looked like up close, to breathe air that hadn&#39;t been filtered through the Abode&#39;s bubble-shield, to meet people who might surprise me. So I flew down through the Rainbow Funnel, past the ley-lines, and eventually found myself standing in a District called Lenoria.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `Lenoria was kind. It smelled like warm bread and pine and the specific kind of quiet that meant people were actually happy there. I stayed four, maybe five years. Long enough to let my guard down a little. Long enough to almost forget that the world outside could reach in.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `But the year 2245 has a way of making you remember.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `A group moved through Lenoria like a slow rot. I tried to stand up. I thought, <em>this time,</em> I thought, <em>you can do this, Raeya.</em> But my kindness has always been the easiest door to kick open, and they found it without even trying. They dragged me into the forest at the edge of town, past the tree line where no one would hear, and made very clear exactly how frail they believed I was.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `Every hit confirmed what I&#39;d always feared. That I was too soft. Too easy. That being a Highland Sylph, being <em>me</em>, was a mistake the world kept correcting in the cruelest ways it could find.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `And then the forest lit up.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `Not in the way fires do, not wild and consuming. It was pointed. Deliberate. A flame with a conscience behind it. The group scattered, and through the smoke and the ache in my ribs, I looked up.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `There was a hand reaching down toward me.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `I didn&#39;t know his name yet. I didn&#39;t know anything about him except that he had stepped into that forest for someone he didn&#39;t know, and he hadn&#39;t flinched. His eyes were steady in a way I hadn&#39;t seen before, the kind of steady that doesn&#39;t come from never being afraid. It comes from being afraid and moving forward anyway.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `Something in my chest cracked open in a way that had nothing to do with the bruises.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `He told me his name was Kydel. I told him mine. He walked me back toward Lenoria without making me feel small for needing it. And somewhere between the tree line and the town, I made a silent promise to myself that I had no idea how to keep yet.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `That the cage was done with me.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `I just didn&#39;t know yet what kind of winds were about to come, and what kind of wolf I was about to meet running alongside them. We became friends. I kept clinging to the kindness he gave me. But….that kind of kindness started to bite back. It started to hurt me emotionally because I&#39;ve been treating him as my savior, like a damsel who needed help. I haven&#39;t been treating him as an equal. So after a few more exchanges, some more bonding, I stopped that old pattern and became a person of my own volition. And I changed.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]" dangerouslySetInnerHTML={{__html: `And that&#39;s when I realized. That type of hurt wasn&#39;t hurtful. It was a kind of love that hurts enough to want more. Sometimes… things catch you before you even see them coming.`}} />
+      <div className="my-8 flex items-center gap-4"><div className="flex-1 h-px bg-[#2e2b26]" /><span className="text-[#c9a84c]/40 text-xs">✦</span><div className="flex-1 h-px bg-[#2e2b26]" /></div>
+      <p className="font-body text-sm text-[#c9a84c] leading-[1.85] italic" dangerouslySetInnerHTML={{__html: `But now…? The wind picked me up for a new journey. A journey deeper within friendship, bonds, and adventures.`}} />
+
+      {/* Chapter navigation */}
+      <div className="mt-16 pt-8 border-t border-[#2e2b26] grid grid-cols-2 gap-4">
+          <Link to="/bookshelf/ministories/damsellete-of-the-wind" className="group flex flex-col text-left border border-[#2e2b26] rounded-sm px-4 py-3 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200"><span className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1">← Previous</span><span className="font-display text-xs text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">Damsellete of The Wind (Raeya&#39;s Ministory)</span></Link>
+          <Link to="/bookshelf/ministories/damsellete-of-the-wind/episode-2" className="group flex flex-col text-right border border-[#2e2b26] rounded-sm px-4 py-3 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200 ml-auto"><span className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1">Next →</span><span className="font-display text-xs text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">EP II — The Wind who Caught The Wolf</span></Link>
       </div>
-
-      {/* TBD Message */}
-      <div className="border border-[#2e2b26] rounded-xl bg-[#1a1714] px-8 py-12 flex flex-col items-center text-center gap-4">
-        <p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">Content Status</p>
-        <h2 className="font-display text-lg text-[#f2ebeb]">To Be Determined</h2>
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed max-w-[480px]">
-          Content: To Be Determined. Explore the Website for great lore and worldbuilding!
-        </p>
-        <Link
-          to="/world"
-          className="mt-4 inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-[#2e2b26] bg-[#131210] text-[#c9a84c] font-display text-sm hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200"
-        >
-          Explore Worldbuilding &#8594;
-        </Link>
-      </div>
-
-      {/* Bottom Nav */}
-      <div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
-        <Link
-          to="/bookshelf/ministories/damsellete-of-the-wind"
-          className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200 max-w-[45%]"
-        >
-          <span className="text-[#c9a84c] text-lg">&#8592;</span>
-          <div>
-            <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider mb-0.5">Back</p>
-            <p className="font-display text-sm text-[#f2ebeb]">Damsellete of The Wind (Raeya's Ministory)</p>
-          </div>
-        </Link>
-        <div />
-      </div>
-
     </div>
   );
 }
