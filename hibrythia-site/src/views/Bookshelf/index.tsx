@@ -44,6 +44,13 @@ const SECTIONS = [
     ],
   },
   {
+    title: 'HibryoX — Mini Stories',
+    description: 'Short e-books for characters who deserve more time. 3–5 episodes each — backstory, development, and timeline catch-ups.',
+    books: [
+      { to: '/bookshelf/ministories', label: 'Hibryds — Ministories', tag: 'HibryoX' },
+    ],
+  },
+  {
     title: 'Season 1: Journey Awaits!',
     description: '27 books across 9 volumes. The first season of The Hibrythian Saga.',
     books: [
@@ -90,13 +97,6 @@ const SECTIONS = [
       { to: '/bookshelf/season3/vol7', label: 'Volume 7: TBD', tag: 'Season 3' },
       { to: '/bookshelf/season3/vol8', label: 'Volume 8: TBD', tag: 'Season 3' },
       { to: '/bookshelf/season3/vol9', label: 'Volume 9: TBD', tag: 'Season 3' },
-    ],
-  },
-  {
-    title: 'HibryoX — Mini Stories',
-    description: 'Short e-books for characters who deserve more time. 3–5 episodes each — backstory, development, and timeline catch-ups.',
-    books: [
-      { to: '/bookshelf/ministories', label: 'Hibryds — Ministories', tag: 'HibryoX' },
     ],
   },
 ];
