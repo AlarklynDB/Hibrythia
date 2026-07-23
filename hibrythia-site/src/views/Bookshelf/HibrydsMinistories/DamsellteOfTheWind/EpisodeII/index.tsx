@@ -1,25 +1,26 @@
 import { Link } from "react-router-dom";
 
-// NOTE: Repo-structure scaffold only — not yet wired into live
-// routing/nav. "EpisodeNo" is a placeholder name/route.
+// NOTE: Repo-structure scaffold — not yet wired into live routing/nav.
+// Title pulled word-for-word from the Notion Table of Contents; full
+// episode prose is TBD.
 
-export default function Ministory1EpisodeNo() {
+export default function Ministory1EpisodeII() {
   return (
     <div className="max-w-[960px] mx-auto px-6 py-20 space-y-16">
 
       {/* Breadcrumb + Title */}
       <div>
         <Link
-          to="/bookshelf/ministories/ministory1"
+          to="/bookshelf/ministories/damsellete-of-the-wind"
           className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] hover:text-[#c9a84c] transition-colors duration-200 inline-block mb-6"
         >
-          &#8592; Back to Ministory 1 (placeholder name)
+          &#8592; Back to Damsellete of The Wind (Raeya's Ministory)
         </Link>
         <p className="font-body text-xs tracking-[0.25em] text-[#c9a84c] uppercase mb-3">
-          Ministory 1 (placeholder name)
+          Hibryds · Damsellete of The Wind
         </p>
         <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">
-          Episode No. (placeholder name)
+          Episode II — The Wind who Caught The Wolf
         </h1>
       </div>
 
@@ -41,13 +42,13 @@ export default function Ministory1EpisodeNo() {
       {/* Bottom Nav */}
       <div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
         <Link
-          to="/bookshelf/ministories/ministory1"
+          to="/bookshelf/ministories/damsellete-of-the-wind"
           className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200 max-w-[45%]"
         >
           <span className="text-[#c9a84c] text-lg">&#8592;</span>
           <div>
             <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider mb-0.5">Back</p>
-            <p className="font-display text-sm text-[#f2ebeb]">Ministory 1 (placeholder name)</p>
+            <p className="font-display text-sm text-[#f2ebeb]">Damsellete of The Wind (Raeya's Ministory)</p>
           </div>
         </Link>
         <div />
