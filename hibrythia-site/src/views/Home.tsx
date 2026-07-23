@@ -69,7 +69,7 @@ export default function Home() {
             Read our World Introduction
           </a>
           <Link
-            to="/world"
+            to="/bookshelf"
             className="font-body text-xs tracking-widest uppercase px-4 py-2 border border-[#2e2b26] text-[#7a7670] rounded-sm hover:border-[#c9a84c]/30 hover:text-[#d8d4cc] transition-all duration-[180ms]"
           >
             Check out our Bookshelf
