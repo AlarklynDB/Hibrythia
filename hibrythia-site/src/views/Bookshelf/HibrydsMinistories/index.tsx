@@ -34,10 +34,10 @@ export default function HibrydsMinistories() {
           What Are Ministories?
         </h2>
         <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
-          Ministories are bite-sized side-stories set within The Hibrythian Saga — smaller in scope than the mainline Volumes, but still canon to the universe.
+          Ministories are bite-sized side-stories set within The Hibrythian Saga — smaller in scope than the mainline Volumes, but still canon to the universe. Some of these stories will serve as either lore, character arcs, and more!
         </p>
         <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
-          Content: To Be Determined. This section is a structural placeholder — Ministories will be filled in and linked live as they're written.
+          All of our Ministories are free to read on this website. If you want to support this world and its main story, consider finding our main books on Barnes & Noble!
         </p>
       </section>
 
