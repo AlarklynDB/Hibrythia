@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function DisqusComments() {
   useEffect(() => {
@@ -61,6 +61,8 @@ const SECTIONS = [
   {
     title: 'Season II: TBD',
     description: '27 books across 9 volumes. The second season of The Hibrythian Saga.',
+    collapsible: true,
+    preview: 'Volumes 1 – 9',
     books: [
       { to: '/bookshelf/season2/vol1', label: 'Volume 1: TBD', tag: 'Season 2' },
       { to: '/bookshelf/season2/vol2', label: 'Volume 2: TBD', tag: 'Season 2' },
@@ -76,6 +78,8 @@ const SECTIONS = [
   {
     title: 'Season III: TBD',
     description: '27 books across 9 volumes. The third and final season of The Hibrythian Saga.',
+    collapsible: true,
+    preview: 'Volumes 1 – 9',
     books: [
       { to: '/bookshelf/season3/vol1', label: 'Volume 1: TBD', tag: 'Season 3' },
       { to: '/bookshelf/season3/vol2', label: 'Volume 2: TBD', tag: 'Season 3' },
@@ -98,6 +102,12 @@ const SECTIONS = [
 ];
 
 export default function Bookshelf() {
+  const [openSections, setOpenSections] = useState<Record<string, boolean>>({});
+
+  const toggleSection = (title: string) => {
+    setOpenSections((prev) => ({ ...prev, [title]: !prev[title] }));
+  };
+
   return (
     <div className="max-w-[960px] mx-auto px-6 py-20">
       <div className="gold-rule mb-6" aria-hidden="true" />
@@ -113,28 +123,70 @@ export default function Bookshelf() {
       </p>
 
       <div className="space-y-14">
-        {SECTIONS.map(({ title, description, books }) => (
-          <section key={title}>
-            <h2 className="font-display text-base text-[#f2ebeb] mb-1">{title}</h2>
-            <p className="font-body text-xs text-[#4a4844] mb-5 leading-relaxed">{description}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {books.map(({ to, label, tag }) => (
-                <Link
-                  key={to}
-                  to={to}
-                  className="group flex flex-col justify-center min-h-[64px] border border-[#2e2b26] rounded-sm px-5 py-4 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200"
+        {SECTIONS.map(({ title, description, books, collapsible, preview }) => {
+          const isOpen = collapsible ? !!openSections[title] : true;
+          return (
+            <section key={title}>
+              {collapsible ? (
+                <button
+                  type="button"
+                  onClick={() => toggleSection(title)}
+                  aria-expanded={isOpen}
+                  className="w-full flex items-center justify-between gap-4 text-left group mb-1 py-1"
                 >
-                  {tag && (
-                    <p className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1.5">{tag}</p>
-                  )}
-                  <span className="font-display text-sm text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors duration-200">
-                    {label}
+                  <span className="flex items-baseline gap-3 flex-wrap">
+                    <h2 className="font-display text-base text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors duration-200">
+                      {title}
+                    </h2>
+                    <span className="font-body text-[10px] tracking-widest uppercase text-[#7a7670]">
+                      {preview}
+                    </span>
                   </span>
-                </Link>
-              ))}
-            </div>
-          </section>
-        ))}
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`w-4 h-4 flex-shrink-0 text-[#7a7670] group-hover:text-[#c9a84c] transition-transform duration-300 ${
+                      isOpen ? 'rotate-180' : 'rotate-0'
+                    }`}
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+              ) : (
+                <h2 className="font-display text-base text-[#f2ebeb] mb-1">{title}</h2>
+              )}
+              <p className="font-body text-xs text-[#4a4844] mb-5 leading-relaxed">{description}</p>
+              <div
+                className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+                  isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {books.map(({ to, label, tag }) => (
+                      <Link
+                        key={to}
+                        to={to}
+                        className="group flex flex-col justify-center min-h-[64px] border border-[#2e2b26] rounded-sm px-5 py-4 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200"
+                      >
+                        {tag && (
+                          <p className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1.5">{tag}</p>
+                        )}
+                        <span className="font-display text-sm text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors duration-200">
+                          {label}
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
+          );
+        })}
       </div>
       <DisqusComments />
     </div>
