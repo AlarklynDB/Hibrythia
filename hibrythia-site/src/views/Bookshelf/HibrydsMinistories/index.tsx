@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 // may be renamed once real content is ready.
 const MINISTORIES = [
   { to: '/bookshelf/ministories/damsellete-of-the-wind', label: "Damsellete of The Wind (Raeya's Ministory)" },
-  { to: '/bookshelf/ministories/ministory2', label: 'Ministory 2 (placeholder name)' },
-  { to: '/bookshelf/ministories/ministory3', label: 'Ministory 3 (placeholder name)' },
+  { to: '/bookshelf/ministories/ministory2', label: 'Ministory 2 (TBD)' },
+  { to: '/bookshelf/ministories/ministory3', label: 'Ministory 3 (TBD)' },
 ];
 
 export default function HibrydsMinistories() {
