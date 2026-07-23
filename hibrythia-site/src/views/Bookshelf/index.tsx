@@ -92,7 +92,7 @@ const SECTIONS = [
     title: 'HibryoX — Mini Stories',
     description: 'Short e-books for characters who deserve more time. 3–5 episodes each — backstory, development, and timeline catch-ups.',
     books: [
-      { to: '/bookshelf/hibryox/raeyas-lost-time', label: "Raeya's Lost Time", tag: 'HibryoX' },
+      { to: '/bookshelf/ministories', label: 'Hibryds — Ministories', tag: 'HibryoX' },
     ],
   },
 ];
