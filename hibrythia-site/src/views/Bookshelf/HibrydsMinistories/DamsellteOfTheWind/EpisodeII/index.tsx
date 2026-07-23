@@ -1,59 +1,80 @@
 import { Link } from "react-router-dom";
 
-// NOTE: Repo-structure scaffold — not yet wired into live routing/nav.
-// Title pulled word-for-word from the Notion Table of Contents; full
-// episode prose is TBD.
-
 export default function Ministory1EpisodeII() {
   return (
-    <div className="max-w-[960px] mx-auto px-6 py-20 space-y-16">
+    <div className="max-w-[720px] mx-auto px-6 py-20">
+      <div className="gold-rule mb-6" aria-hidden="true" />
+      <Link
+        to="/bookshelf/ministories/damsellete-of-the-wind"
+        className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] hover:text-[#c9a84c] transition-colors duration-200 inline-block mb-6"
+      >
+        ← Back to Damsellete of The Wind (Raeya&#39;s Ministory)
+      </Link>
+      <p className="font-body text-xs tracking-[0.25em] text-[#c9a84c] uppercase mb-2">Hibryds · Damsellete of The Wind</p>
+      <h1 className="font-display text-[clamp(1.3rem,1rem+1.25vw,2rem)] text-[#f2ebeb] mb-3 leading-tight">Episode II — The Wind who Caught The Wolf</h1>
+      <p className="font-body text-xs text-[#7a7670] italic mb-12">Raeya&#39;s Adventure with Kydel | Raeya POV</p>
 
-      {/* Breadcrumb + Title */}
-      <div>
-        <Link
-          to="/bookshelf/ministories/damsellete-of-the-wind"
-          className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] hover:text-[#c9a84c] transition-colors duration-200 inline-block mb-6"
-        >
-          &#8592; Back to Damsellete of The Wind (Raeya's Ministory)
-        </Link>
-        <p className="font-body text-xs tracking-[0.25em] text-[#c9a84c] uppercase mb-3">
-          Hibryds · Damsellete of The Wind
-        </p>
-        <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">
-          Episode II — The Wind who Caught The Wolf
-        </h1>
+      <div className="my-8 flex items-center gap-4"><div className="flex-1 h-px bg-[#2e2b26]" /><span className="text-[#c9a84c]/40 text-xs">✦</span><div className="flex-1 h-px bg-[#2e2b26]" /></div>
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `There&#39;s a phrase I picked up somewhere along the travels.`}} />
+      <p className="font-body text-sm text-[#c9a84c] leading-[1.85] italic indent-8" dangerouslySetInnerHTML={{__html: `The wind who caught the wolf.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I thought about it a lot on quiet nights, tucked in the second floor of our treehouse while Kydel was probably still awake, staring at the ceiling like he always did when something was on his mind. And I thought, yeah. That&#39;s exactly what happened to me. I wasn&#39;t supposed to catch him. I wasn&#39;t even supposed to be <em>here.</em> But winds don&#39;t always go the direction they plan.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `Let me back up.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `After Lenoria, the world opened up fast.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `We traveled together toward Eldreule, which was its own kind of overwhelming in the best way possible. Kydel barely knew how to deal with emotions back then, and I barely knew how to talk to someone without second-guessing every single word. We were two very different kinds of awkward. But somehow it worked. We walked, sparred, raced across lake surfaces, and he grew a whole tree from a seed in roughly four seconds and acted like it wasn&#39;t impressive at all. That&#39;s Kydel, for you.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `There was one moment that stuck with me, though. One night at a campfire, somewhere between the hills and the forest path, he asked me something out of the blue.`}} />
+      <p className="font-body text-sm text-[#c9a84c] leading-[1.85] italic pl-4 border-l-2 border-[#c9a84c]/30 my-3" dangerouslySetInnerHTML={{__html: `<em>&quot;What am I, to you?&quot;</em>`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He said it so quietly. Like he was scared of the answer.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I didn&#39;t rush. I thought about it. I thought about all the ways I could soften it or dress it up, and then I just didn&#39;t. I told him the truth: that he was a <em>friend.</em> A good one. The kind who put others before himself even when he was clearly terrified. The kind who held his hand out for a stranger in a forest and meant it with his whole chest. I told him that&#39;s who he was to me, and friendship, real friendship, was worth fighting for.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He said &quot;you&#39;re right.&quot; And then got a little misty about it.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I pretended not to notice. That&#39;s called grace. And at this point, I could feel our friendship and bond solidify in something. Something more.`}} />
+      <div className="my-8 flex items-center gap-4"><div className="flex-1 h-px bg-[#2e2b26]" /><span className="text-[#c9a84c]/40 text-xs">✦</span><div className="flex-1 h-px bg-[#2e2b26]" /></div>
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He wasn&#39;t a quiet traveler, by any measure. Kydel attracted attention the way magnets attract metal: totally involuntarily, very dramatically. Monsters, crowds, ancient crystals lodged in the ground by something that was <em>alive</em> for twenty-five million years. You know. Normal stuff. Heh.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `But the Skypeak Obelisk was where things got <em>interesting</em>. And by interesting, I mean: the day I fell sick with a fever of 250 degrees helphranites, which I&#39;m pretty sure is not a normal fever temperature for anyone.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `It started after the dream. I don&#39;t talk about the dream much, but it went like this:`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `Kydel died. Protecting the District of Amberwick. And I was the one still standing, holding what was left of him.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I woke up crying into his shirt before I even remembered I was awake. He held me without asking questions first, which was the right call. He just said, <em>&quot;It&#39;s okay. I&#39;m here,&quot;</em> and that was enough for about three minutes before the fever hit me like a wall.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He panicked immediately.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He tried the medical center. No luck. He made a telekinetic pillow at sub-zero temperature and operated it hands-free so he wouldn&#39;t disturb me. He went into a cave system inside a mountain range, completely alone, to dig up a flower called the Iridescent Lily because some clerk slipped him a note that said it could cure impossible fevers. He came back and found a stampede of wild animals terrorizing the town and sorted that out too, apparently, on the way home.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `All of this while I was unconscious.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `When I woke up, he held a glowing petal over my face and told me to eat it.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `Mind you, I ate a flower petal. It tasted bitter, but sweet? It was like a melachonic dew of honey and vineyard stalks. Apparently I also mumbled something embarrassing in my sleep. Ahaha…ha… Moving on.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `After that, he said we could have a day just for us. No battles. No domains. No monsters with twenty-five million year old crystals. Just a walk around the Obelisk, whatever I wanted.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I wanted the Puppy Cafe. Because I asked. And it was more than just a date. I got to do something cute and normal with my partner.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `And he didn&#39;t even hesitate. He could&#39;ve went with something else entirely, but he&#39;s just that dedicated towards me.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `We walked in and the puppies immediately swarmed him (it was so cute, omg). A golden retriever climbed into his lap and sat down like it owned the place. And Kydel, who punches meteors, got flustered by a small dog looking at him. He gave it head pats. He made little sounds at it. He had a full conversation with a puppy in baby-talk.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `And then, because he is <em>exactly</em> who he is, he disappeared for three minutes and came back as one of the puppies. I didn&#39;t know…! (why is he so sly?! Gah I love him too much….!! Akcjakcjaia). I held him and called him cute. I told the puppy it reminded me of someone familiar. He waited until I started worrying about where Kydel went before revealing himself. I thought was very funny and then I thought it was less funny when I nearly dropped him. Oopsies~ (teehee).`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `&quot;<em>You&#39;re holding me,</em>&quot; he said, with the smuggest expression I have ever seen on a puppy&#39;s face.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I screamed a little bit.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He nuzzled against me and acted victorious.`}} />
+      <div className="my-8 flex items-center gap-4"><div className="flex-1 h-px bg-[#2e2b26]" /><span className="text-[#c9a84c]/40 text-xs">✦</span><div className="flex-1 h-px bg-[#2e2b26]" /></div>
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `Later, near a lake at the edge of town, he undid something in me that I had been holding together for a long time.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `My hair was wet from a water fight he started without warning, and I tried to pull it back and hide it because I always hide it, and he stopped me. He said he thought I looked beautiful with it down. I tried to laugh it off. He didn&#39;t let me.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He told me I should be proud of myself. That no one&#39;s words had the right to make me smaller. That he&#39;d always be in my corner. He said it so plainly and so directly, like it was obvious. Like it had never occurred to him that someone might not believe it about themselves.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I cried. I wasn&#39;t trying to. But I did.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `And he sat with me, dried my hair, and didn&#39;t make it weird.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `&quot;<em>You look exquisite,</em>&quot; he said, combing through it with his hands.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `Which, for the record, is the most theatrical compliment anyone has ever paid me, and it absolutely worked.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I kissed him. That&#39;s on me.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He was surprised. He returned it. His heart was going fast, which I could feel through my own powers, which felt a little too on the nose for the two of us.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `We both said it that night, out loud and to each other&#39;s faces.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I love you.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He gave me a ring the shape of the flower he gave me once. I put it on and I thought about how all of this started in a forest in Lenoria, and how strange and good and terrifying life had become since then.`}} />
+      <div className="my-8 flex items-center gap-4"><div className="flex-1 h-px bg-[#2e2b26]" /><span className="text-[#c9a84c]/40 text-xs">✦</span><div className="flex-1 h-px bg-[#2e2b26]" /></div>
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `The weeks after that were mostly training. We pushed hard, both of us. Kydel unlocked something new; Aura Focal Projection, which he was incredibly pleased about and tested immediately on a dumpster, which no longer exists. I pushed my own magic further than I thought it could go. We mastered things together and sparred and bickered and laughed about it.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `We were ready. For whatever came next.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `What came next was Amberwick.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `We heard murmurs about it from passing citizens, then saw the smoke from the air, a thick dark column rising north of Grelladore. The town was already in ruins when we landed. Buildings on fire. Ground scorched black. The kind of devastation that doesn&#39;t come from an accident.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `A demon witch was waiting for us.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `She was old and powerful and she looked at Kydel like she already knew exactly who he was, which scared me more than the fire did. What followed was a battle I want to describe as managed and controlled. It was neither of those things.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I did what I could. I boosted them both, healed where I could reach, called out what I saw. But at a certain point, the three of us were outpaced, and I felt the pressure of something shifting.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `There was a voice in my head, quiet at first, then clearer.`}} />
+      <p className="font-body text-sm text-[#c9a84c] leading-[1.85] italic pl-4 border-l-2 border-[#c9a84c]/30 my-3" dangerouslySetInnerHTML={{__html: `<em>&quot;If you love him, wouldn&#39;t you do anything?&quot;</em>`}} />
+
+      {/* Chapter navigation */}
+      <div className="mt-16 pt-8 border-t border-[#2e2b26] grid grid-cols-2 gap-4">
+          <Link to="/bookshelf/ministories/damsellete-of-the-wind/episode-1" className="group flex flex-col text-left border border-[#2e2b26] rounded-sm px-4 py-3 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200"><span className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1">← Previous</span><span className="font-display text-xs text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">EP I — The Caged Wind</span></Link>
+          <Link to="/bookshelf/ministories/damsellete-of-the-wind/episode-3" className="group flex flex-col text-right border border-[#2e2b26] rounded-sm px-4 py-3 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200 ml-auto"><span className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1">Next →</span><span className="font-display text-xs text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">EP III — Raeya&#39;s Loving Sacrifice</span></Link>
       </div>
-
-      {/* TBD Message */}
-      <div className="border border-[#2e2b26] rounded-xl bg-[#1a1714] px-8 py-12 flex flex-col items-center text-center gap-4">
-        <p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">Content Status</p>
-        <h2 className="font-display text-lg text-[#f2ebeb]">To Be Determined</h2>
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed max-w-[480px]">
-          Content: To Be Determined. Explore the Website for great lore and worldbuilding!
-        </p>
-        <Link
-          to="/world"
-          className="mt-4 inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-[#2e2b26] bg-[#131210] text-[#c9a84c] font-display text-sm hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200"
-        >
-          Explore Worldbuilding &#8594;
-        </Link>
-      </div>
-
-      {/* Bottom Nav */}
-      <div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
-        <Link
-          to="/bookshelf/ministories/damsellete-of-the-wind"
-          className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200 max-w-[45%]"
-        >
-          <span className="text-[#c9a84c] text-lg">&#8592;</span>
-          <div>
-            <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider mb-0.5">Back</p>
-            <p className="font-display text-sm text-[#f2ebeb]">Damsellete of The Wind (Raeya's Ministory)</p>
-          </div>
-        </Link>
-        <div />
-      </div>
-
     </div>
   );
 }
