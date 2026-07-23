@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // live routing/nav. Folder + title names below are placeholders and
 // may be renamed once real content is ready.
 const MINISTORIES = [
-  { to: '/bookshelf/ministories/damsellete-of-the-wind', label: "Damsellete of The Wind (Raeya's Ministory)" },
+  { to: '/bookshelf/ministories/damsellete-of-the-wind', label: "Hibryds - Damsellete of The Wind ( HDoTW | Raeya's Ministory)" },
   { to: '/bookshelf/ministories/ministory2', label: 'Ministory 2 (TBD)' },
   { to: '/bookshelf/ministories/ministory3', label: 'Ministory 3 (TBD)' },
 ];
