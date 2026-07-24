@@ -37,8 +37,9 @@ const LORE_DIRS = [
 ]
 
 // Vol 0 - HTHGOE lives inside Bookshelf, but it's real published lore
-// (not a TBD placeholder like the other volumes), so it's counted
-// separately and added into the total alongside LORE_DIRS.
+// (not a TBD placeholder like the other volumes). It gets its own
+// standalone tally — "Vol0GenesisLore" — rather than being folded into
+// the generic Lore bucket, so the footer can show it as its own line.
 const BOOKSHELF_DIR = 'views/Bookshelf'
 const VOL0_HTHGOE_DIR = 'views/Bookshelf/Vol0HTHGOE'
 
@@ -161,7 +162,7 @@ function main() {
   let lorePages = 0
   let loreSpecialCharacterCount = 0
 
-  for (const relDir of [...LORE_DIRS, VOL0_HTHGOE_DIR]) {
+  for (const relDir of LORE_DIRS) {
     const absDir = join(SRC_ROOT, relDir)
     const files = findIndexFiles(absDir)
     for (const file of files) {
@@ -171,6 +172,20 @@ function main() {
       loreSpecialCharacterCount += countSpecialChars(text)
       lorePages += 1
     }
+  }
+
+  // ---- Vol 0 - HTHGOE: its own standalone "Vol0GenesisLore" tally ---
+  let vol0Words = 0
+  let vol0Pages = 0
+  let vol0SpecialCharacterCount = 0
+
+  const vol0Files = findIndexFiles(join(SRC_ROOT, VOL0_HTHGOE_DIR))
+  for (const file of vol0Files) {
+    const source = readFileSync(file, 'utf-8')
+    const text = extractRenderedText(source)
+    vol0Words += countWords(text)
+    vol0SpecialCharacterCount += countSpecialChars(text)
+    vol0Pages += 1
   }
 
   // ---- Ministories: split finished pages from TBD scaffolds --------
@@ -214,9 +229,9 @@ function main() {
   excludedTotal += ministoryTBDPages
   excluded.total = excludedTotal
 
-  const overallWords = loreWords + ministoryWords
-  const overallPages = lorePages + ministoryPages
-  const overallSpecialCharacterCount = loreSpecialCharacterCount + ministorySpecialCharacterCount
+  const overallWords = loreWords + vol0Words + ministoryWords
+  const overallPages = lorePages + vol0Pages + ministoryPages
+  const overallSpecialCharacterCount = loreSpecialCharacterCount + vol0SpecialCharacterCount + ministorySpecialCharacterCount
 
   const outDir = join(SRC_ROOT, 'data')
   mkdirSync(outDir, { recursive: true })
@@ -225,6 +240,9 @@ function main() {
     loreWords,
     lorePages,
     loreSpecialCharacterCount,
+    vol0Words,
+    vol0Pages,
+    vol0SpecialCharacterCount,
     ministoryWords,
     ministoryPages,
     ministorySpecialCharacterCount,
@@ -237,7 +255,7 @@ function main() {
   writeFileSync(outPath, JSON.stringify(payload, null, 2) + '\n')
 
   console.log(
-    `[count-lore-words] Lore: ${loreWords.toLocaleString('en-US')} words / ${lorePages.toLocaleString('en-US')} pages. Ministory: ${ministoryWords.toLocaleString('en-US')} words / ${ministoryPages.toLocaleString('en-US')} pages. Overall: ${overallWords.toLocaleString('en-US')} words / ${overallPages.toLocaleString('en-US')} pages (${excludedTotal} pages excluded) -> ${outPath}`
+    `[count-lore-words] Lore: ${loreWords.toLocaleString('en-US')} words / ${lorePages.toLocaleString('en-US')} pages. Vol0GenesisLore: ${vol0Words.toLocaleString('en-US')} words / ${vol0Pages.toLocaleString('en-US')} pages. Ministory: ${ministoryWords.toLocaleString('en-US')} words / ${ministoryPages.toLocaleString('en-US')} pages. Overall: ${overallWords.toLocaleString('en-US')} words / ${overallPages.toLocaleString('en-US')} pages (${excludedTotal} pages excluded) -> ${outPath}`
   )
 }
 

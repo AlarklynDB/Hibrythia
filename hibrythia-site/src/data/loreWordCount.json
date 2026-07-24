@@ -1,7 +1,10 @@
 {
-  "loreWords": 92147,
-  "lorePages": 103,
-  "loreSpecialCharacterCount": 18535,
+  "loreWords": 90383,
+  "lorePages": 95,
+  "loreSpecialCharacterCount": 18010,
+  "vol0Words": 1764,
+  "vol0Pages": 8,
+  "vol0SpecialCharacterCount": 525,
   "ministoryWords": 13568,
   "ministoryPages": 7,
   "ministorySpecialCharacterCount": 3604,
@@ -14,5 +17,5 @@
     "Ministories": 2,
     "total": 39
   },
-  "generatedAt": "2026-07-24T03:38:46.850Z"
+  "generatedAt": "2026-07-24T03:44:20.389Z"
 }
