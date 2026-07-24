@@ -1,59 +1,100 @@
 import { Link } from "react-router-dom";
 
-// NOTE: Repo-structure scaffold — not yet wired into live routing/nav.
-// Title pulled word-for-word from the Notion Table of Contents; full
-// episode prose is TBD.
-
 export default function Ministory1EpisodeV() {
   return (
-    <div className="max-w-[960px] mx-auto px-6 py-20 space-y-16">
+    <div className="max-w-[720px] mx-auto px-6 py-20">
+      <div className="gold-rule mb-6" aria-hidden="true" />
+      <Link
+        to="/bookshelf/ministories/damsellete-of-the-wind"
+        className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] hover:text-[#c9a84c] transition-colors duration-200 inline-block mb-6"
+      >
+        ← Back to Damsellete of The Wind (Raeya&#39;s Ministory)
+      </Link>
+      <p className="font-body text-xs tracking-[0.25em] text-[#c9a84c] uppercase mb-2">Hibryds · Damsellete of The Wind</p>
+      <h1 className="font-display text-[clamp(1.3rem,1rem+1.25vw,2rem)] text-[#f2ebeb] mb-3 leading-tight">Episode V — Back From the Dead</h1>
+      <p className="font-body text-xs text-[#7a7670] italic mb-12">Raeya’s New Life</p>
 
-      {/* Breadcrumb + Title */}
-      <div>
-        <Link
-          to="/bookshelf/ministories/damsellete-of-the-wind"
-          className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] hover:text-[#c9a84c] transition-colors duration-200 inline-block mb-6"
-        >
-          &#8592; Back to Damsellete of The Wind (Raeya's Ministory)
-        </Link>
-        <p className="font-body text-xs tracking-[0.25em] text-[#c9a84c] uppercase mb-3">
-          Hibryds · Damsellete of The Wind
-        </p>
-        <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">
-          Episode V — Back From the Dead
-        </h1>
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `What felt like days, minutes, and hours, felt like years. Probably because Zohl told me my body works on Hetra’s circadium system. I felt a warm, tingling, fresh sensation lift me from my core. It was almost like a rekindle of an extinguished flame that was brought back to life. The warmth and coolness of the water flowed around my body, bringing back my senses.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `Gradually, I flexed my muscles, causing my fingers to twitch. I could hear the water, the ambiance of the divine realm, and distant chatters. I could hear distinguished voices talk. Zohl, and the King. I also heard another one. It was female-like and a beauty of a song. The realm felt really lively. Like I could feel all the senses and divine pleasantries in my body again.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `As I groaned softly, I relied on my arms to lift myself up. I felt water drip from my body, my hair soaked, and my clothes wet. I couldn’t use my powers just yet, so I took it slowly.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Raeya!” I heard Zohl’s voice. I could feel him help me up, as I gradually opened my eyes. As I tried to walk, my legs felt weak, and I stumbled along the floor. He caught me by my arms to help me up. It felt like I was a baby all over again, haha.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Careful dear, you’ve been laying idle for quite a long time,” he said with a slight concern. “Take it slowly.”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `It really felt like yesterday, like I woke up the day after. He helped me sit down on some beds of clouds, and I looked around. The King was with Zohl, and another being that I’ve never seen. I let my body slowly regain its mobility. After gaining back my mobile sensation, I could use my powers, so I quickly dried my clothes and my hair using some of my magic. It seems like Zohl redressed me with care.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `Awww…how nice of him~! Ehehe~`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“How are you feeling, Raeya?” The King asked me. “I’m glad to see you’re back to normal!”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I looked down at my hands and gripped onto them. I was back. I am back..! I responded, “I've never felt this amazing before!” I was happy. Happy to be back. “I feel fresh and strong!”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `Both of them laughed, and they seemed happy. Zohl gave me a head pat from behind and he was excited to see me back. I felt my strength come back, and I got up and flew around. I flew up into the skies, zoomed past the clouds that hovered in the air, and rocketed around the area. The flight of being able to fly after the years of revival felt exciting, as usual. I flew back down next to my friends and they congratulated me once again.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“I am glad you're back,” he expressed his feelings. I felt a bit flustered.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Zohl, thank you for everything,” I thanked him. We both shook hands on it as The King approached us.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“I want to introduce you to someone,” he addressed me.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“This is Queen Laeyana, the Spirit of Magic. The Goddess of Magic. The first source of All Magic.”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He gestured towards her, and she was a beauty. She stood around as tall as a building and took on the appearance of a Dryad and some parts of a sylph, as I could notice quickly. Her hair was pink, highlighted with green. She almost looked like an angel. I slightly bowed before her presence. She gestured me not to, but being formal with others was a trait I was supposed to follow while growing up.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Raeya, my dear, I know the past few days have been tough for you, but I have to let you know, your partner is thinking lowly about himself. He is lost and needs guidance,” She exclaimed to me.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“I can sense that he is with Aloria right now. However, with you being his anchor support, he feels bad about himself, thinking about how he couldn’t protect you. He thinks he’s a monster and a failure.”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I realized the shock I had put on Kydel. He is my everything to me, and with two supreme beings in front of me, I felt nothing but guilt for him. I wanted to go back, to see him and to soothe him of his pain.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“You can…see everything…?” I asked her with a curious tone. Wow, who knew the two of them can read minds!`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Yes, and as of right now, his inner thoughts say, “I’m not good enough for her, no, myself”,” The Queen responded.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I then felt a strain of sadness for him. I really want to see him, I really do. Not only he understood me and knows me by my flaws and strengths, I also see his cons and pros. The ability to grow as a person can't be done alone.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `True, he might be a direwolf graced with power, but that doesn't really define him. Not by power or strength, but as a person that can grow if room is made. I have my own morality I want to live by, and I want to teach him that too.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“I can tell you’re eager to go back, and I’ve heard I’m supposed to give you something in return after the success of the revival,” she finished with an offer.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“And I thought I’d give you a new set of magic powers.”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I was eager and excited, with a smile on my face. I felt a rush of energy come down my body. She opened out her hands and manifested some orb-like colors that contained powers. A yellow-like color appeared on one, a green, and a light-pink one. I flew up to her hand.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Please choose wisely! Oh!”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I caught her off-guard and took the light-pink power orb. I held it in my palm and it quickly melted into me. A fresh surge of energy flowed down towards my hands, my feet, and my torso.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“What a hasty one, aren’t you?” She teased.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“She wants to go back so that she can see her partner, Kydel,” Zohl laughed.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Do you need me to debrief you?” she asked me with concern.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Thank you, but no thanks!” I tried to be polite. Perhaps I was a little hasty, but boy, was I way too excited.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“I’m excited to go back! I want to see my partner!”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I could feel my eagerness and excitement jump through the roof. Both the King, Zohl, and Laeyana saw my expressions of happiness. They giggled.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Zohl, can you hurry uppp??” I asked him endearingly. He laughed.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Okay, okay, just let me say thanks and goodbyes to my friends,” Zohl told me. “I’ll be quick!”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I pouted, “oh come on!”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He darted off. I looked down on my left hand and at my ring that Kydel had given me. I was ready to see him. I want to see Kydel. Because I trust him in every way possible. Because something about this revival means something to him, not just me.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `He must’ve been heartbroken after I sacrificed myself. But…that’s alright. It’s because I love him. And it’s also because we all break down when we lose something precious. Kind of like how I lost my biological parents when I was a wee little lad.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `But….I don’t want this to end in a tandem relationship. I want it to be soft. Gentle. Like he is. But in a form of dynamic gentleness. After all, Kydel is mine only. One could say that I want him forever and that he is mine—which isn’t wrong. Possessiveness can be a good thing, but it only becomes bad when neither side acknowledges each other’s feelings. That isn’t who I am or how I act. I want to live by my own morals and standards. Not to compete, but as a balance.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `I just want to be there for him.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `When things are tough.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `When things seem like they aren’t the way they seem.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `When things need time to adjust. Because we’re all beings that were given life and choices.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `And I want to make new choices with him. I want to lie in his pain and help him grow.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“You really love Kydel, don’t you?” Queen Laeyana took noticed my unusual silence.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“I do! Not only has he been there for me in my toughest times, he’s the type of person to share his kindness!” I explained to her.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Everything about him, despite his powers, or his flaws, is what makes him, him!”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“I love him for who he is!”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `Both the King and the Queen smiled at my enthusiasm and gentle boastfulness of my partner, and they seemed to like it.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“You make a perfect partner for him,” the King expressed. “And I’m sure he’ll return those feelings back.”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `In the corner of my eye, I saw Zohl coming back towards me, and he bowed before the two almighty.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“I’m ready for you now, but let me notify Aloria!” he told me. He put his fingers up against his head and communed through the realms, back to Hetra.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“You can do that?” I was surprised.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“One of the many benefits of being a Spirit,” he chuckled in response.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Okay, let’s go!”`}} />
+      <div className="my-8 flex items-center gap-4"><div className="flex-1 h-px bg-[#2e2b26]" /><span className="text-[#c9a84c]/40 text-xs">✦</span><div className="flex-1 h-px bg-[#2e2b26]" /></div>
+      <div className="my-10 flex items-center gap-4"><div className="flex-1 h-px bg-[#2e2b26]" /><span className="font-display text-xs tracking-widest uppercase text-[#c9a84c]">⊰ Back to The Living</span><div className="flex-1 h-px bg-[#2e2b26]" /></div>
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `Zohl opened up a portal back to Hetra, and it landed directly in front of the house. My house. Our house. The first thing I saw was the back of Kydel. My face lit up with happiness and I tackled him. Okay. Maybe that wasn’t gentle, but I got excited!! Can’t a girl have nice things?`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Kydel!” I was happy. I gave him a hug, and he returned one. I kissed him on his cheek. But not on the lips. Not yet. Not when there was a huge elephant in the room between him and Zohl.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `Zohl might have used him for his own selfish gains, but I don’t think that was the only reason. Why was Kydel chosen…? I’ve always wondered that. But I don’t want to ask that right now. Not when a relationship between two brothers might break. They need to heal together.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `This isn’t about me though. It’s about them.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Oh boy, what a long ride…(or well, instant),” I heard Zohl express his complaints. After he stepped out, the portal closed from behind once again. But he was glad to be back, to see Kydel doing well.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“You look good! I missed you!” Kydel complimented me.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Boy, am I happy to see you! I couldn’t wait any longer.”`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `But through this interaction with him, I could sense a strange sense of hostility between Kydel and Zohl. It’s like he wanted answers, but he was wary of him. Like a sharp end of a blade ready to piece the heavens and the skies. I wanted to speak up, but I didn’t want to sound rude. Instead, I just offered a question.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“You’re still upset at Zohl?” I asked him. Kydel nodded.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Look, Kydel, about this whole thing, can we go inside first?” He requested.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Sure,” he agreed. While it was time for Aloria to head off, we both waved bye to her as we went inside.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“This is something between me and Kydel. Raeya, can you give us a moment together?” He asked me.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `“Sure! I’ll be upstairs!” I answered, flying upwards. As I went to my room, the sense of familiarness came to me. Everything was the same as I remembered: my bed, my stuff, and the balcony that was beyond the doors outside. So I went outside and admired the scenery before I went back downstairs to see what the two were up to. The two were discussing something else, so I assumed everything was patched up.`}} />
+      <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] indent-8" dangerouslySetInnerHTML={{__html: `But I am glad they made up.`}} />
+      <div className="my-8 flex items-center gap-4"><div className="flex-1 h-px bg-[#2e2b26]" /><span className="text-[#c9a84c]/40 text-xs">✦</span><div className="flex-1 h-px bg-[#2e2b26]" /></div>
+      <p className="font-body text-sm text-[#c9a84c] leading-[1.85] italic indent-8" dangerouslySetInnerHTML={{__html: `Human emotions are sacred. Despite the positivity and negativity. It takes courage to step forward and confess secrets one dared to keep for too long, even if it hurts.`}} />
+      <p className="font-body text-sm text-[#c9a84c] leading-[1.85] italic indent-8" dangerouslySetInnerHTML={{__html: `That's how we grow. To have a mature mind. And it's also when to know when to give up, and when to receive it.`}} />
+      <p className="font-body text-sm text-[#c9a84c] leading-[1.85] italic indent-8" dangerouslySetInnerHTML={{__html: `Because today is the present—and it should be cherished like a fragrant dew of memories.`}} />
+
+      {/* Chapter navigation */}
+      <div className="mt-16 pt-8 border-t border-[#2e2b26] grid grid-cols-2 gap-4">
+          <Link to="/bookshelf/ministories/damsellete-of-the-wind/episode-4" className="group flex flex-col text-left border border-[#2e2b26] rounded-sm px-4 py-3 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200"><span className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1">← Previous</span><span className="font-display text-xs text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">EP IV — Timed Revival</span></Link>
+          <Link to="/bookshelf/ministories/damsellete-of-the-wind" className="group flex flex-col text-right border border-[#2e2b26] rounded-sm px-4 py-3 bg-[#131210] hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200 ml-auto"><span className="font-body text-[9px] tracking-widest uppercase text-[#4a4844] mb-1">Next →</span><span className="font-display text-xs text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">Back to Damsellete of The Wind (TOC)</span></Link>
       </div>
-
-      {/* TBD Message */}
-      <div className="border border-[#2e2b26] rounded-xl bg-[#1a1714] px-8 py-12 flex flex-col items-center text-center gap-4">
-        <p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844]">Content Status</p>
-        <h2 className="font-display text-lg text-[#f2ebeb]">To Be Determined</h2>
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed max-w-[480px]">
-          Content: To Be Determined. Explore the Website for great lore and worldbuilding!
-        </p>
-        <Link
-          to="/world"
-          className="mt-4 inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-[#2e2b26] bg-[#131210] text-[#c9a84c] font-display text-sm hover:border-[#c9a84c]/40 hover:bg-[#1a1814] transition-all duration-200"
-        >
-          Explore Worldbuilding &#8594;
-        </Link>
-      </div>
-
-      {/* Bottom Nav */}
-      <div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
-        <Link
-          to="/bookshelf/ministories/damsellete-of-the-wind"
-          className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200 max-w-[45%]"
-        >
-          <span className="text-[#c9a84c] text-lg">&#8592;</span>
-          <div>
-            <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider mb-0.5">Back</p>
-            <p className="font-display text-sm text-[#f2ebeb]">Damsellete of The Wind (Raeya's Ministory)</p>
-          </div>
-        </Link>
-        <div />
-      </div>
-
     </div>
   );
 }
