@@ -38,13 +38,20 @@ export default function Footer() {
         <div className="lore-stats-card w-full" role="note" aria-label="Word count tracker">
           <p className="lore-stats-title">[ Word Count Tracker ]</p>
           <p className="lore-stats-body">
-            Lore Word Count: {loreStats.loreWords.toLocaleString('en-US')} Words Across {loreStats.lorePages.toLocaleString('en-US')} Pages.<br />
-            Vol0GenesisLore Word Count: {loreStats.vol0Words.toLocaleString('en-US')} Words Across {loreStats.vol0Pages.toLocaleString('en-US')} Pages.<br />
-            Ministory Word Count: {loreStats.ministoryWords.toLocaleString('en-US')} Words Across {loreStats.ministoryPages.toLocaleString('en-US')} Pages.<br />
-            Overall Word Count: {loreStats.overallWords.toLocaleString('en-US')} Words Across {loreStats.overallPages.toLocaleString('en-US')} Pages.<br />
-            Special Characters Counted: {loreStats.overallSpecialCharacterCount.toLocaleString('en-US')}.<br />
-            Not Yet Tallied: Bookshelf ({loreStats.excluded.Bookshelf.toLocaleString('en-US')} Pages, Mostly TBD), Ministories ({loreStats.excluded.Ministories.toLocaleString('en-US')} Pages, TBD) &amp; Multimedia ({loreStats.excluded.Multimedia.toLocaleString('en-US')} Pages) —{' '}
-            {loreStats.excluded.total.toLocaleString('en-US')} Pages In Total.
+            <strong>Lore Word Count:</strong> <span className="lore-stats-number">{loreStats.loreWords.toLocaleString('en-US')}</span> Words Across <span className="lore-stats-number">{loreStats.lorePages.toLocaleString('en-US')}</span> Pages.<br />
+            <strong>Vol0GenesisLore Word Count:</strong> <span className="lore-stats-number">{loreStats.vol0Words.toLocaleString('en-US')}</span> Words Across <span className="lore-stats-number">{loreStats.vol0Pages.toLocaleString('en-US')}</span> Pages.<br />
+            <strong>Ministory Word Count:</strong> <span className="lore-stats-number">{loreStats.ministoryWords.toLocaleString('en-US')}</span> Words Across <span className="lore-stats-number">{loreStats.ministoryPages.toLocaleString('en-US')}</span> Pages.<br />
+            <strong>Overall Word Count:</strong> <span className="lore-stats-number">{loreStats.overallWords.toLocaleString('en-US')}</span> Words Across <span className="lore-stats-number">{loreStats.overallPages.toLocaleString('en-US')}</span> Pages.
+          </p>
+          <div className="lore-stats-divider" aria-hidden="true" />
+          <p className="lore-stats-body">
+            <strong>Special Characters Counted:</strong> <span className="lore-stats-number">{loreStats.overallSpecialCharacterCount.toLocaleString('en-US')}</span>.<br />
+            <strong>Not Yet Tallied:</strong> Bookshelf (<span className="lore-stats-number">{loreStats.excluded.Bookshelf.toLocaleString('en-US')}</span> Pages, Mostly TBD), Ministories (<span className="lore-stats-number">{loreStats.excluded.Ministories.toLocaleString('en-US')}</span> Pages, TBD) &amp; Multimedia (<span className="lore-stats-number">{loreStats.excluded.Multimedia.toLocaleString('en-US')}</span> Pages) —{' '}
+            <span className="lore-stats-number">{loreStats.excluded.total.toLocaleString('en-US')}</span> Pages In Total.
+          </p>
+          <div className="lore-stats-divider" aria-hidden="true" />
+          <p className="lore-stats-body">
+            <strong>All Pages Tally:</strong> <span className="lore-stats-number">{loreStats.allPagesCount.toLocaleString('en-US')}</span> Pages Across The Entire Site.
           </p>
         </div>
         <div className="piracy-notice w-full" role="note" aria-label="Anti-piracy notice">

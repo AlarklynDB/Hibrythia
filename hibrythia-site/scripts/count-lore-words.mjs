@@ -100,6 +100,35 @@ function findIndexFiles(dir) {
   return results
 }
 
+// ---- recursive .astro page finder -----------------------------
+// Counts literally every routed page on the site (src/pages/**\/*.astro),
+// the same count Astro itself reports at build time ("N page(s) built").
+// This is the "All Pages Tally" — a standalone, always-accurate total
+// that naturally includes every category above (Lore, Vol0GenesisLore,
+// Ministory, and everything in the Not Yet Tallied bucket) plus any
+// structural/navigation pages (home, TOC hubs, 404, etc.) that don't
+// belong to any single content bucket. Auto-updates whenever a page
+// is added or removed — no manual step required.
+function findAstroPages(dir) {
+  let results = []
+  let entries
+  try {
+    entries = readdirSync(dir)
+  } catch {
+    return results
+  }
+  for (const entry of entries) {
+    const full = join(dir, entry)
+    const st = statSync(full)
+    if (st.isDirectory()) {
+      results = results.concat(findAstroPages(full))
+    } else if (entry.endsWith('.astro')) {
+      results.push(full)
+    }
+  }
+  return results
+}
+
 // ---- extract rendered text from a raw .tsx source string ----
 function extractRenderedText(source) {
   // 1. Strip JSX block comments: {/* ... */}
@@ -233,6 +262,9 @@ function main() {
   const overallPages = lorePages + vol0Pages + ministoryPages
   const overallSpecialCharacterCount = loreSpecialCharacterCount + vol0SpecialCharacterCount + ministorySpecialCharacterCount
 
+  // ---- All Pages Tally: every routed page across the whole site ----
+  const allPagesCount = findAstroPages(join(SRC_ROOT, 'pages')).length
+
   const outDir = join(SRC_ROOT, 'data')
   mkdirSync(outDir, { recursive: true })
   const outPath = join(outDir, 'loreWordCount.json')
@@ -250,12 +282,13 @@ function main() {
     overallPages,
     overallSpecialCharacterCount,
     excluded,
+    allPagesCount,
     generatedAt: new Date().toISOString(),
   }
   writeFileSync(outPath, JSON.stringify(payload, null, 2) + '\n')
 
   console.log(
-    `[count-lore-words] Lore: ${loreWords.toLocaleString('en-US')} words / ${lorePages.toLocaleString('en-US')} pages. Vol0GenesisLore: ${vol0Words.toLocaleString('en-US')} words / ${vol0Pages.toLocaleString('en-US')} pages. Ministory: ${ministoryWords.toLocaleString('en-US')} words / ${ministoryPages.toLocaleString('en-US')} pages. Overall: ${overallWords.toLocaleString('en-US')} words / ${overallPages.toLocaleString('en-US')} pages (${excludedTotal} pages excluded) -> ${outPath}`
+    `[count-lore-words] Lore: ${loreWords.toLocaleString('en-US')} words / ${lorePages.toLocaleString('en-US')} pages. Vol0GenesisLore: ${vol0Words.toLocaleString('en-US')} words / ${vol0Pages.toLocaleString('en-US')} pages. Ministory: ${ministoryWords.toLocaleString('en-US')} words / ${ministoryPages.toLocaleString('en-US')} pages. Overall: ${overallWords.toLocaleString('en-US')} words / ${overallPages.toLocaleString('en-US')} pages (${excludedTotal} pages excluded). All Pages Tally: ${allPagesCount.toLocaleString('en-US')} pages sitewide -> ${outPath}`
   )
 }
 
