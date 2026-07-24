@@ -42,10 +42,19 @@ const LORE_DIRS = [
 const BOOKSHELF_DIR = 'views/Bookshelf'
 const VOL0_HTHGOE_DIR = 'views/Bookshelf/Vol0HTHGOE'
 
+// Hibryds Ministories (also inside Bookshelf) get their own separate
+// tally — see MINISTORY logic below. Finished episodes/TOC pages count
+// toward "Ministory Word Count"; scaffolds still showing the TBD
+// placeholder (Ministory2, Ministory3, future unwritten episodes) are
+// tracked as their own "Not Yet Tallied: Ministories" bucket, same
+// spirit as the Bookshelf TBD bucket but scoped to Ministories.
+const MINISTORY_ROOT = 'views/Bookshelf/HibrydsMinistories'
+const TBD_MARKER = 'To Be Determined'
+
 // Folders intentionally left OUT of the tally, shown in the footer
 // card so it's transparent about what "Total Lore" does NOT include.
-// (Bookshelf's excluded count below excludes Vol 0 - HTHGOE, since that
-// volume is counted as lore.)
+// (Bookshelf's excluded count below excludes Vol 0 - HTHGOE and all of
+// HibrydsMinistories, since those are tracked in their own buckets.)
 const EXCLUDED_DIRS = [
   { label: 'Multimedia', dir: 'views/Multimedia' },
 ]
@@ -148,9 +157,9 @@ function countSpecialChars(text) {
 
 // ---- main -----------------------------------------------------
 function main() {
-  let totalWords = 0
-  let totalPages = 0
-  let specialCharacterCount = 0
+  let loreWords = 0
+  let lorePages = 0
+  let loreSpecialCharacterCount = 0
 
   for (const relDir of [...LORE_DIRS, VOL0_HTHGOE_DIR]) {
     const absDir = join(SRC_ROOT, relDir)
@@ -158,10 +167,29 @@ function main() {
     for (const file of files) {
       const source = readFileSync(file, 'utf-8')
       const text = extractRenderedText(source)
-      totalWords += countWords(text)
-      specialCharacterCount += countSpecialChars(text)
-      totalPages += 1
+      loreWords += countWords(text)
+      loreSpecialCharacterCount += countSpecialChars(text)
+      lorePages += 1
     }
+  }
+
+  // ---- Ministories: split finished pages from TBD scaffolds --------
+  let ministoryWords = 0
+  let ministoryPages = 0
+  let ministorySpecialCharacterCount = 0
+  let ministoryTBDPages = 0
+
+  const ministoryFiles = findIndexFiles(join(SRC_ROOT, MINISTORY_ROOT))
+  for (const file of ministoryFiles) {
+    const source = readFileSync(file, 'utf-8')
+    if (source.includes(TBD_MARKER)) {
+      ministoryTBDPages += 1
+      continue
+    }
+    const text = extractRenderedText(source)
+    ministoryWords += countWords(text)
+    ministorySpecialCharacterCount += countSpecialChars(text)
+    ministoryPages += 1
   }
 
   const excluded = {}
@@ -172,28 +200,44 @@ function main() {
     excludedTotal += count
   }
   // Bookshelf excluded count = everything in Bookshelf MINUS Vol 0 - HTHGOE
-  // (which is counted as lore above).
+  // (counted as lore above) MINUS all of HibrydsMinistories (counted/
+  // tracked separately above, whether finished or TBD).
   const bookshelfAll = findIndexFiles(join(SRC_ROOT, BOOKSHELF_DIR)).length
   const vol0Count = findIndexFiles(join(SRC_ROOT, VOL0_HTHGOE_DIR)).length
-  const bookshelfExcluded = bookshelfAll - vol0Count
+  const ministoryAll = ministoryFiles.length
+  const bookshelfExcluded = bookshelfAll - vol0Count - ministoryAll
   excluded.Bookshelf = bookshelfExcluded
   excludedTotal += bookshelfExcluded
+  // Ministories excluded count = only the TBD ministory scaffolds
+  // (finished ministory pages are tallied above, not excluded).
+  excluded.Ministories = ministoryTBDPages
+  excludedTotal += ministoryTBDPages
   excluded.total = excludedTotal
+
+  const overallWords = loreWords + ministoryWords
+  const overallPages = lorePages + ministoryPages
+  const overallSpecialCharacterCount = loreSpecialCharacterCount + ministorySpecialCharacterCount
 
   const outDir = join(SRC_ROOT, 'data')
   mkdirSync(outDir, { recursive: true })
   const outPath = join(outDir, 'loreWordCount.json')
   const payload = {
-    totalWords,
-    totalPages,
-    specialCharacterCount,
+    loreWords,
+    lorePages,
+    loreSpecialCharacterCount,
+    ministoryWords,
+    ministoryPages,
+    ministorySpecialCharacterCount,
+    overallWords,
+    overallPages,
+    overallSpecialCharacterCount,
     excluded,
     generatedAt: new Date().toISOString(),
   }
   writeFileSync(outPath, JSON.stringify(payload, null, 2) + '\n')
 
   console.log(
-    `[count-lore-words] ${totalWords.toLocaleString('en-US')} words, ${specialCharacterCount.toLocaleString('en-US')} special chars, across ${totalPages.toLocaleString('en-US')} lore pages (${excludedTotal} pages excluded) -> ${outPath}`
+    `[count-lore-words] Lore: ${loreWords.toLocaleString('en-US')} words / ${lorePages.toLocaleString('en-US')} pages. Ministory: ${ministoryWords.toLocaleString('en-US')} words / ${ministoryPages.toLocaleString('en-US')} pages. Overall: ${overallWords.toLocaleString('en-US')} words / ${overallPages.toLocaleString('en-US')} pages (${excludedTotal} pages excluded) -> ${outPath}`
   )
 }
 
