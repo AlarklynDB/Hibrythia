@@ -38,111 +38,10 @@ export default function EconomyOfPlanetHetra() {
           Hetra operates on a two-tier currency system: <span className="text-[#f2ebeb] font-semibold">Bills (Hetrix)</span> and <span className="text-[#f2ebeb] font-semibold">Coins (Hetryl)</span>. The global symbol stamped on every single denomination is the <span className="text-[#f2ebeb] font-semibold">Erbgeroger Flower</span> — the world&apos;s emblem of Unity — ensuring that every transaction across the planet is a quiet reminder that prosperity is built on togetherness.
         </p>
 
-        {/* Counterfeit is Impossible */}
-        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Counterfeit is Impossible</h3>
-
-        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
-          <h4 className="font-display text-base text-[#f2ebeb] mb-2">Security Feature 1</h4>
-          <p className="font-body text-base text-[#c8c2ba] mb-3">
-            Each bill&apos;s sides have a security label embedded vertically on the horizontal length of the bill. The colored security labels are made with special Hetranium-laced polymers — and it appears as pink, violet, aqua, and navy. Hetranium-laced polymers go by another name: <span className="text-[#f2ebeb] font-semibold">Polyhetral Labels</span>.
-          </p>
-          <ul className="space-y-2 mb-3">
-            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-              <span className="text-[#c9a84c] shrink-0">—</span>
-              <span>If the Polyhetral Labels are perfected as fake&hellip; use an infrared laser to shine it through. Infrared will pass through them.</span>
-            </li>
-            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-              <span className="text-[#c9a84c] shrink-0">—</span>
-              <span>Real Polyhetral labels bounce back all visible and invisible colors of the light spectrum.</span>
-            </li>
-          </ul>
-          <p className="font-body text-base text-[#c8c2ba]">
-            Infrared Laser Pens are mandatory for all retailers or cash-only stores.
-          </p>
+        {/* Image placeholder */}
+        <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center mb-10">
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ Image Placeholder ]</p>
         </div>
-
-        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
-          <h4 className="font-display text-base text-[#f2ebeb] mb-2">Security Feature 2</h4>
-          <p className="font-body text-base text-[#c8c2ba]">
-            The entire bill is covered with a very <span className="text-[#7fb3d5]">light blue grid</span>. This is called an <span className="text-[#f2ebeb] font-semibold">EBLGrid</span> — an Encryption Bit Layer Grid. This is applied second to the end of the minting process. After that, a 3812-bit Encryption Layer near the left Polyhetral Label is applied.
-          </p>
-        </div>
-
-        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-8">
-          <h4 className="font-display text-base text-[#f2ebeb] mb-2">Security Feature 3</h4>
-          <p className="font-body text-base text-[#c8c2ba] mb-3">
-            Known as an <span className="text-[#f2ebeb] font-semibold">EBL</span>, this Encryption Bit Layer will stay the same and the pattern of it won&apos;t change. The EBL is a very hard process to make and also to counterfeit, as it requires sturdy precision and application because it is very fragile. The slightest movement will tear it, since the EBL is embedded into the grid itself.
-          </p>
-          <p className="font-body text-base text-[#c8c2ba] mb-3">
-            It is visible to the naked eye if viewed up close. But from afar, the bill itself will look like a regular bill, hidden in plain sight.
-          </p>
-          <p className="font-body text-base text-[#c8c2ba]">
-            Genuine bills are made by AI automated machines. Super stable. The EBL and the Polyhetral, along with the EBLGrid won&apos;t be torn this way. Nhuemyns cannot control gyroscopic stability, which is why machines are used to mint these bills — Artificial Intelligent Bill Minting Automation. Produced in New Rynels.
-          </p>
-        </div>
-
-        {/* Materials used in Minting Bills */}
-        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Materials used in Minting Bills</h3>
-        <p className="font-body text-base text-[#c8c2ba] mb-3">
-          The paper material of each bill is made up of the following things:
-        </p>
-        <ul className="space-y-3 mb-8">
-          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-            <span className="text-[#c9a84c] shrink-0">—</span>
-            <span><span className="text-[#f2ebeb] font-semibold">Hetrium Paper</span>: Nitinol infused cotton, linen, and <Link to="/world/databases/CreaturesOfTheWorld#buffalosaurus-ants" className="text-[#c9a84c] hover:underline">Buffalosaurus Silk</Link> from Buffalosaurus Ants. Heat Reformative. When folded or shaped, it stays in place unless heat is applied to turn it back to normal.</span>
-          </li>
-          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-            <span className="text-[#c9a84c] shrink-0">—</span>
-            <span><span className="text-[#f2ebeb] font-semibold">Built In Security Labels</span>: Made with Polyhetral. An advanced tech and process ever since Philstra Rhys became the richest man alive.</span>
-          </li>
-        </ul>
-
-        {/* Emergency Use: Fire Starting Property */}
-        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Emergency Use: Fire Starting Property</h3>
-        <p className="font-body text-base text-[#c8c2ba] mb-3">
-          Since Polyhetral Labels reflect all colors of the light spectrum, visible and invisible, this gives Hetrix bills an unexpected survival function. If a person&apos;s infrared laser pen dies or isn&apos;t available, any ambient light source can still be used to verify a bill, but it can also be used for something far more practical.
-        </p>
-        <ul className="space-y-2 mb-3">
-          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-            <span className="text-[#c9a84c] shrink-0">—</span>
-            <span>Flames like a lighter or a lit match won&apos;t work. It produces heat, but not enough light.</span>
-          </li>
-        </ul>
-        <p className="font-body text-base text-[#c8c2ba] mb-3">
-          By angling a Hetrix bill toward a light source and using a magnifying glass (or any curved glass surface) to concentrate the reflected light into a single point, the bundled visible and infrared energy is enough to ignite tinder or kindling. This works because Polyhetral Labels don&apos;t just reflect light, they reflect the full spectrum, meaning the concentrated beam carries more energy than a standard reflective surface would.
-        </p>
-        <p className="font-body text-base text-[#c8c2ba] mb-3">
-          Since Hetrix bills are made from Nitinol infused, heat reformative paper, a bill can be folded into a curved or parabolic shape to help focus the reflected light even further. Because the material holds its folded shape naturally, no external frame or tool is needed to keep the fold in place while aiming it.
-        </p>
-        <p className="font-body text-base text-[#c8c2ba] mb-4">
-          This means Hetrix bills double as a renewable, no battery, zero fuel fire starting tool. No matches, lighters, or flint are required. Just the bill itself, a light source, and something to concentrate the beam.
-        </p>
-        <ul className="space-y-2 mb-4">
-          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-            <span className="text-[#c9a84c] shrink-0">—</span>
-            <span>This is considered common survivalist knowledge across Hetra, often taught informally or through the AQTFC.</span>
-          </li>
-          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-            <span className="text-[#c9a84c] shrink-0">—</span>
-            <span>Adventurers and travelers without proper gear can still start a fire using nothing but currency they already carry.</span>
-          </li>
-          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-            <span className="text-[#c9a84c] shrink-0">—</span>
-            <span>This property is treated as a feature, not a flaw. Hetranian mints have never attempted to remove it, since Hetranium&apos;s full spectrum reflection is inseparable from the anti-counterfeit design itself.</span>
-          </li>
-          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-            <span className="text-[#c9a84c] shrink-0">—</span>
-            <span>This ties directly into Hetra&apos;s broader economic philosophy, where durable, multi-use design is rewarded rather than punished.</span>
-          </li>
-        </ul>
-        <blockquote className="border-l-2 border-[#c9a84c] pl-4 mb-4">
-          <p className="font-body text-base text-[#c9a84c] italic">
-            Money that can start a fire in an emergency is the kind of detail that quietly says a lot about how Hetra builds things. Nothing here is made for a single purpose only.
-          </p>
-        </blockquote>
-        <p className="font-body text-base text-[#c8c2ba] mb-8">
-          Fake bills however, cannot do this.
-        </p>
 
         {/* Hetrix and Hetryl Designs */}
         <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Hetrix and Hetryl Designs</h3>
@@ -234,7 +133,7 @@ export default function EconomyOfPlanetHetra() {
         <p className="font-body text-base text-[#c8c2ba] mb-3">
           Each coin is made with a specific material blend that gives it its unique look and feel:
         </p>
-        <div className="space-y-2 mb-6">
+        <div className="space-y-2">
           {[
             { name: "Kilpies",   comp: "85% Nickel + 15% Iron. Slightly magnetic." },
             { name: "Skrunkels", comp: "75% Copper + 25% Tin. Dark orange-brown tint." },
@@ -246,14 +145,6 @@ export default function EconomyOfPlanetHetra() {
               <span className="font-body text-base text-[#c8c2ba]">{c.comp}</span>
             </div>
           ))}
-        </div>
-
-        {/* Image placeholders */}
-        <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center mb-4">
-          <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ Coin Designs — Image Placeholder ]</p>
-        </div>
-        <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center">
-          <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ Banknotes — Image Placeholder ]</p>
         </div>
       </section>
 
@@ -267,7 +158,7 @@ export default function EconomyOfPlanetHetra() {
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
           World Net Worth &amp; Economic Scale
         </h2>
-        <div className="bg-[#0f0d0c] border-l-2 border-[#7a746e] pl-5 pr-4 py-4 mb-6">
+        <div className="bg-[#0f0d0c] border-l-2 border-[#7ba876] pl-5 pr-4 py-4 mb-6">
           <p className="font-body text-base text-[#c8c2ba]">
             As of the year <span className="text-[#f2ebeb] font-semibold">2245</span>, the estimated net worth of Planet Hetra is approximately <span className="text-[#f2ebeb] font-semibold">~250 Octillion Hetrix.</span> This staggering figure is the result of centuries of mass production, scientific breakthroughs, advanced technology, and the combined economic output of all continents — chiefly <span className="text-[#f2ebeb] font-semibold">Rynel</span>, <span className="text-[#f2ebeb] font-semibold">Lynneria</span>, and <span className="text-[#f2ebeb] font-semibold">Eulerich</span>.
           </p>
@@ -476,12 +367,21 @@ export default function EconomyOfPlanetHetra() {
           </p>
         </div>
 
-        <p className="font-body text-base text-[#c8c2ba] mb-10">
+        <p className="font-body text-base text-[#c8c2ba]">
           The Obelisk can hold up to <span className="text-[#f2ebeb] font-semibold">2.3 million individuals</span> at one time, making it one of the most economically active single locations on the planet. The Worth of this attraction goes up to <span className="text-[#f2ebeb] font-semibold">60 Trillion Hetrix</span>.
         </p>
+      </section>
 
-        {/* The Adventurer's Quarters */}
-        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">The Adventurer&apos;s Quarters (AQ)</h3>
+      <div className="border-t border-[#2e2b26] mb-10" />
+
+      {/* ── Adventurer's Quarters ── */}
+      <section className="mb-12">
+        <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
+          Adventurer&apos;s Quarters
+        </p>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
+          The Adventurer&apos;s Quarters (AQ)
+        </h2>
         <p className="font-body text-base text-[#c8c2ba] mb-3">
           The AQ is a prominent part of any MMO/RPG System where you can spend rewards at, not just getting quests and bounty jobs to earn coins and rewards. Each Floor in the Obelisk will have at least one or two per entrance, usually among the west or east sides.
         </p>
@@ -514,7 +414,7 @@ export default function EconomyOfPlanetHetra() {
         </div>
 
         {/* Another Cool Thing */}
-        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-8">
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5">
           <h4 className="font-display text-base text-[#f2ebeb] mb-3">Another Cool Thing</h4>
           <p className="font-body text-base text-[#c8c2ba] mb-3">
             A person&apos;s AQ Status and Rank can be taken outside. It is more of an ID that serves both in-system function and outside. A secondary identification. The World outside also has real Adventurer Quarters, which gives you REAL Hetrix for completing missions and bounties. When your outside, your rank will not rise. It will be strictly tied to your in-system status.
@@ -553,10 +453,21 @@ export default function EconomyOfPlanetHetra() {
             It is deemed illegal to bring outside weapons (of any type) inside. You&apos;ll be charged the same price for reregistry if you somehow sneak in a real world weapon. And your in-system rank will be <span className="text-[#f2ebeb] font-semibold">reset back to normal</span>. You can re-register if you want. After all, the Skypeak Obelisk is a community-based system, not just inside, but also outside.
           </p>
         </div>
+      </section>
 
-        {/* In-System Economy */}
-        <h3 className="font-display text-sm text-[#f2ebeb] mb-2">In-System Economy</h3>
-        <h3 className="font-display text-sm text-[#c9a84c] mb-4">Rewards via Conversion Received in Hetrix</h3>
+      <div className="border-t border-[#2e2b26] mb-10" />
+
+      {/* ── In-System Economy ── */}
+      <section className="mb-12">
+        <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
+          Reward Conversion
+        </p>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-2">
+          In-System Economy
+        </h2>
+        <p className="font-body text-base text-[#c9a84c] font-semibold mb-4">
+          Rewards via Conversion Received in Hetrix
+        </p>
         <p className="font-body text-base text-[#c8c2ba] mb-4">
           The Skypeak Obelisk&apos;s in-system economy is one of a kind and is easily translatable into Real World Hetrix, due to the fact it can be converted into real money.
         </p>
@@ -578,10 +489,10 @@ export default function EconomyOfPlanetHetra() {
               <tr className="border-b border-[#2e2b26]">
                 <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Reward Type</th>
                 <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Hetrix Value</th>
-                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Batch Min</th>
-                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Batch Max</th>
-                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Ħ Conversion (Min)</th>
-                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2">Ħ Conversion (Max)</th>
+                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Batch Reward (Min/Base)</th>
+                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Batch Reward (Max/Base)</th>
+                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2 pr-3">Ħ Conversion Received (Min)</th>
+                <th className="font-display text-[10px] tracking-widest uppercase text-[#7a746e] text-left py-2">Ħ Conversion Received (Max)</th>
               </tr>
             </thead>
             <tbody>
@@ -611,6 +522,125 @@ export default function EconomyOfPlanetHetra() {
             </tbody>
           </table>
         </div>
+      </section>
+
+      <div className="border-t border-[#2e2b26] mb-10" />
+
+      {/* ── Counterfeit is Impossible & Materials ── */}
+      <section className="mb-12">
+        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Counterfeit is Impossible</h3>
+
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-2">Security Feature 1</h4>
+          <p className="font-body text-base text-[#c8c2ba] mb-3">
+            Each bill&apos;s sides have a security label embedded vertically on the horizontal length of the bill. The colored security labels are made with special Hetranium-laced polymers — and it appears as pink, violet, aqua, and navy. Hetranium-laced polymers go by another name: <span className="text-[#f2ebeb] font-semibold">Polyhetral Labels</span>.
+          </p>
+          <ul className="space-y-2 mb-3">
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span>If the Polyhetral Labels are perfected as fake&hellip; use an infrared laser to shine it through. Infrared will pass through them.</span>
+            </li>
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span>Real Polyhetral labels bounce back all visible and invisible colors of the light spectrum.</span>
+            </li>
+          </ul>
+          <p className="font-body text-base text-[#c8c2ba]">
+            Infrared Laser Pens are mandatory for all retailers or cash-only stores.
+          </p>
+        </div>
+
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-2">Security Feature 2</h4>
+          <p className="font-body text-base text-[#c8c2ba]">
+            The entire bill is covered with a very <span className="text-[#7fb3d5]">light blue grid</span>. This is called an <span className="text-[#f2ebeb] font-semibold">EBLGrid</span> — an Encryption Bit Layer Grid. This is applied second to the end of the minting process. After that, a 3812-bit Encryption Layer near the left Polyhetral Label is applied.
+          </p>
+        </div>
+
+        <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-8">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-2">Security Feature 3</h4>
+          <p className="font-body text-base text-[#c8c2ba] mb-3">
+            Known as an <span className="text-[#f2ebeb] font-semibold">EBL</span>, this Encryption Bit Layer will stay the same and the pattern of it won&apos;t change. The EBL is a very hard process to make and also to counterfeit, as it requires sturdy precision and application because it is very fragile. The slightest movement will tear it, since the EBL is embedded into the grid itself.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] mb-3">
+            It is visible to the naked eye if viewed up close. But from afar, the bill itself will look like a regular bill, hidden in plain sight.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba]">
+            Genuine bills are made by AI automated machines. Super stable. The EBL and the Polyhetral, along with the EBLGrid won&apos;t be torn this way. Nhuemyns cannot control gyroscopic stability, which is why machines are used to mint these bills — Artificial Intelligent Bill Minting Automation. Produced in New Rynels.
+          </p>
+        </div>
+
+        {/* Materials used in Minting Bills */}
+        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Materials used in Minting Bills</h3>
+        <p className="font-body text-base text-[#c8c2ba] mb-3">
+          The paper material of each bill is made up of the following things:
+        </p>
+        <ul className="space-y-3">
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span><span className="text-[#f2ebeb] font-semibold">Hetrium Paper</span>: Nitinol infused cotton, linen, and <Link to="/world/databases/CreaturesOfTheWorld#buffalosaurus-ants" className="text-[#c9a84c] hover:underline">Buffalosaurus Silk</Link> from Buffalosaurus Ants. Heat Reformative. When folded or shaped, it stays in place unless heat is applied to turn it back to normal.</span>
+          </li>
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span><span className="text-[#f2ebeb] font-semibold">Built In Security Labels</span>: Made with Polyhetral. An advanced tech and process ever since Philstra Rhys became the richest man alive.</span>
+          </li>
+        </ul>
+      </section>
+
+      <div className="border-t border-[#2e2b26] mb-10" />
+
+      {/* ── Emergency Use: Fire Starting Property ── */}
+      <section className="mb-12">
+        <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
+          Emergency Use
+        </p>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
+          Emergency Use: Fire Starting Property
+        </h2>
+        <p className="font-body text-base text-[#c8c2ba] mb-3">
+          Since Polyhetral Labels reflect all colors of the light spectrum, visible and invisible, this gives Hetrix bills an unexpected survival function. If a person&apos;s infrared laser pen dies or isn&apos;t available, any ambient light source can still be used to verify a bill, but it can also be used for something far more practical.
+        </p>
+        <ul className="space-y-2 mb-3">
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span>Flames like a lighter or a lit match won&apos;t work. It produces heat, but not enough light.</span>
+          </li>
+        </ul>
+        <p className="font-body text-base text-[#c8c2ba] mb-3">
+          By angling a Hetrix bill toward a light source and using a magnifying glass (or any curved glass surface) to concentrate the reflected light into a single point, the bundled visible and infrared energy is enough to ignite tinder or kindling. This works because Polyhetral Labels don&apos;t just reflect light, they reflect the full spectrum, meaning the concentrated beam carries more energy than a standard reflective surface would.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] mb-3">
+          Since Hetrix bills are made from Nitinol infused, heat reformative paper, a bill can be folded into a curved or parabolic shape to help focus the reflected light even further. Because the material holds its folded shape naturally, no external frame or tool is needed to keep the fold in place while aiming it.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] mb-4">
+          This means Hetrix bills double as a renewable, no battery, zero fuel fire starting tool. No matches, lighters, or flint are required. Just the bill itself, a light source, and something to concentrate the beam.
+        </p>
+        <ul className="space-y-2 mb-4">
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span>This is considered common survivalist knowledge across Hetra, often taught informally or through the AQTFC.</span>
+          </li>
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span>Adventurers and travelers without proper gear can still start a fire using nothing but currency they already carry.</span>
+          </li>
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span>This property is treated as a feature, not a flaw. Hetranian mints have never attempted to remove it, since Hetranium&apos;s full spectrum reflection is inseparable from the anti-counterfeit design itself.</span>
+          </li>
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <span>This ties directly into Hetra&apos;s broader economic philosophy, where durable, multi-use design is rewarded rather than punished.</span>
+          </li>
+        </ul>
+        <blockquote className="border-l-2 border-[#c9a84c] pl-4 mb-4">
+          <p className="font-body text-base text-[#c9a84c] italic">
+            Money that can start a fire in an emergency is the kind of detail that quietly says a lot about how Hetra builds things. Nothing here is made for a single purpose only.
+          </p>
+        </blockquote>
+        <p className="font-body text-base text-[#c8c2ba]">
+          Fake bills however, cannot do this.
+        </p>
       </section>
 
       {/* ── Bottom Nav ── */}
