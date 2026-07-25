@@ -528,7 +528,12 @@ export default function EconomyOfPlanetHetra() {
 
       {/* ── Counterfeit is Impossible & Materials ── */}
       <section className="mb-12">
-        <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Counterfeit is Impossible</h3>
+        <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">
+          Bill Security
+        </p>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">
+          Counterfeit is Impossible
+        </h2>
 
         <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-5 mb-4">
           <h4 className="font-display text-base text-[#f2ebeb] mb-2">Security Feature 1</h4>
