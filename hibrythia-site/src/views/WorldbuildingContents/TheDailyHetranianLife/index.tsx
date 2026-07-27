@@ -715,6 +715,16 @@ export default function TheDailyHetranianLife() {
         </p>
       </section>
 
+      {/* Closing Quote */}
+      <blockquote className="bg-[#0f0d0c] border-l-2 border-[#c9a84c] pl-5 pr-4 py-4 mb-10">
+        <p className="font-body text-base text-[#c8c2ba] italic">
+          &ldquo;The present is where every individual life lives on this world. When to receive and when to give back, it is the way of life and how every day becomes a life full of unexpected surprises&rdquo;
+        </p>
+        <p className="font-body text-sm text-[#7a746e] mt-2">
+          &mdash; Aloria
+        </p>
+      </blockquote>
+
       {/* ── Bottom Nav ── */}
       <div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
         <Link to="/world/databases" className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200 max-w-[45%]">
