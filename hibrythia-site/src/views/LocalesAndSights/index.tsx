@@ -67,6 +67,18 @@ const SECTIONS = [
         path: '/world/locales/HetraSEAPSpaceProgram',
         icon: '🚀',
       },
+      {
+        title: 'HetraS.E.A.M — Space Museum',
+        desc: 'Hetra\'s premier government-funded museum, preserving the discoveries of the Nhumela Cluster — from the first Schavel expedition to the dangers found in deep space.',
+        path: '/world/locales/HetraSEAMSpaceMuseum',
+        icon: '🚀',
+      },
+      {
+        title: 'Adventurer Quarters Task Force Centre (AQTFC)',
+        desc: 'The mandatory registration and dispatch authority bridging every Skypeak Obelisk adventurer to real-world contracts, protection, and Hetra\'s wider economy.',
+        path: '/world/locales/AQTFC',
+        icon: '🚀',
+      },
     ],
   },
   {
