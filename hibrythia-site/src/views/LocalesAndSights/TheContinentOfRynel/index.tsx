@@ -16,7 +16,10 @@ export default function TheContinentOfRynel() {
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Locales &amp; Sights</p>
           <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">The Continent of Rynel</h1>
           <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-            The continent of Rynel, west Varleqe, Hetrania, and Lynneria, is smack-dab center of the globe (not literally). Rynel is another continent much like Norrane. Instead of operating on a large hexicule crystal, Rynel operates on the Oakgnar Grand Tree, which is considered to be the biggest and tallest tree in the whole world. There are a total of six locations on this continent, four being Oakgnar&apos;s towns, one ruin, and one city.
+            The continent of Rynel sits smack-dab at the center of the globe, west of Varleqe, Hetrania, and Lynneria. Unlike other continents, Rynel does not operate on a large Hexicule crystal. Instead, it is anchored by the <span className="text-[#f2ebeb] font-semibold">Oakgnar Grand Tree</span>, considered the biggest and tallest tree in the entire world. Rynel is home to six notable locations: four Oakgnar Districts that surround the Grand Tree, one sealed ruin, and one of the most economically powerful cities on Planet Hetra, New Rynels.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            Rynel is also the birthplace of the <Link to="/world/locales/erbgeroger-flower" className="text-[#c9a84c] hover:underline">Erbgeroger Flower</Link>, the sacred mountain flower that serves as the world symbol for Unity. Its likeness is engraved on every single Hetrix bill in circulation, meaning every transaction on the planet carries a quiet reminder of Rynel&apos;s cultural significance.
           </p>
         </div>
       </div>
@@ -26,21 +29,42 @@ export default function TheContinentOfRynel() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ The Continent of Rynel — Image Placeholder ]</p>
       </div>
 
-      {/* Locations */}
+      {/* The Oakgnar Grand Tree */}
       <div className="space-y-6">
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Locations within Rynel</h2>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">The Oakgnar Grand Tree</h2>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          The heart of Rynel and the symbolic center of Planet Hetra. The Oakgnar Grand Tree is not just a natural landmark. It is a living institution that holds the continent together spiritually, culturally, and structurally.
+        </p>
+        <p className="font-body text-sm text-[#7a746e] leading-relaxed">
+          Locales: The Oakgnar Grand Tree, The Sethranian Church, Oakgnar Verns, Oakgnar Grelt, Oakgnar Maple, Oakgnar Astel
+        </p>
 
         <div className="space-y-3">
           <h3 className="font-display text-sm text-[#f2ebeb] mb-3">The Oakgnar Grand Tree</h3>
           <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-            The Oakgnar Grand Tree is composed of three main materials, a single Hexicule Core, Hardwood, and Stonewood. The Hexicule Core keeps the tree intact within the ground, serves as a light beacon, is nearly indestructible, and can regenerate its roots and wood when damaged. The Oakgnar Grand Tree is a symbolism where all the four corners of Hetra (earth) binds together where people are unified despite absolute differences of each other. A worldwide cultural festival will be held a month, yearly, celebrating life and enjoying it to the fullest. The time zone that the Oakgnar Grand Tree is located at is on UCC-0.
+            The Oakgnar Grand Tree is composed of three main materials: a single Hexicule Core, Hardwood, and Stonewood. The Hexicule Core keeps the tree rooted within the ground, serves as a light beacon for the surrounding area, and is nearly indestructible. It can also regenerate its own roots and wood when damaged, making it essentially self-sustaining.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The tree sits at UCC-0, the world&apos;s base time zone, making it the geographic and temporal reference point of the entire planet. More than just a natural wonder, the Oakgnar Grand Tree is a symbol of world unity, representing a place where all four corners of Hetra come together, bound by their differences and their shared connection to the land.
+          </p>
+        </div>
+
+        <div className="space-y-3">
+          <h3 className="font-display text-sm text-[#f2ebeb] mb-3">
+            <Link to="/world/locales/sethranian-church" className="hover:underline">The Sethranian Church</Link>
+          </h3>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The Sethranian Church was built by one of the Seven Architects, Sethra, back in the Greungerian Era. It was the last structure built by Sethra, completed on a Sethraday, which is the final day of the week. The church still holds deep significance across the world to this day.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            People often come here to send wishes and prayers to <Link to="/characters/QueenEiraValthorne" className="text-[#c9a84c] hover:underline">Queen Eira</Link>, as the <Link to="/world/databases/HibrythianReligions" className="text-[#c9a84c] hover:underline">Religion of Valthoreia</Link> is Planet Hetra&apos;s main modern religion. It is a quiet, sacred place that draws visitors from across the continent.
           </p>
         </div>
 
         <div className="space-y-4">
-          <h3 className="font-display text-sm text-[#f2ebeb] mb-3">The Oakgnar Towns</h3>
+          <h3 className="font-display text-sm text-[#f2ebeb] mb-3">The Oakgnar Districts</h3>
           <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-            There are a total of Four Oakgnar towns that surround the Oakgnar Grand Tree. They are named:
+            There are four Oakgnar Districts that surround the Grand Tree, each one named and governed by one of the Lynn Brothers, who serve as the towns&apos; Mayors.
           </p>
           <div className="grid grid-cols-2 gap-3">
             {[
@@ -57,36 +81,68 @@ export default function TheContinentOfRynel() {
             ))}
           </div>
           <p className="font-body text-sm text-[#7a746e] leading-relaxed">
-            These four towns are named by the Lynn Brothers who are the towns&apos; Mayors.
+            These four towns form a ring of community life around the Grand Tree, serving as the residential and cultural backbone of central Rynel.
           </p>
         </div>
 
         <div className="space-y-3">
-          <h3 className="font-display text-sm text-[#f2ebeb] mb-3">New Rynels</h3>
+          <h3 className="font-display text-sm text-[#f2ebeb] mb-3">The Oakgnar Grand Festivities</h3>
           <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-            Being the largest coast-line city in the entire world, New Rynels spans around two state-wide lengths (like the counter-part of New York, but bigger and busier). This place is home to the richest people on the planet, with numbers that go up to the quadrillions. This city is filled with entrepreneurs, social workers, and big jobs that give out large pays, with the minimum wage being at <span className="font-body text-[#f2ebeb]">&#294;25.35 Hetrix (19.55 USD)</span>. This is also a place home to a space program called The Hetranian Space Exploration &amp; Aeronautics Program (HetraSEAP). This huge coastal city is founded by Philstra Rhys.
+            Every year, for a full month during <span className="text-[#f2ebeb] font-semibold">Muhulmber</span> (a 60-day month), festivities, weddings, and world-wide celebrations are held on Rynel. People come from across Planet Hetra, regardless of their differences, to celebrate the life they were given. The spirit of the event is simple: set aside the pain and the hardship for a month and enjoy being alive.
           </p>
-        </div>
-
-        <div className="space-y-3">
-          <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Rynel Ruins</h3>
           <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-            South of both Oakgnar Towns and New Rynels. Rynel Ruins leads underground, with the ruins being the exact size of the continent itself. Scientists say that the Rynel Ruins leads to an underground ancient animal kingdom, The Feathered Dinosaurs. Though there are texts and myths that say these creatures may be real, it still remains a speculation to this day. Currently, there is no way to enter the said ruins, since the entrance is sealed off with a divine seal.
+            The main celebration takes place on the <span className="text-[#f2ebeb] font-semibold">45th day of Muhulmber</span>. It is a time of relaxation, peace, and games, and it is widely considered the most beloved recurring event on the planet.
           </p>
         </div>
       </div>
 
-      {/* Oakgnar Festivities */}
-      <div className="space-y-4">
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Oakgnar Festivities (Oakgnar Grand Tree)</h2>
+      {/* New Rynels */}
+      <div className="space-y-6">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">New Rynels</h2>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          Every year, for a duration of one month, festivities, weddings, and celebrations are held specifically on Rynel during the month of Muhulmber. Muhulmber is a month that has a duration of 60 days. Everyone from around the world, despite being different and with differences, all come to this very place to celebrate the life they were given (united together through a kindred spirit). Toss away the pain and the suffering just for a month and celebrate. The time of relaxation, peace, fun, and games all reside on Rynel&apos;s famous and favorable, popular event, The Oakgnar Grand Festivities.
+          New Rynels is the largest coastline city in the entire world, spanning around two state-wide lengths. Think of it as the counterpart to New York, only bigger, busier, and far wealthier. This city is home to the richest individuals on Planet Hetra, with personal net worths reaching up into the quadrillions.
         </p>
-        <blockquote className="border-l-2 border-[#c9a84c]/40 pl-4">
-          <p className="font-body text-base text-[#c9a84c] leading-relaxed italic">
-            This happens on the 45th day of the month.
+
+        <div className="space-y-3">
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            New Rynels was founded by <Link to="/characters/PhilstraRhys" className="text-[#f2ebeb] font-semibold hover:underline">Philstra Rhys</Link>, the world&apos;s first Multi-Sextillionaire, with a personal worth of <span className="text-[#f2ebeb] font-semibold">55 Sextillion Hetrix</span>. Philstra is the founder of many major institutions and is the primary backer of <Link to="/world/locales/HetraSEAPSpaceProgram" className="text-[#c9a84c] hover:underline">HetraSEAP</Link>, the Hetranian Space Exploration and Aeronautics Program, which alone carries a worth of around <span className="text-[#f2ebeb] font-semibold">25 quintillion Hetrix</span>.
           </p>
-        </blockquote>
+          <ul className="space-y-2">
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span><span className="text-[#f2ebeb] font-semibold">Minimum Wage:</span> &#294;25.35 Hetrix (~$8.45 USD)</span>
+            </li>
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span><span className="text-[#f2ebeb] font-semibold">Key Industries:</span> Entrepreneurship, Space Exploration (HetraSEAP), High Finance</span>
+            </li>
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span><span className="text-[#f2ebeb] font-semibold">Founded by:</span> Philstra Rhys</span>
+            </li>
+          </ul>
+        </div>
+
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          New Rynels is the economic powerhouse of Planet Hetra and the hub where Hetrix bills are actually minted. The Artificial Intelligent Bill Minting Automation machinery responsible for producing every Hetrix denomination in circulation is housed and operated here, because the process demands a level of gyroscopic precision that no person can replicate by hand. The EBLGrid, Polyhetral Labels, and 3812-bit Encryption Layers stamped on every bill all come out of this city.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          Beyond finance and minting, New Rynels is a city that rewards ambition. Many of the most famous scientists and graduates from Ironbark Hibryds University have migrated here for entrepreneurship opportunities, and the city draws talent from across every continent on the planet.
+        </p>
+      </div>
+
+      {/* Rynel Ruins */}
+      <div className="space-y-3">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Rynel Ruins</h2>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          Rynel Ruins sits south of both the Oakgnar Districts and New Rynels. The ruins lead underground and are said to be the exact size of the continent itself in terms of their spread beneath the surface.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          Scientists speculate that the Rynel Ruins lead to an underground ancient animal kingdom called <span className="text-[#f2ebeb] font-semibold">The Feathered Dinosaurs</span>. Texts and myths suggest these creatures may have been real, though it remains a speculation to this day. For now, the question stays open.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          Currently, there is no way to enter the ruins. The entrance is sealed off with a divine seal, and no known force has been able to break through it. Whether what lies beneath is truly an ancient kingdom, a repository of lost knowledge, or something else entirely, remains one of the great mysteries of Planet Hetra.
+        </p>
       </div>        {/* Bottom Nav */}
         <div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
                   <Link to="/world/locales" className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200 max-w-[45%]">
@@ -108,4 +164,3 @@ export default function TheContinentOfRynel() {
     </div>
   );
 }
-
