@@ -22,6 +22,11 @@ const SECTIONS = [
     description: 'The living world — its creatures, peoples, and the beings that inhabit it.',
     pages: [
       {
+        to: '/world/databases/TheDailyHetranianLife',
+        label: 'The Daily Hetranian Life',
+        description: 'Everyday life on Hetra — food, tourism, arts, education, work, healthcare, and law.',
+      },
+      {
         to: '/world/databases/CreaturesOfTheWorld',
         label: 'Creatures of the World',
         description: 'Flora, fauna, and supernatural entities that inhabit Hetra.',
