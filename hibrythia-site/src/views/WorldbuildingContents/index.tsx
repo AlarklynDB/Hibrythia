@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const SECTIONS = [
   {
-    title: 'V. The Current World of Hibryds',
+    title: 'VI. The Current World of Hibryds',
     description: 'The physical reality of the planet Hetra and the solar system it calls home.',
     pages: [
       {
@@ -18,7 +18,7 @@ const SECTIONS = [
     ],
   },
   {
-    title: 'IV. The Equation of Life',
+    title: 'V. The Equation of Life',
     description: 'The living world — its creatures, peoples, and the beings that inhabit it.',
     pages: [
       {
@@ -39,6 +39,27 @@ const SECTIONS = [
     ],
   },
   {
+    title: 'IV. Technology & Consumerism',
+    description: 'The economic engine, transit networks, and consumer technology that keep Hetra\'s modern world running.',
+    pages: [
+      {
+        to: '/world/databases/EconomyOfPlanetHetra',
+        label: 'Economy of Planet Hetra',
+        description: 'The economic systems, currencies (including Ħ Hetrix), and trade across Hetra.',
+      },
+      {
+        to: '/world/databases/TechnologyTransitSystems',
+        label: 'Technology & Transit Systems',
+        description: 'Technological advancements, transportation, and infrastructure of Hetra.',
+      },
+      {
+        to: '/world/databases/TechnologicalBrandsOfHetra',
+        label: 'Technological Brands of Hetra',
+        description: 'Consumer tech, phone brands, and gadgets shaping everyday life on Hetra.',
+      },
+    ],
+  },
+  {
     title: 'III. The Inner Gears',
     description: 'The systems, sciences, and frameworks that keep the world of Hetra running.',
     pages: [
@@ -46,11 +67,6 @@ const SECTIONS = [
         to: '/world/databases/HetraStandardSystems',
         label: "Hetra's Standard Systems",
         description: 'Measurements, units, and standards used in the Hibrythian world.',
-      },
-      {
-        to: '/world/databases/EconomyOfPlanetHetra',
-        label: 'Economy of Planet Hetra',
-        description: 'The economic systems, currencies (including Ħ Hetrix), and trade across Hetra.',
       },
       {
         to: '/world/databases/GeoscienceOfHetra',
@@ -81,11 +97,6 @@ const SECTIONS = [
         to: '/world/databases/WeatherClimateSeasons',
         label: 'Weather, Climate & Seasons',
         description: 'Climate zones, seasonal cycles, and weather phenomena across Hetra.',
-      },
-      {
-        to: '/world/databases/TechnologyTransitSystems',
-        label: 'Technology & Transit Systems',
-        description: 'Technological advancements, transportation, and infrastructure of Hetra.',
       },
       {
         to: '/world/databases/CalendarAndTime',
@@ -140,10 +151,10 @@ export default function DatabasesAndSystems() {
         Databases & Systems
       </h1>
       <p className="font-body text-sm text-[#7a7670] mb-14 max-w-[600px] leading-relaxed">
-        In here, there are a lot of systems and information based on how the world works, including info based on our planet, the multiverse, time, and many more!
+        In here, there are a lot of systems and information based on how the world works, including info based on our planet, the multiverse, time, and many more! This page will peel back like layers in descending order!
       </p>
 
-      <div className="space-y-14">
+      <div className="space-y-14 mb-14">
         {SECTIONS.map(({ title, description, pages }) => (
           <section key={title}>
             <h2 className="font-display text-base text-[#f2ebeb] mb-1">{title}</h2>
@@ -168,6 +179,18 @@ export default function DatabasesAndSystems() {
           </section>
         ))}
       </div>
+
+      <blockquote className="bg-[#0f0d0c] border-l-2 border-[#c9a84c] pl-5 pr-4 py-4">
+        <p className="font-body text-base text-[#c8c2ba] italic">
+          &ldquo;This is not the world you know. The Hibrythian Saga is a universe full of magic, fantasy, sci-fi and a lot more. From the people, the society and more, get immersed and explore the vast lands of Planet Hetra and beyond&rdquo;
+        </p>
+        <p className="font-body text-sm text-[#7a746e] mt-2">
+          &mdash;{' '}
+          <Link to="/characters/AeoniaTheSpiritOfTime" className="text-[#c9a84c]/80 hover:text-[#c9a84c] transition-colors duration-200">
+            Aeonia, The Spirit of Time
+          </Link>
+        </p>
+      </blockquote>
     </div>
   );
 }

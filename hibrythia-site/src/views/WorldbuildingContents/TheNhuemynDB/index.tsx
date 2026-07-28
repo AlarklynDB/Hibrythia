@@ -7,13 +7,13 @@ export default function TheNhuemynDB() {
       <div className="flex items-center gap-2 font-body text-[10px] tracking-widest uppercase text-[#4a4844] mb-10 flex-wrap">
         <Link to="/world/databases" className="hover:text-[#c9a84c] transition-colors">Databases</Link>
         <span>›</span>
-        <span className="text-[#7a746e]">IV. Equation of Life</span>
+        <span className="text-[#7a746e]">V. Equation of Life</span>
         <span>›</span>
         <span className="text-[#7a746e]">The Nhuemyn DB</span>
       </div>
 
       {/* Hero */}
-      <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">IV. Equation of Life</p>
+      <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">V. Equation of Life</p>
       <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-6">The Nhuemyn DB</h1>
 
       <div className="space-y-12">

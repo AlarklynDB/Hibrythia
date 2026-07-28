@@ -11,7 +11,7 @@ export default function OurPlanetHetra() {
       </div>
 
       {/* Hero */}
-      <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">V. The Current World of Hibryds</p>
+      <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">VI. The Current World of Hibryds</p>
       <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-2">Our Planet Hetra</h1>
       <p className="font-body text-sm text-[#7a746e] italic mb-4">Midtheltra · The Third Realm of Hibrytheia</p>
 

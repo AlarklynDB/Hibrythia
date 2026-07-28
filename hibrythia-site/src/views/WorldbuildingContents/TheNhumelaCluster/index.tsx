@@ -45,7 +45,7 @@ export default function TheNhumelaCluster() {
       </div>
 
       {/* Hero */}
-      <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">V. The Current World of Hibryds</p>
+      <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">VI. The Current World of Hibryds</p>
       <h1 className="font-display text-3xl md:text-4xl text-[#f2ebeb] mb-4">The Nhumela Cluster</h1>
       <p className="font-body text-sm text-[#7a746e] italic mb-2">Home Solar System</p>
       <p className="font-body text-base text-[#7a746e] leading-relaxed mb-10 max-w-[600px]">
