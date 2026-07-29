@@ -142,7 +142,7 @@ export default function HetraSEAPSpaceProgram() {
           This fun space activity was implemented in the year 2150 AD. It uses Lhureanium as a source of renewable fuel and energy. This fuel is a special kind bio-chemical that is used for Hyperspace Travels and for these kinds of space tours. Lhureanium uses a mix of hexicules, lunar energy, plasma, and Vesselyte Crystals.
         </p>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          Hetranians and also Schavelia-Hetrans will need to make a reservation to book a ticket which costs <strong>75.85 Hetrix Dollars</strong>. Schavelia-Hetrans will need to emigrate back to Hetra for this tour, since Planet Schavel doesn&apos;t have nearly as enough resources as Hetra. Don&apos;t worry, people make it in time for this. There&apos;s a huge window before the liftoff.
+          Hetranians and also Schavelia-Hetrans will need to make a reservation to book a ticket which costs <strong>Ħ75.85 Hetrix Dollars</strong>. Schavelia-Hetrans will need to emigrate back to Hetra for this tour, since Planet Schavel doesn&apos;t have nearly as enough resources as Hetra. Don&apos;t worry, people make it in time for this. There&apos;s a huge window before the liftoff.
         </p>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
           A Spaceship is prepared in The Gulf of New Rynels, where a massive platform floats on the water. This ship is called the <strong>United Hetral Shuttle Spaceship</strong>, or the <strong>UHSS</strong>. It will take you on a massive tour of the Nhumela Cluster using a stable drive. There are multiple checkpoints within the solar system which allows the ship to halt. There is a sundeck on this ship that you can view the open space from within.
@@ -274,7 +274,137 @@ export default function HetraSEAPSpaceProgram() {
             </tbody>
           </table>
         </div>
-      </div>        {/* Bottom Nav */}
+      </div>
+
+      {/* The H.O.S.S */}
+      <div className="space-y-8">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">The H.O.S.S &mdash; Hetranian Orbital Space Station</h2>
+
+        <div className="space-y-4">
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The H.O.S.S is Hetra&apos;s first Orbital Space Station. It isn&apos;t just a station, it is a piece of technology that is a part of HetraSEAP&apos;s program, along with brands and products at an infrastructure level of production. The H.O.S.S is backed by <strong>Philstra Rhys</strong> himself (who so funded HetraSEAP) which costed nearly <strong>Ħ10.35 trillion hetrix</strong> to build.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            All station parts are made one by one per each unit down on Hetra, and is later deployed using the UHSS.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            Each of the parts of H.O.S.S are deployed piece by piece to Hetra&apos;s orbit by the UHSS (United Hetral Shuttle Spaceship) when it&apos;s not being used for tourism, which is then assembled in orbit.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-3">H.O.S.S Station Tech Specs</h4>
+          <ul className="list-disc list-inside space-y-2 pl-2">
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed">105,550 eXpH based on Hexicule Energy. Renewable by Solar, Lunar, and Stellar energy.</li>
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed">Carries up to 23 TB of storage and information which could be relayed back to HetraSEAP.</li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-3">What it&apos;s made out of</h4>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            Made out of Hardwood Lucid Metal, Nitinol infused Copper Tungsten for heat reformation and damage reformation. This is an Artificial metal alloy which is called <strong>Ossitanium-24</strong>. It sits on the Periodic Table in Hetra&apos;s custom periodic elements. Ossitanium-24 can be shortened to <strong>Oss24</strong>. Non-corrosive and is super resistant to the cold.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The H.O.S.S orbits around Planet Hetra, matching the planet&apos;s rotational speed. This piece of technology serves as a station deployment for space satellites and other technological innovation. Since the H.O.S.S orbits the planet matching its speed, it uses the same time system depending on the timezone it orbits (lands in).
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            Communication between HetraSEAP and the space station is super fast because the networking system within uses an enhanced network of Wifi-7 known as <strong>HOSSNet-8</strong>.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The space station is bigger than Earth&apos;s ISS, roughly around six football fields in size. It has a platform so flat and around, most rocketry and tech are made on the H.O.S.S without having to go back to New Rynels. This platform is called the <strong>HOSS Innovation Deck</strong>.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong>H.O.S.S Dimension Specs</strong></p>
+          <ul className="list-disc list-inside space-y-2 pl-2">
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed">630 Meters Long</li>
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed">408 Meters Wide</li>
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed">560 Meters Tall</li>
+          </ul>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            HOSS Innovation Deck: it runs at exactly 292 ft x 167 ft which makes it a perfect platform to engineer and invent spacecraft and more.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            Of course, it runs on Hexicule Power, combined with solar, lunar, and stellar energy. The hexicules can be seen on both the top and bottom of the HOSS and they shine a very nice color in space. It would sometimes leave a trail of pink light near Hetra&apos;s atmosphere like a ring of light which slowly fades away when the light dissolves. The trail of pink light is visible down on the planet&apos;s surface and is very faint.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong>HOSS Satellites</strong></p>
+          <ul className="list-disc list-inside space-y-2 pl-2">
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed">CalderiaX</li>
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed">GristelZ1A</li>
+          </ul>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The H.O.S.S serves not just as a laboratory but also has its own rockets that help ship materials back and forth from New Rynels on Hetra so that all space technology can be made. There are currently <strong>five astronauts</strong> and <strong>ten scientists</strong> living aboard the station.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-3">Natural Gravity on the H.O.S.S</h4>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The Station itself has natural gravity since it orbits the planet matching the rotational speed. The station itself has a type of technology called <strong>MagGrav</strong>, a piece of Magnetic Hexicule Suspension that is synced (or linked) to Planet Hetra&apos;s orbital field and spin. Since most of Planet Hetra has raw hexicule energy near its core, the condensation of that energy is pure and stable.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The MagGrav detects that kind of energy and locks it in as it own gravity system for the station itself. It will feel like you&apos;re walking on Planet Hetra despite being on the station. The north and south magnetic fields from the planet are also attached to the MagGrav which puts it in a stable position in a stable orbital plane.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The MagGrav can be turned on and off depending on situations that require extensive study, and can also be simulated to different levels.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-3">Artificial Atmosphere on the H.O.S.S</h4>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            Among the H.O.S.S&apos;s other technology, scientists have engineered Artificial Atmosphere by pulling the planets&apos; natural elements of carbon, hydrogen, oxygen and nitrogen into the station by creating a &ldquo;bubble like wrap&rdquo; that coats around the whole station. This bubble like atmosphere is called <strong>HOSS Airfield</strong>.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-3">HOSS Laser Array</h4>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The HOSS Laser Array is pre-built into the station and can be rotated 360 in all directions. This helps with space exploration and deep space identification. It looks like a giant camera&apos;s lens and has up to 100 different kinds of mirrors and glass which makes it super powerful. The laser array doesn&apos;t shoot out normal red infrared light. It shoots out <strong>Hetranium-Hexicule light energy</strong>, a pink like infrared light that is not harmful (since it&apos;s powered by a Hetranium Hexicule Core).
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            The laser array has been used multiple times, detecting strange space phenomena and sending information of it back to HetraSEAP. The data down in Hetra is then processed into viable information for HetraSEAP&apos;s Space Museum, HetraSEAM.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h4 className="font-display text-base text-[#f2ebeb] mb-3">The H.O.S.S Autopilot Assistant</h4>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            H.O.S.S doesn&apos;t run on human pilots. It has it&apos;s own AI agent named <strong>Agent Hoss</strong>, which helps steer and maintain the station&apos;s speed and stability. Agent Hoss is different from Giatus since it&apos;s main directives are different than it&apos;s surface counterpart. Agent Hoss has a very distinct personality: dad jokes, space facts, and a very gentleman tone.
+          </p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong>Agent Hoss Directives</strong></p>
+          <ul className="list-disc list-inside space-y-2 pl-2">
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed">Help maintain the station&apos;s control and stability</li>
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed">Configure the MagGrav and the Airfield</li>
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed">Enhance, Repair and Fix certain tech issues. It guides the scientists on board and tells them how to prevent further issues.</li>
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed">Inject smaller agents into different satellites or probes with clearer, distinct directives.</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Each Planet has its own H.O.S.S */}
+      <div className="space-y-4">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Each Planet has its own H.O.S.S</h2>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          Planet Hetra&apos;s H.O.S.S is the main station out in The Nhumela Cluster. It&apos;s also the main station for Planet Schavel that sits vertically in the Goldilocks zone. And each planet gets its own H.O.S.S Station. These stations also serve as checkpoints for the Space Tour.
+        </p>
+        <ul className="list-disc list-inside space-y-2 pl-2">
+          <li className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong>H.O.S.S Netryl</strong> &mdash; Orbitally locked to the cold side. The intense heat from the scorching side will fry and melt all technological devices, including the Airfield.</li>
+          <li className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong>H.O.S.S Ackpeck</strong> &mdash; Planet Ackpeck gets its own H.O.S.S Station. It sits close to the planet in orbit.</li>
+          <li className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong>H.O.S.S Quilk</strong> &mdash; Also has its own H.O.S.S Station. It rotates along the vertical orbit of the planet.</li>
+          <li className="font-body text-base text-[#c8c2ba] leading-relaxed"><strong>H.O.S.S Ackteq</strong> &mdash; Another H.O.S.S Station for the last planet of the solar system.</li>
+        </ul>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          Each of these H.O.S.S Stations help deploy missions to each of the planets surface to study. Although these four planets are uninhabitable, all data and information are relayed back to H.O.S.S Hetra.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          Planet Hetra&apos;s HOSS isn&apos;t just a space station. It&apos;s a station where scientists and astrophysicist nerds come together to explore the great unknown.
+        </p>
+      </div>
+
+        {/* Bottom Nav */}
         {/* Bottom Nav */}
         <div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
           <Link to="/world/locales" className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200 max-w-[45%]">
