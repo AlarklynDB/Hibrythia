@@ -58,6 +58,24 @@ export default function OurPlanetHetra() {
             Planet Hetra is a lot more bigger than Earth, but has similar density, gravity, and mass. Hetra is 3% bigger in terms of numbers, but almost works the same as Earth. The specifications here are calculated from the citizens of Hetra, primarily scientists from the City of Eldreule (on Lynneria).
           </p>
 
+          <p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] mb-3">Kardashev Scale Type</p>
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-4">
+            Planet Hetra sits at a <strong className="text-[#f2ebeb]">Type 1.5 Civilization</strong> because it is able to harness magic, energy from Hexicules, and has a net worth in the octillions in terms of Hetrix (money) and Infrastructure, which includes:
+          </p>
+          <ul className="space-y-2 pl-4 mb-8">
+            {[
+              "It's own Space Program",
+              'Economic Status',
+              'The Richest Man on Hetra',
+            ].map((item) => (
+              <li key={item} className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2">
+                <span className="text-[#c9a84c] shrink-0">–</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <h3 className="font-display text-base text-[#f2ebeb] mb-4">Planetary Specifications</h3>
           <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5 space-y-2 mb-6">
             <p className="font-body text-xs text-[#4a4844] mb-4">Almost all of Hetra's water is contained in its global ocean, covering 82.8% of global crust.</p>
             {[
