@@ -60,19 +60,21 @@ export default function OurPlanetHetra() {
 
           <p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] mb-3">Kardashev Scale Type</p>
           <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-4">
-            Planet Hetra sits at a <strong className="text-[#f2ebeb]">Type 1.5 Civilization</strong> because it is able to harness magic, energy from Hexicules, and has a net worth in the octillions in terms of Hetrix (money) and Infrastructure, which includes:
+            Planet Hetra sits at a <strong className="text-[#f2ebeb]">Type 1.5 Civilization</strong> because it is able to harness <Link to="/world/databases/MagicDatabase" className="text-[#c9a84c] hover:underline">magic</Link>, energy from <Link to="/world/databases/TechnologyTransitSystems" className="text-[#c9a84c] hover:underline">Hexicules</Link>, and has a net worth in the <Link to="/world/databases/EconomyOfPlanetHetra" className="text-[#c9a84c] hover:underline">octillions</Link> in terms of Hetrix (money) and Infrastructure, which includes:
           </p>
           <ul className="space-y-2 pl-4 mb-8">
-            {[
-              "It's own Space Program",
-              'Economic Status',
-              'The Richest Man on Hetra',
-            ].map((item) => (
-              <li key={item} className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2">
-                <span className="text-[#c9a84c] shrink-0">–</span>
-                <span>{item}</span>
-              </li>
-            ))}
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2">
+              <span className="text-[#c9a84c] shrink-0">–</span>
+              <span>It&apos;s own <Link to="/world/locales/HetraSEAPSpaceProgram" className="text-[#c9a84c] hover:underline">Space Program</Link></span>
+            </li>
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2">
+              <span className="text-[#c9a84c] shrink-0">–</span>
+              <span>Economic Status</span>
+            </li>
+            <li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2">
+              <span className="text-[#c9a84c] shrink-0">–</span>
+              <span>The <Link to="/characters/PhilstraRhys" className="text-[#c9a84c] hover:underline">Richest Man</Link> on Hetra</span>
+            </li>
           </ul>
 
           <h3 className="font-display text-base text-[#f2ebeb] mb-4">Planetary Specifications</h3>
