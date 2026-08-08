@@ -74,6 +74,14 @@ export default function Home() {
           >
             Check out our Bookshelf
           </Link>
+          <a
+            href="https://www.alarkiusej.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-body text-xs tracking-widest uppercase px-4 py-2 bg-[#c9a84c] text-[#141210] font-semibold rounded-sm hover:bg-[#d8b95e] transition-all duration-[180ms]"
+          >
+            Buy The Books
+          </a>
 
         </div>
         <p className="font-body text-xs text-[#4a4844] mt-5 leading-relaxed">
