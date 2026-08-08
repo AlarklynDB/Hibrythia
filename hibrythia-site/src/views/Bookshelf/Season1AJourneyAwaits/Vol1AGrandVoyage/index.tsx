@@ -91,14 +91,24 @@ export default function Vol1AGrandVoyage() {
         </div>
 
         {/* CTA */}
-        <a
-          href="https://alarkiusej.com/bn-hibrythian-saga"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-[#c9a84c]/60 bg-[#1a1714] text-[#c9a84c] font-display text-sm hover:bg-[#c9a84c]/10 hover:border-[#c9a84c] transition-all duration-200"
-        >
-          Now Available on B&amp;N &#8599;
-        </a>
+        <div className="flex flex-col items-start gap-3">
+          <a
+            href="https://alarkiusej.com/bn-hibrythian-saga"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-[#c9a84c]/60 bg-[#1a1714] text-[#c9a84c] font-display text-sm hover:bg-[#c9a84c]/10 hover:border-[#c9a84c] transition-all duration-200"
+          >
+            Now Available on B&amp;N &#8599;
+          </a>
+          <a
+            href="https://www.alarkiusej.com/#books"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-sm bg-[#c9a84c] text-[#141210] font-display text-sm font-semibold hover:bg-[#d8b95e] transition-all duration-200"
+          >
+            Buy Exclusively on AlarkiusEJ.com &#8599;
+          </a>
+        </div>
       </div>
 
       {/* Divider */}
