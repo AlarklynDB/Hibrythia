@@ -26,6 +26,12 @@ const MEDIA_CARDS = [
     desc: "Explore Planet Schavel and its unique biomes.",
     available: false,
   },
+  {
+    to: "/multimedia/InteractiveBook",
+    label: "Interactive Book",
+    desc: "A flip-through, page-by-page digital experience of The Hibrythian Saga.",
+    available: false,
+  },
 ];
 
 const MUSIC = [
