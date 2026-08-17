@@ -30,7 +30,7 @@ const MEDIA_CARDS = [
     to: "/multimedia/InteractiveBook",
     label: "Interactive Book",
     desc: "A flip-through, page-by-page digital experience of The Hibrythian Saga.",
-    available: false,
+    available: true,
   },
 ];
 
