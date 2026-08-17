@@ -8,12 +8,16 @@ import {
   type ViewName,
 } from "./bookViewer";
 
-import paperbackFront from "./textures/paperback-front.jpg";
-import paperbackSpine from "./textures/paperback-spine.jpg";
-import paperbackBack from "./textures/paperback-back.jpg";
-import hardcoverFront from "./textures/hardcover-front.jpg";
-import hardcoverSpine from "./textures/hardcover-spine.jpg";
-import hardcoverBack from "./textures/hardcover-back.jpg";
+// Astro intercepts plain .jpg imports through its image-asset pipeline and
+// resolves them to an { src, width, height } object instead of a raw URL
+// string (which is what Three.js's TextureLoader needs). Appending `?url`
+// forces Vite to hand back the plain hashed URL string instead.
+import paperbackFront from "./textures/paperback-front.jpg?url";
+import paperbackSpine from "./textures/paperback-spine.jpg?url";
+import paperbackBack from "./textures/paperback-back.jpg?url";
+import hardcoverFront from "./textures/hardcover-front.jpg?url";
+import hardcoverSpine from "./textures/hardcover-spine.jpg?url";
+import hardcoverBack from "./textures/hardcover-back.jpg?url";
 
 const TEXTURES: BookViewerTextures = {
   paperback: { front: paperbackFront, spine: paperbackSpine, back: paperbackBack },
