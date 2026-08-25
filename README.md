@@ -6,6 +6,13 @@ Half of the Projects here are for AlarkiusEJ's Worldbulding Content, which is an
 This REPO is just for AlarkiusEJ. 
 No one shall edit, add, or create content in this repository.
 
+---
+**All Creative Control Direction ie:**
+- Writing, Art, Lore, Worldbuilding and Multimedia
+
+is made by Me, Myself and I. Claude Code simply helps with the logic and structure.
+
+---
 All Worldbuilding Content for:
 - The Hibrythian Saga
 - AlarkiusEJ's Portfolio
