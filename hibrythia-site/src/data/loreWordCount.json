@@ -1,16 +1,16 @@
 {
-  "loreWords": 100326,
+  "loreWords": 100377,
   "lorePages": 98,
-  "loreSpecialCharacterCount": 19842,
+  "loreSpecialCharacterCount": 19851,
   "vol0Words": 1764,
   "vol0Pages": 8,
   "vol0SpecialCharacterCount": 525,
   "ministoryWords": 13568,
   "ministoryPages": 7,
   "ministorySpecialCharacterCount": 3604,
-  "overallWords": 115658,
+  "overallWords": 115709,
   "overallPages": 113,
-  "overallSpecialCharacterCount": 23971,
+  "overallSpecialCharacterCount": 23980,
   "excluded": {
     "Multimedia": 7,
     "Bookshelf": 31,
@@ -18,5 +18,5 @@
     "total": 40
   },
   "allPagesCount": 157,
-  "generatedAt": "2026-08-17T10:20:39.140Z"
+  "generatedAt": "2026-08-27T10:45:55.970Z"
 }

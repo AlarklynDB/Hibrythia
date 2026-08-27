@@ -254,6 +254,16 @@ export default function RaeyaFlutters() {
               <p className="font-body text-sm text-[#c8c2ba] leading-relaxed">{desc}</p>
             </div>
           ))}
+          <div className="border border-[#2e2b26] rounded-xl bg-[#131210] p-4 space-y-1 sm:col-span-2">
+            <p className="font-display text-sm text-[#f2ebeb]">&#8642; Hyper Vocals</p>
+            <p className="font-body text-sm text-[#c8c2ba] leading-relaxed">
+              As a Sylph, all sylphs have a special vocal ability called Multi-Vocal Harmony. As stated in{' '}
+              <Link to="/world/meta/TheSigilOfHibrythia/sylphrelm" className="text-[#c9a84c] hover:underline">
+                The Sylphrelm
+              </Link>
+              , sylphs can mimic sounds and frequencies, split their vocals into tracks, and can sing orchestras using one voice in different tracks. This can also be weaponized against foes who uses their voice as weapons, or disrupt people with enhanced hearing abilities. It won&apos;t hurt her enhanced hearing.
+            </p>
+          </div>
         </div>
       </section>
 
