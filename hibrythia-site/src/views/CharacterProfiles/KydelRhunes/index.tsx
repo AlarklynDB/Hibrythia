@@ -371,7 +371,7 @@ export default function KydelRhunes() {
 
           <PowerToggle title="Limited Powers (Beast Form Only)" color="#7a746e">
             <p className="font-body text-sm text-[#c8c2ba] leading-relaxed">Most of these powers are limited to Kydel&apos;s Beast form.</p>
-            <SubPower name="Telepathic Voice Projection" desc="This power allows Kydel to project his voice even without moving his mouth. Kydel has found this ability useful when he's in his beast form. However, this power does not carry over to his human form." />
+            <SubPower name="Telepathic Voice Projection" desc="This power allows Kydel to project his voice even without moving his mouth. Kydel has found this ability useful when he's in his beast form. However, this power does not carry over to his human form. His voice can also be a deadly instrument and can produce sounds at various levels. He can override this to his human form if needed." />
             <SubPower name="Regenerative Healing" desc="This power is an active ability that is only limited to his beast form. Kydel can regenerate his bruises, wounds, and injuries at excessive speeds. However, after Kydel got his human form, this power doesn't carry over." />
           </PowerToggle>
 
