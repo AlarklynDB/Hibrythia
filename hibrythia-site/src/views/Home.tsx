@@ -23,7 +23,7 @@ export default function Home() {
           Official Website for "Hibryds — A Grand Voyage" and many more Books in this Series!
         </p>
         <p className="font-body text-xs text-[#c9a84c]/60">
-          © All Rights Reserved | Alarkius Elvya Jay / AlarkiusEJ |{' '}
+          © {new Date().getFullYear()} All Rights Reserved | Alarkius Elvya Jay / AlarkiusEJ |{' '}
           <a
             href="https://www.alarkiusej.com/"
             target="_blank"
@@ -384,4 +384,3 @@ export default function Home() {
     </div>
   );
 }
-
