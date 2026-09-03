@@ -46,6 +46,10 @@ export default defineConfig({
       // Network-first / passthrough behaviour preserved.
       VitePWA({
         registerType: 'autoUpdate',
+        // BaseLayout.astro links <link rel="manifest" href="/manifest.json">
+        // — vite-plugin-pwa defaults to manifest.webmanifest, which left the
+        // <link> pointing at a 404 and the manifest never loading at all.
+        manifestFilename: 'manifest.json',
         includeAssets: ['favicon.ico', 'icon-192.png', 'icon-512.png'],
         manifest: {
           name: 'The Hibrythian Saga',
