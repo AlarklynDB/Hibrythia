@@ -101,6 +101,14 @@ export default function Vol1AGrandVoyage() {
             Now Available on B&amp;N &#8599;
           </a>
           <a
+            href="https://play.google.com/store/books/details?id=1rICEgAAQBAJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-[#c9a84c]/60 bg-[#1a1714] text-[#c9a84c] font-display text-sm hover:bg-[#c9a84c]/10 hover:border-[#c9a84c] transition-all duration-200"
+          >
+            Ebook Version &#8599;
+          </a>
+          <a
             href="https://www.alarkiusej.com/#books"
             target="_blank"
             rel="noopener noreferrer"
