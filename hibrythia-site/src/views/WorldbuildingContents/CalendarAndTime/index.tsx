@@ -193,7 +193,7 @@ export default function CalendarAndTime() {
         <h3 className="font-display text-sm text-[#f2ebeb] mb-4">Eras Within Planet Hetra</h3>
         <div className="space-y-3">
           {[
-            { era: "The Greungerian Era (Ancient Era)", date: "10,000 OD – 500 OD", desc: "This was when the continents were still a massive landmass before the split. A meteor about the size of Greenland came from space in 501 OD and split the continents. It took nearly 200 years for the continents to settle into the current shape Modern Hetra stands on. They didn't drift into place. They were violently displaced and settled due to traces of hexicules within the lower mantles of crust. It became hyper reactive and cooled down significantly.  It wasn’t as dangerous as it was compared to hexicule storms because The 5 Giants lived in this area and helped rebuild ancient civilization—even after the continental drift.." },
+            { era: "The Greungerian Era (Ancient Era)", date: "10,000 OD – 400 OD", desc: "This was when the continents were still a massive landmass before the split. A meteor about the size of Greenland came from space in 400 OD and split the continents. This was called the Great Continental Drift of 400 OD. It took nearly 100 years for the continents to settle into the current shape Modern Hetra stands on. They didn't drift into place. They were violently displaced and settled due to traces of hexicules within the lower mantles of crust. It became hyper reactive and cooled down significantly. It wasn't as dangerous as it was compared to hexicule storms because The 5 Giants lived in this area and helped rebuild ancient civilization—even after the continental drift.", quote: "In Hibryds I - A Grand Voyage, EP 0 - Before Time: \"The Rogue Clone and The Demon\"", quoteDesc: "Parts of the land of Greungeria had been carved out by Zohl's hand to float in the sky, which he calls Hetrania. Pink like crystals called Hexicules help it stay afloat in the air. This was also when the first Hibryd appeared. This happened in 444 OD—a pivotal plot for Hibryds I." },
             { era: "The Medieval Era", date: "300 OD – 1 AD", desc: "Started in 300 OD and ended in 1 AD before the implementation of The Hetranian Calendar." },
             { era: "The Steampunk Magic Era", date: "3 AD – 1500 AD", desc: "Steam Technology was the first innovation alongside Magic Abilities. This introduced the first ten concepts of steam engines and the discovery of thermodynamics." },
             { era: "The Discovery of Hexicules", date: "1501 AD", desc: "It puzzled the scientists of the time about what it is, why it is, and how it functions. It took 64 years to understand the science behind this strange crystal. Scientists from Lynneria and Rynels took extra study precautions, which includes research and experimentations." },
@@ -206,6 +206,12 @@ export default function CalendarAndTime() {
                 <span className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]">{item.date}</span>
               </div>
               <p className="font-body text-base text-[#c8c2ba]">{item.desc}</p>
+              {item.quote && (
+                <>
+                  <p className="font-display text-sm text-[#c9a84c] mt-3">{item.quote}</p>
+                  <p className="font-body text-base text-[#c8c2ba] mt-1">{item.quoteDesc}</p>
+                </>
+              )}
             </div>
           ))}
         </div>
