@@ -43,8 +43,14 @@ export default function TheSkyContinentOfHetrania() {
       {/* Lifted into the Sky */}
       <div className="space-y-4">
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Lifted into the Sky</h2>
+        <p className="font-display text-sm text-[#c9a84c]">
+          In Hibryds I - A Grand Voyage, EP 0 - Before Time: &ldquo;The Rogue Clone and The Demon&rdquo;
+        </p>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          It was <Link to="/characters/ZohlCelestreule" className="text-[#f2ebeb] font-semibold hover:underline">Zohl</Link>, the Celestriax Spirit and creator and protector of the Nhumela Cluster, who made the decision to raise Hetrania off the surface of Hetra entirely. The reasoning was not without urgency. A lesser demon witch named <Link to="/characters/QueenRachnaea" className="text-[#c9a84c] hover:underline">Rachnaea</Link> had appeared on the neighboring continent of Varleqe, leeching power from one of the <Link to="/characters/TheSpiritWardens" className="text-[#c9a84c] hover:underline">Spirit Wardens</Link> and growing stronger with every passing hour. Since Rachnaea was not yet capable of flight, lifting the land out of her reach was the most direct way to protect the continent and all the creatures that called it home.
+          Parts of the land of Greungeria had been carved out by <Link to="/characters/ZohlCelestreule" className="text-[#f2ebeb] font-semibold hover:underline">Zohl</Link>&apos;s hand so that it can float in the sky. He calls this sky continent Hetrania. Pink like crystals called Hexicules help it stay afloat in the air. This was also when the first Hibryd appeared. This happened in 444 OD.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          The reasoning was not without urgency. A lesser demon witch named <Link to="/characters/QueenRachnaea" className="text-[#c9a84c] hover:underline">Rachnaea</Link> had appeared on the neighboring continent of Varleqe, leeching power from one of the <Link to="/characters/TheSpiritWardens" className="text-[#c9a84c] hover:underline">Spirit Wardens</Link> and growing stronger with every passing hour. Since Rachnaea was not yet capable of flight, lifting the land out of her reach was the most direct way to protect the continent and all the creatures that called it home.
         </p>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
           Zohl floated above the land and pointed his hands downward, using his powers to carve the landmass free from the surface of the sea below it. The ocean rushed in to fill the massive cavity left behind as the continent rose. Once the land was stable in the sky, he created enormous clusters of Hexicule Crystals beneath the island. These pink, glowing crystals gouged out from underneath in massive formations, alive with energy and divine power. They are what keep Hetrania floating to this day, and they also serve as a regenerative force for the continent&apos;s ecosystem. If the ground gets damaged, the Hexicules work to repair it over time.
