@@ -44,10 +44,10 @@ const dayEvents = [
 const timezones = [
   { continent: "Eulerich",  ucc: "UCC +10 / +13", note: "Divided by two countries: The Eulan Kingdom (UCC +13) and The Oelen Kingdom (UCC +10)." },
   { continent: "Norrane",   ucc: "UCC +6",         note: "A Green Continent. Climate is very moderate — not too cold and not too hot." },
-  { continent: "Rynel",     ucc: "UCC ±0",         note: "Splits into three zones: ±0, +1, & +2. The Oakgnar Grand Tree sits in the ±0 zone — the first landmark for early navigation, visible from Lynneria, Hetrania, and Norrane." },
+  { continent: "Rynel",     ucc: "UCC ±0",         note: "Splits into three zones: ±0, +2, & +3. The Oakgnar Grand Tree sits in the ±0 zone — the first landmark for early navigation, visible from Lynneria, Hetrania, and Norrane." },
   { continent: "Hetrania",  ucc: "UCC -6",         note: "The Sky Continent of Hetrania." },
-  { continent: "Lynneria",  ucc: "UCC -7",         note: "" },
-  { continent: "Varleqe",   ucc: "UCC -8 to -12",  note: "A huge supercontinent split into four different zones." },
+  { continent: "Lynneria",  ucc: "UCC -6",         note: "" },
+  { continent: "Varleqe",   ucc: "UCC -7, -8, -9, -11 & -13", note: "A huge supercontinent that is split into five different zones. It goes from UCC -7 to UCC -13." },
 ];
 
 export default function CalendarAndTime() {
@@ -380,28 +380,40 @@ export default function CalendarAndTime() {
           <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ UCC Timezones with Night Visual — Image Placeholder ]</p>
         </div>
 
-        {/* Two Days Ahead */}
+        {/* Two Calendar Days at Once */}
         <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-6 mb-4">
-          <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Hetra is TWO Days Ahead</h3>
+          <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Hetra Can Have Two Calendar Days at Once</h3>
           <p className="font-body text-sm text-[#c8c2ba] mb-3">
-            Unlike Earth which has a "one day" ahead format, Planet Hetra is ahead by <span className="text-[#f2ebeb] font-semibold">two days</span> due to its larger circumference and wider distribution of time zones. So if today is Hynsday in one region, some places might be experiencing Iyonsday or even Bhuseday.
+            At the same moment, different regions of Planet Hetra may show <span className="text-[#f2ebeb] font-semibold">two neighboring calendar days</span>. One region may be on Hynsday while another is still on Sethraday or has already reached Iyonsday.
           </p>
           <p className="font-body text-sm text-[#c8c2ba] mb-4">
-            Planet Hetra's massive size (3% larger than Earth) combined with its 32-hour day cycle creates a unique temporal distribution across its surface. With the UCC system spanning from <span className="text-[#f2ebeb] font-semibold">UCC +12 to UCC -12</span>, there's a <span className="text-[#f2ebeb] font-semibold">24-hour differential</span> between the furthest time zones. Since a full day is 32 hours, and the time zone spread covers 24 hours of difference, this means:
+            This does <span className="text-[#f2ebeb] font-semibold">not</span> mean one region is two full days ahead. It means some regions can be one calendar day apart because their local clocks cross into a new day at different times.
           </p>
-          <div className="space-y-1 pl-4 border-l border-[#c9a84c]/30">
-            <p className="font-body text-base text-[#c8c2ba]">When it's <span className="text-[#f2ebeb]">Hynsday 08:00 AM</span> in Rynel (UCC ±0)</p>
-            <p className="font-body text-base text-[#c8c2ba]">It could be <span className="text-[#f2ebeb]">Iyonsday 20:00 PM</span> in Eulan Kingdom (UCC +12)</p>
-            <p className="font-body text-base text-[#c8c2ba]">And <span className="text-[#f2ebeb]">Sethraday 16:00 PM</span> in western Varleqe (UCC -12)</p>
+          <h4 className="font-display text-base text-[#f2ebeb] mb-2">How Does This Work?</h4>
+          <p className="font-body text-sm text-[#c8c2ba] mb-3">
+            The Universal Celestial Clock spans from <span className="text-[#f2ebeb] font-semibold">UCC +13</span> in the Eulan Kingdom to <span className="text-[#f2ebeb] font-semibold">UCC -13</span> in western Varleqe. This creates a maximum difference of <span className="text-[#f2ebeb] font-semibold">26 hours</span>.
+          </p>
+          <p className="font-body text-sm text-[#c8c2ba] mb-4">
+            A complete Hetranian day lasts <span className="text-[#f2ebeb] font-semibold">32 hours</span>. Since 26 hours is shorter than one full Hetranian day, only two neighboring calendar days can exist at the same moment—not three.
+          </p>
+          <p className="font-body text-sm text-[#c8c2ba] mb-2">For example, at the same moment:</p>
+          <div className="space-y-1 pl-4 border-l border-[#c9a84c]/30 mb-4">
+            <p className="font-body text-base text-[#c8c2ba]"><span className="text-[#f2ebeb]">Rynel (UCC ±0):</span> Hynsday 08:00</p>
+            <p className="font-body text-base text-[#c8c2ba]"><span className="text-[#f2ebeb]">Eulan Kingdom (UCC +13):</span> Hynsday 21:00</p>
+            <p className="font-body text-base text-[#c8c2ba]"><span className="text-[#f2ebeb]">Western Varleqe (UCC -13):</span> Sethraday 27:00</p>
           </div>
+          <p className="font-body text-sm text-[#c8c2ba]">
+            Eulan and Rynel are already on Hynsday, while western Varleqe is still finishing Sethraday.
+          </p>
         </div>
 
         {/* Daily Life Implications */}
         <div className="space-y-3">
           {[
-            { title: "Communication & Scheduling", desc: "Inter-continental communication requires careful attention to both time zones AND days. Business meetings, family calls, and global events must account for not just hour differences, but potentially being on different days entirely." },
-            { title: "Travel & Day Lag", desc: "Travelers crossing multiple continents experience 'day lag' in addition to traditional jet lag. Someone traveling from Varleqe (UCC -12) to Eulerich (UCC +12) could literally 'lose' or 'gain' entire days depending on their direction of travel." },
-            { title: "Cultural Celebrations", desc: "Holidays and festivals are celebrated at different times across the world. A global New Year celebration in the month of Viviambel might see western Varleqe ringing in the new year a full two days after Eulerich already has." },
+            { title: "Communication & Scheduling", desc: "Intercontinental communication requires people to state the local time, calendar day, and UCC zone. Two people speaking at the same moment may see different days on their calendars." },
+            { title: "Travel & Jet Lag", desc: "Traveling between UCC -13 and UCC +13 changes the local clock by as much as 26 hours. Travelers do not physically lose or gain time, but their local date may move forward or backward by one day." },
+            { title: "Cultural Celebrations", desc: "Holidays begin at different moments around the world. The Eulan Kingdom at UCC +13 reaches a new calendar day 26 hours before western Varleqe at UCC -13." },
+            { title: "The Two-Day Window", desc: "At certain moments, two neighboring calendar days exist across Hetra at once. This is called the Two-Day Window and is taught as part of basic UCC literacy." },
           ].map((item, i) => (
             <div key={i} className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-4">
               <h4 className="font-display text-base text-[#f2ebeb] mb-2">{item.title}</h4>
@@ -419,7 +431,7 @@ export default function CalendarAndTime() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Conversations</p>
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="conversations">Conversations</h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-6">
-          Here are some examples of how the Two-Day difference affects everyday communication across Planet Hetra:
+          Here are some examples of how the Two-Day Window affects communication across Planet Hetra:
         </p>
 
         {/* Example 1 */}
@@ -427,24 +439,24 @@ export default function CalendarAndTime() {
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Example 1 — The Deadline Disaster</p>
           <div className="space-y-3 font-body text-sm">
             <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Solen (Varleqe West - UCC -12) via CrystalComm</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Hey Vael, just finishing up my part of the Guild Report — I'll have it to you by Bhuseday morning, promise!"</p>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Solen (Western Varleqe — UCC -13) via CrystalComm</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Hey Vael, I'm finishing my part of the Guild Report. It's still Iyonsday 28:07 here!"</p>
             </div>
             <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Vael (Eulan Kingdom - UCC +13)</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"...Solen. It is currently Runesday, 14:07 PM here. The Guild Master already asked where it was."</p>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Vael (Eulan Kingdom — UCC +13)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Solen, it is Bhuseday 22:07 here. The Guild Master already asked where it was."</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Solen</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"No — NO — it's still Iyonsday night here, I have time—"</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"But Bhuseday morning hasn't happened here yet—"</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Vael</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"You had time. Two days ago. I suggest you start writing very fast."</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Your clock is 26 hours behind mine. Please start writing faster."</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Solen</p>
-              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40]">"I hate this planet."</p>
+              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40">"I hate UCC math."</p>
             </div>
           </div>
         </div>
@@ -454,32 +466,24 @@ export default function CalendarAndTime() {
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Example 2 — The Romantic Miscalculation</p>
           <div className="space-y-3 font-body text-sm">
             <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Emris (Rynel - UCC +1)</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"I sent her flowers to arrive on Yhursday for our anniversary. I planned it months in advance. I am a GREAT partner."</p>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Emris (Rynel — UCC +1)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"I scheduled her flowers for Yhursday 30:00 my time. I planned everything perfectly."</p>
             </div>
             <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Friend Toran (Lynneria - UCC -7)</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Emris. Where does she live?"</p>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Friend Toran (Lynneria — UCC -6)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Where does she live?"</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Emris</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"...Norrane. UCC +6. Why?"</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Norrane. UCC +6. Why?"</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Toran</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"It is already Draxday evening in Norrane. Your flowers arrived a day late."</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Your Yhursday 30:00 was already Draxday 03:00 for her."</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Emris</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"..."</p>
-            </div>
-            <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Toran</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"How are you a cartographer and you still don't do UCC math before romantic gestures."</p>
-            </div>
-            <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Emris</p>
-              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40]">"Do not speak to me right now."</p>
+              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40">"...I am no longer accepting questions."</p>
             </div>
           </div>
         </div>
@@ -489,36 +493,28 @@ export default function CalendarAndTime() {
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Example 3 — Grandmother Doesn't Care About Time Zones</p>
           <div className="space-y-3 font-body text-sm">
             <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Neva (Western Varleqe - UCC -10)</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Grandma, you called at 03:00 AM my time—"</p>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Neva (Western Varleqe — UCC -10)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Grandma, you called at Runesday 03:00 my time—"</p>
             </div>
             <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Gran Dushe (Norrane - UCC +6)</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"It is a perfectly reasonable hour. It is Runesday morning here and the sun is already up."</p>
-            </div>
-            <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Neva</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"It is BHUSEDAY here and it is the MIDDLE OF THE NIGHT."</p>
-            </div>
-            <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Gran Dushe</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"In MY day we did not complain about time. We simply woke up."</p>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Gran Dushe (Norrane — UCC +6)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"It is Runesday 19:00 here. A perfectly reasonable hour."</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Neva</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"In your day people didn't live on opposite ends of the planet, Gran—"</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"It is the middle of the night for me."</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Gran Dushe</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Are you coming to visit or not? I made Ruehoys cake."</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"In my day, we did not complain about time. We simply woke up."</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Neva</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"...I'll be there by Sethraday."</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"In your day, people didn't live on opposite ends of the planet, Gran—"</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Gran Dushe</p>
-              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40]">"I will count from MY Sethraday, just so you know."</p>
+              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40">"Are you visiting or not? I made Ruehoys cake."</p>
             </div>
           </div>
         </div>
@@ -528,32 +524,20 @@ export default function CalendarAndTime() {
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Example 4 — Festival of Lights Scheduling</p>
           <div className="space-y-3 font-body text-sm">
             <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">City Herald Oswin (Rynel - UCC ±0) — Official CrystalBroadcast</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Citizens! The Festival of Lights begins at sundown on Draxday, Calderia 15th! All are welcome!"</p>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">City Herald Oswin (Rynel — UCC ±0) via CrystalBroadcast</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Citizens! The Festival of Lights begins at sundown on Draxday, Calderia 15th—UCC Standard time!"</p>
             </div>
             <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Merchant Calla (Varleqe East - UCC -8)</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Does that mean OUR Draxday or RYNEL's Draxday?"</p>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Merchant Calla (Eastern Varleqe — UCC -8)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"So when it begins at Draxday 24:44 in Rynel, it will be Draxday 16:44 here. Got it."</p>
             </div>
             <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Herald Oswin</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"...UCC Standard Draxday."</p>
-            </div>
-            <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Merchant Calla</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"So Yhursday here. Got it."</p>
-            </div>
-            <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Traveler Brix (Eulerich - UCC +10)</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"That's Sethraday for me. Do I just... show up early?"</p>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Traveler Brix (Eulerich — UCC +10)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"And it will already be Sethraday 02:44 for me. Do I arrive on Draxday or Sethraday?"</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Herald Oswin</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"The festival lasts three days. You will catch some of it. Probably."</p>
-            </div>
-            <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Traveler Brix</p>
-              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40]">"'Probably.' Wonderful. Love this world."</p>
+              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40">"Arrive at the converted local time. Please stop frightening the tourists."</p>
             </div>
           </div>
         </div>
@@ -563,36 +547,32 @@ export default function CalendarAndTime() {
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Example 5 — Night Shift Problems</p>
           <div className="space-y-3 font-body text-sm">
             <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Dawnwatch Officer Lenne (Hetrania - UCC -6) — Logging into the Continental Watch Network</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Iyonsday night shift, clocking in. All quiet on the sky continent."</p>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Dawnwatch Officer Lenne (Hetrania — UCC -6)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Iyonsday 28:00. Night shift clocking in. All quiet on the sky continent."</p>
             </div>
             <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Dawnwatch Officer Rethis (Eulerich - UCC +13)</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Officer Lenne, I am clocking OUT of Bhuseday morning shift. You two are overlapping by eight hours today."</p>
-            </div>
-            <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Lenne</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Wait, so right now you're finishing a shift that starts the day AFTER mine?"</p>
-            </div>
-            <div>
-              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Rethis</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Technically I have already lived through your 'tomorrow.'"</p>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Dawnwatch Officer Rethis (Eulan Kingdom — UCC +13)</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"It is Bhuseday 15:00 here. I am finishing my daytime shift."</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Lenne</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"...Is it a good day?"</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"We're speaking at the same moment, but you're already on Bhuseday?"</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Rethis</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Nothing unusual. A minor Moonbel sighting near the eastern ridge."</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Correct. Our local clocks are 19 hours apart."</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Lenne</p>
-              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Noted. I'll watch for it in my 'today' then."</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"Anything I should know about tomorrow?"</p>
             </div>
             <div>
               <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Rethis</p>
-              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40]">"Good luck. You already know how it ends."</p>
+              <p className="text-[#c8c2ba] pl-3 border-l border-[#2e2b26]">"A minor Moonbel sighting near the eastern ridge."</p>
+            </div>
+            <div>
+              <p className="text-[#7a746e] text-[10px] tracking-widest uppercase mb-1">Lenne</p>
+              <p className="text-[#c9a84c] italic pl-3 border-l border-[#c9a84c]/40">"Wonderful. Time zones come with spoilers now."</p>
             </div>
           </div>
         </div>
