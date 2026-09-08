@@ -107,6 +107,20 @@ export default function CalendarAndTime() {
           </p>
           <p className="font-body text-sm text-[#c9a84c] italic mt-3">32 hours a day, with great daylight, less night hours, but a longer year of 444 days!</p>
         </div>
+
+        {/* Time Related Pages */}
+        <p className="font-body text-[10px] tracking-widest uppercase text-[#7a746e] mt-8 mb-3">Time Related Pages</p>
+        <Link
+          to="/world/databases/CalendarAndTime/TemporalInversionOfCausality"
+          className="group flex items-center gap-4 px-5 py-5 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200"
+        >
+          <span className="text-2xl">&#8987;</span>
+          <div>
+            <p className="font-display text-base text-[#f2ebeb] group-hover:text-[#c9a84c] transition-colors">Temporal Inversion of Causality (TIoC)</p>
+            <p className="font-body text-sm text-[#7a746e] leading-relaxed mt-0.5">A metaphysical phenomenon where cause and effect become non-linear &mdash; effects may manifest before, during, or even in absence of their causes.</p>
+          </div>
+          <span className="ml-auto text-[#c9a84c] text-lg opacity-0 group-hover:opacity-100 transition-opacity">&#8594;</span>
+        </Link>
       </section>
 
       <div className="border-t border-[#2e2b26] mb-10" />
