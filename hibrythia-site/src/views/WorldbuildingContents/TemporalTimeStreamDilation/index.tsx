@@ -10,6 +10,8 @@ const hetraTimeline = [
 const comparisonTable = [
   { condition: "Without TTSD", result: "Outsider lands in the past (ATEL layer)" },
   { condition: "With TTSD", result: "Outsider lands in the present (MTEL, Year 2245 for Planet Hetra)" },
+  { condition: "Stranded in an earlier MTEL year", result: "Near-light-speed travel can carry the crew forward naturally without TTSD" },
+  { condition: "Stranded in ATEL", result: "Natural travel cannot cross Year 0 into MTEL" },
 ];
 
 const quickRef = [
@@ -18,6 +20,7 @@ const quickRef = [
   { term: "Year 0", def: "The Suppressor \u2014 boundary and conversion point between ATE and MTE" },
   { term: "TTSD", def: "Technology that converts ATE \u2192 MTE alignment for Outsiders" },
   { term: "Temporal Separation", def: "The law that keeps past (ATE) actions from affecting the present (MTE)" },
+  { term: "Bilinear Natural Time Travel", def: "Natural forward movement within ATEL or MTEL without crossing between them" },
 ];
 
 export default function TemporalTimeStreamDilation() {
@@ -80,8 +83,9 @@ export default function TemporalTimeStreamDilation() {
           {[
             "Sits at the boundary between ATE and MTE",
             "Not a date. Not a reset. An active suppressor.",
-            "Its primary function: keep ATE and MTE permanently separated",
-            "Also acts as the influx point \u2014 the conversion gate where Ancient Temporal Energy is processed into Modern Temporal Energy for TTSD use",
+            "Keeps ATE and MTE permanently separated",
+            "Natural forward travel cannot cross Year 0",
+            "Acts as the influx point where TTSD converts Ancient Temporal Energy into Modern Temporal Energy",
           ].map((item, i) => (
             <div key={i} className="flex gap-3 items-start">
               <span className="text-[#c9a84c] font-display text-sm mt-0.5">&mdash;</span>
@@ -106,6 +110,7 @@ export default function TemporalTimeStreamDilation() {
             "What Outsiders encounter without TTSD",
             "Landing on Hetra unshielded = arriving in the pre-Greungerian era",
             "Actions taken within ATE stay in ATE \u2014 no effect on the present whatsoever",
+            "A ship can move forward naturally within ATE, but it cannot pass through Year 0 into MTE",
             "The past is fully sealed and sandboxed \u2014 this is called Temporal Separation",
           ].map((item, i) => (
             <div key={i} className="flex gap-3 items-start">
@@ -122,17 +127,17 @@ export default function TemporalTimeStreamDilation() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]">Energy Layer</p>
         <h2 className="font-display text-lg text-[#f2ebeb]">Modern Temporal Energy (MTEL)</h2>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          MTEL, also known as Modern Temporal Energy Layer (or just MTE), is a natural modern energy radiating from a planet. This type of energy is only confined to the modern eras of a planet that goes through time naturally. Think of it like the future. Or any time period after Year 0.
+          MTEL, also known as the Modern Temporal Energy Layer (or MTE), is the living flow of a planet&apos;s modern time. It covers every year after Year 0.
         </p>
         <p className="font-body text-sm text-[#7a746e] mb-2">This Energy does many of the following:</p>
         <div className="border border-[#2e2b26] bg-[#0f0d0c] rounded-sm p-5 space-y-3">
           {[
-            "The living flow of Planet Hetra\u2019s time or for any other planet.",
-            "Covers Year 1 AD \u2192 Year 2245+",
-            "What all residents naturally exist within",
-            "TTSD aligns Outsiders to MTE so they land in the present",
-            "Because MTE is a continuous, active flow \u2014 movement within MTE is possible",
-            "This is how in-universe time travel functions: navigating along the MTE current to any year between Year 1 AD and 2245 for Planet Hetra.",
+            "Covers Year 1 AD \u2192 Year 2245+ on Planet Hetra",
+            "Holds the timeline where Hetra\u2019s residents naturally live",
+            "TTSD aligns Outsiders to MTE so they reach the planet\u2019s present",
+            "Travelers already inside MTE can move forward naturally without TTSD",
+            "A crew stranded in an earlier MTE year may travel near light speed, experience less time aboard their ship, and let the outside universe advance toward the future",
+            "This natural progression never crosses Year 0 because the crew remains inside MTE",
           ].map((item, i) => (
             <div key={i} className="flex gap-3 items-start">
               <span className="text-[#c9a84c] font-display text-sm mt-0.5">&mdash;</span>
@@ -155,9 +160,10 @@ export default function TemporalTimeStreamDilation() {
           <div className="border border-[#2e2b26] bg-[#0f0d0c] rounded-sm p-5 space-y-3">
             {[
               "Technology installed on ships and vessels",
-              "Reads and processes Ancient Temporal Energy through the Year 0 influx point",
-              "Converts it into Modern Temporal Energy",
-              "Result: the ship and its crew are aligned to the planet\u2019s present year (2245 or any)",
+              "Detects the Ancient Temporal Energy surrounding an approaching planet",
+              "Uses the Year 0 influx point to convert ATE alignment into MTE alignment",
+              "Places the ship and its crew in the planet\u2019s present temporal layer",
+              "It does not control natural forward time",
             ].map((item, i) => (
               <div key={i} className="flex gap-3 items-start">
                 <span className="text-[#c9a84c] font-display text-sm mt-0.5">&mdash;</span>
@@ -166,6 +172,9 @@ export default function TemporalTimeStreamDilation() {
             ))}
           </div>
         </div>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          If a crew is already inside MTE but stranded in an earlier year, they do not need TTSD to move forward. They may travel near light speed and allow the rest of the universe to age naturally around them. TTSD is only needed to change or correct their temporal layer.
+        </p>
 
         {/* Comparison table */}
         <div className="border border-[#2e2b26] rounded-sm overflow-hidden">
