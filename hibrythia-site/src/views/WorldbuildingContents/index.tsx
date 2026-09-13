@@ -54,8 +54,8 @@ const SECTIONS = [
       },
       {
         to: '/world/databases/TechnologicalBrandsOfHetra',
-        label: 'Technological Brands of Hetra',
-        description: 'Consumer tech, phone brands, and gadgets shaping everyday life on Hetra.',
+        label: 'Technological Products of Hetra',
+        description: 'Hexicule-powered phones, smartwatches, computers, and the GIATUS super computer shaping everyday life on Hetra.',
       },
     ],
   },
