@@ -99,6 +99,11 @@ const SECTIONS = [
         description: 'Climate zones, seasonal cycles, and weather phenomena across Hetra.',
       },
       {
+        to: '/world/databases/HetranianGlobalDefenseAgency',
+        label: 'The Hetranian Global Defense Agency',
+        description: 'HetraGDA — the international police task force protecting Hetra\'s populated regions, its departments, and its badges.',
+      },
+      {
         to: '/world/databases/CalendarAndTime',
         label: 'Calendar & Time — The 32-Hour System',
         description: 'The Hetranian calendar: 32-hour days, 14 months, 444 days per year.',
