@@ -5,7 +5,7 @@
 // shim's NavLink/useLocation (aliased from react-router-dom).
 // ============================================================
 import { useState, useEffect } from 'react'
-import { NavLink, Link, useLocation } from 'react-router-dom'
+import { NavLink, Link, useLocation, LocationProvider } from 'react-router-dom'
 
 const navLinks = [
   { to: '/',           label: 'Home',       end: true  },
@@ -15,14 +15,19 @@ const navLinks = [
   { to: '/multimedia', label: 'Multimedia', end: false },
 ]
 
-export default function Navbar() {
+// `currentPath` is supplied by BaseLayout.astro (the page's own path
+// prop). Seeding the router shim with it means the correct nav link
+// is active in the server HTML and on the very first client render —
+// no flash of "Home" before the real page highlights.
+export default function Navbar({ currentPath }: { currentPath?: string }) {
   const [mobileOpen, setMobileOpen] = useState(false)
-  const location = useLocation()
+  const location = useLocation(currentPath)
 
   // Close drawer on route change
   useEffect(() => { setMobileOpen(false) }, [location.pathname])
 
   return (
+    <LocationProvider pathname={currentPath}>
     <header className="sticky top-0 z-50 border-b border-[#2e2b26] bg-[#0e0d0b]/90 backdrop-blur-sm">
       <div className="max-w-[1200px] mx-auto px-5 h-12 flex items-center justify-between">
         {/* Logo */}
@@ -124,6 +129,7 @@ export default function Navbar() {
         </ul>
       </div>
     </header>
+    </LocationProvider>
   )
 }
 

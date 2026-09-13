@@ -17,7 +17,7 @@
 // 149 page files.
 // ============================================================
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, createContext, useContext } from 'react'
 import type { AnchorHTMLAttributes, ReactNode } from 'react'
 
 // ── <Link> ──────────────────────────────────────────────────
@@ -40,15 +40,19 @@ export function Link({ to, children, ...rest }: LinkProps) {
 // Returns an object shaped like react-router's location.
 //
 // Hydration note: every page is pre-rendered at build time where
-// window is undefined, so the server HTML is always generated with
-// pathname '/'. The initial CLIENT render must produce that same
-// value — if it read window.location straight away, React would see
-// a className/aria-current mismatch during hydration, and React 18
-// does not patch attribute mismatches, so the server's "Home is
-// active" classes would stay in the DOM forever. Instead we start
-// from the server-safe value on both sides and sync to the real URL
-// in an effect, which triggers a normal re-render that actually
-// writes the correct classes.
+// window is undefined, so useLocation() cannot read the real URL on
+// the server. The initial CLIENT render must produce the same value
+// the server did — React 18 does not patch className/aria-current
+// mismatches during hydration, so any disagreement leaves the
+// server's classes in the DOM forever.
+//
+// To get the right answer from the first byte (no flash), the page
+// path is passed in from BaseLayout.astro, which already knows it:
+//   <Navbar currentPath={path} client:load />
+// Navbar hands it to <LocationProvider>, and useLocation() seeds its
+// state from it. Server and client both start with that value, so
+// hydration matches AND the correct link is active immediately. The
+// effect then syncs to window.location, which is a no-op visually.
 export interface ShimLocation {
   pathname: string
   search: string
@@ -56,6 +60,13 @@ export interface ShimLocation {
 }
 
 const SERVER_LOCATION: ShimLocation = { pathname: '/', search: '', hash: '' }
+
+const LocationContext = createContext<string | null>(null)
+
+/** Provides the SSR-known pathname to every useLocation()/NavLink below it. */
+export function LocationProvider({ pathname, children }: { pathname?: string; children?: ReactNode }) {
+  return <LocationContext.Provider value={pathname ?? null}>{children}</LocationContext.Provider>
+}
 
 function getLocation(): ShimLocation {
   if (typeof window === 'undefined') return SERVER_LOCATION
@@ -66,14 +77,19 @@ function getLocation(): ShimLocation {
   }
 }
 
-export function useLocation(): ShimLocation {
-  // Always start from the server value so the hydration render matches.
-  const [loc, setLoc] = useState<ShimLocation>(SERVER_LOCATION)
+export function useLocation(initialPathname?: string): ShimLocation {
+  const contextPathname = useContext(LocationContext)
+  // Seed from the SSR-known path (argument, then context). Both server
+  // and client see the same value, so the hydration render matches.
+  const seed = initialPathname ?? contextPathname
+  const [loc, setLoc] = useState<ShimLocation>(
+    seed ? { pathname: seed, search: '', hash: '' } : SERVER_LOCATION
+  )
 
   useEffect(() => {
     function update() { setLoc(getLocation()) }
-    // Sync to the real URL once mounted (this is what fixes the
-    // stale "Home" highlight on every non-home page).
+    // Sync to the real URL once mounted (also covers pages that
+    // didn't pass a path — they correct themselves here).
     update()
     // fires on browser back/forward
     window.addEventListener('popstate', update)
