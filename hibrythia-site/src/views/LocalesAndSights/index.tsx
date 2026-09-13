@@ -62,6 +62,12 @@ const SECTIONS = [
         icon: '🏛️',
       },
       {
+        title: 'HetraGDA Headquarters',
+        desc: 'The central command facility of the Hetranian Global Defense Agency in New Rynels — nerve center of worldwide police operations and the Global Badge Network.',
+        path: '/world/locales/HetraGDA-HQ',
+        icon: '🚔',
+      },
+      {
         title: 'HetraS.E.A.P — Space Program',
         desc: 'Hetra\'s pioneering space exploration program, pushing the boundaries of what civilizations on this world can achieve.',
         path: '/world/locales/HetraSEAPSpaceProgram',

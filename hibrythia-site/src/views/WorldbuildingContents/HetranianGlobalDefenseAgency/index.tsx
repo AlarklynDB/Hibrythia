@@ -174,7 +174,7 @@ export default function HetranianGlobalDefenseAgency() {
       <section className="space-y-4">
         <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Rynel&apos;s GDA Department</h3>
         <Para>
-          The Continent of Rynel doesn&apos;t have just its own department&mdash;this is where the main headquarters building is located. It is called the HetraGDA Headquarters, or HGDA-HQ for short.
+          The Continent of Rynel doesn&apos;t have just its own department&mdash;this is where the main headquarters building is located. It is called the <GoldLink to="/world/locales/HetraGDA-HQ">HetraGDA Headquarters</GoldLink>, or HGDA-HQ for short.
         </Para>
         <Para>
           It serves as the central command facility for the <Strong>Hetranian Global Defense Agency</Strong>, acting as the nerve center that every department across the planet answers to. Whether it is the Kharphan Executive Police Department in Lynneria or the Eulerich Police Department and Military Services, all branches route their oversight, records filing, officer registration, badge issuance, and case escalations through this building.
