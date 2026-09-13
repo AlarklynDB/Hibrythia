@@ -37,20 +37,28 @@ export function Link({ to, children, ...rest }: LinkProps) {
 }
 
 // ── useLocation() ───────────────────────────────────────────
-// Returns an object shaped like react-router's location. On the
-// server (build time) window is undefined, so we fall back to '/'.
-// On the client (after hydration) it reflects the real URL — so
-// NavLink active-highlighting keeps working.
+// Returns an object shaped like react-router's location.
+//
+// Hydration note: every page is pre-rendered at build time where
+// window is undefined, so the server HTML is always generated with
+// pathname '/'. The initial CLIENT render must produce that same
+// value — if it read window.location straight away, React would see
+// a className/aria-current mismatch during hydration, and React 18
+// does not patch attribute mismatches, so the server's "Home is
+// active" classes would stay in the DOM forever. Instead we start
+// from the server-safe value on both sides and sync to the real URL
+// in an effect, which triggers a normal re-render that actually
+// writes the correct classes.
 export interface ShimLocation {
   pathname: string
   search: string
   hash: string
 }
 
+const SERVER_LOCATION: ShimLocation = { pathname: '/', search: '', hash: '' }
+
 function getLocation(): ShimLocation {
-  if (typeof window === 'undefined') {
-    return { pathname: '/', search: '', hash: '' }
-  }
+  if (typeof window === 'undefined') return SERVER_LOCATION
   return {
     pathname: window.location.pathname,
     search: window.location.search,
@@ -59,10 +67,14 @@ function getLocation(): ShimLocation {
 }
 
 export function useLocation(): ShimLocation {
-  const [loc, setLoc] = useState<ShimLocation>(getLocation)
+  // Always start from the server value so the hydration render matches.
+  const [loc, setLoc] = useState<ShimLocation>(SERVER_LOCATION)
 
   useEffect(() => {
     function update() { setLoc(getLocation()) }
+    // Sync to the real URL once mounted (this is what fixes the
+    // stale "Home" highlight on every non-home page).
+    update()
     // fires on browser back/forward
     window.addEventListener('popstate', update)
     // patch pushState/replaceState so <Link> clicks also trigger update
