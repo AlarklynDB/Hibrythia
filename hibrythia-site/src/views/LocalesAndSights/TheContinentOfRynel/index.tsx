@@ -29,6 +29,41 @@ export default function TheContinentOfRynel() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ The Continent of Rynel — Image Placeholder ]</p>
       </div>
 
+    {/* New Rynels */}
+      <div className="space-y-6">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">New Rynels</h2>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          New Rynels is the largest coastline city in the entire world, and it takes up the entire length from the northeastern coast that stretches to the southwestern coast. Think of it as the counterpart to Tokyo (Japan) combined with Chongqing (China)—but multiply the density by eight times. New Rynels is the wealthiest city in the entire planet of Hetra. This city is home to the richest individuals on Planet Hetra, with personal net worths reaching up into the quadrillions. From surface level of the continent, there are at least up to six different sky-high ground levels that sit on super strong support from buildings among each elevation.  
+        </p>
+
+        <div className="space-y-3">
+          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+            New Rynels was founded by <Link to="/characters/PhilstraRhys" className="text-[#f2ebeb] font-semibold hover:underline">Philstra Rhys</Link>, the world&apos;s first Multi-Sextillionaire, with a personal worth of <span className="text-[#f2ebeb] font-semibold">55 Sextillion Hetrix</span>. Philstra is the founder of many major institutions and is the primary backer of <Link to="/world/locales/HetraSEAPSpaceProgram" className="text-[#c9a84c] hover:underline">HetraSEAP</Link>, the Hetranian Space Exploration and Aeronautics Program, which alone carries a worth of around <span className="text-[#f2ebeb] font-semibold">25 quintillion Hetrix</span>.
+          </p>
+          <ul className="space-y-2">
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span><span className="text-[#f2ebeb] font-semibold">Minimum Wage:</span> &#294;25.35 Hetrix (~$8.45 USD)</span>
+            </li>
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span><span className="text-[#f2ebeb] font-semibold">Key Industries:</span> Entrepreneurship, Space Exploration (HetraSEAP), High Finance</span>
+            </li>
+            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+              <span className="text-[#c9a84c] shrink-0">—</span>
+              <span><span className="text-[#f2ebeb] font-semibold">Founded by:</span> Philstra Rhys</span>
+            </li>
+          </ul>
+        </div>
+
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          New Rynels is the economic powerhouse of Planet Hetra and the hub where Hetrix bills are actually minted. The Artificial Intelligent Bill Minting Automation machinery responsible for producing every Hetrix denomination in circulation is housed and operated here, because the process demands a level of gyroscopic precision that no person can replicate by hand. The EBLGrid, Polyhetral Labels, and 3812-bit Encryption Layers stamped on every bill all come out of this city.
+        </p>
+        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+          Beyond finance and minting, New Rynels is a city that rewards ambition. Many of the most famous scientists and graduates from Ironbark Hibryds University have migrated here for entrepreneurship opportunities, and the city draws talent from across every continent on the planet.
+        </p>
+      </div>
+
       {/* The Oakgnar Grand Tree */}
       <div className="space-y-6">
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4">The Oakgnar Grand Tree</h2>
@@ -96,40 +131,6 @@ export default function TheContinentOfRynel() {
         </div>
       </div>
 
-      {/* New Rynels */}
-      <div className="space-y-6">
-        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">New Rynels</h2>
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          NNew Rynels is the largest coastline city in the entire world, and it takes up the entire length from the northeastern coast that stretches to the southwestern coast. Think of it as the counterpart to Tokyo (Japan) combined with Chongqing (China)—but multiply the density by eight times. New Rynels is the wealthiest city in the entire planet of Hetra. This city is home to the richest individuals on Planet Hetra, with personal net worths reaching up into the quadrillions. From surface level of the continent, there are at least up to six different sky-high ground levels that sit on super strong support from buildings among each elevation.  
-        </p>
-
-        <div className="space-y-3">
-          <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-            New Rynels was founded by <Link to="/characters/PhilstraRhys" className="text-[#f2ebeb] font-semibold hover:underline">Philstra Rhys</Link>, the world&apos;s first Multi-Sextillionaire, with a personal worth of <span className="text-[#f2ebeb] font-semibold">55 Sextillion Hetrix</span>. Philstra is the founder of many major institutions and is the primary backer of <Link to="/world/locales/HetraSEAPSpaceProgram" className="text-[#c9a84c] hover:underline">HetraSEAP</Link>, the Hetranian Space Exploration and Aeronautics Program, which alone carries a worth of around <span className="text-[#f2ebeb] font-semibold">25 quintillion Hetrix</span>.
-          </p>
-          <ul className="space-y-2">
-            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-              <span className="text-[#c9a84c] shrink-0">—</span>
-              <span><span className="text-[#f2ebeb] font-semibold">Minimum Wage:</span> &#294;25.35 Hetrix (~$8.45 USD)</span>
-            </li>
-            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-              <span className="text-[#c9a84c] shrink-0">—</span>
-              <span><span className="text-[#f2ebeb] font-semibold">Key Industries:</span> Entrepreneurship, Space Exploration (HetraSEAP), High Finance</span>
-            </li>
-            <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
-              <span className="text-[#c9a84c] shrink-0">—</span>
-              <span><span className="text-[#f2ebeb] font-semibold">Founded by:</span> Philstra Rhys</span>
-            </li>
-          </ul>
-        </div>
-
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          New Rynels is the economic powerhouse of Planet Hetra and the hub where Hetrix bills are actually minted. The Artificial Intelligent Bill Minting Automation machinery responsible for producing every Hetrix denomination in circulation is housed and operated here, because the process demands a level of gyroscopic precision that no person can replicate by hand. The EBLGrid, Polyhetral Labels, and 3812-bit Encryption Layers stamped on every bill all come out of this city.
-        </p>
-        <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          Beyond finance and minting, New Rynels is a city that rewards ambition. Many of the most famous scientists and graduates from Ironbark Hibryds University have migrated here for entrepreneurship opportunities, and the city draws talent from across every continent on the planet.
-        </p>
-      </div>
 
       {/* Rynel Ruins */}
       <div className="space-y-3">
