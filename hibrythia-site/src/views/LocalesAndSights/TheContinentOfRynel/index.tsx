@@ -33,7 +33,7 @@ export default function TheContinentOfRynel() {
       <div className="space-y-6">
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4">New Rynels</h2>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-          New Rynels is the largest coastline city in the entire world, and it takes up the entire length from the northeastern coast that stretches to the southwestern coast. Think of it as the counterpart to Tokyo (Japan) combined with Chongqing (China)—but multiply the density by eight times. New Rynels is the wealthiest city in the entire planet of Hetra. This city is home to the richest individuals on Planet Hetra, with personal net worths reaching up into the quadrillions. From surface level of the continent, there are at least up to six different sky-high ground levels that sit on super strong support from buildings among each elevation.  
+          New Rynels is the largest coastline city in the entire world, and it takes up the entire length from the northeastern coast that stretches to the southwestern coast. Think of it as the counterpart to Tokyo (Japan) combined with Chongqing (China)—but multiply the density by eight times. New Rynels is the wealthiest city in the entire planet of Hetra. This city is home to the richest individuals on Planet Hetra, with personal net worths reaching up into the quadrillions. From surface level of the continent, there are up to six different sky-high ground levels that sit on super strong support from buildings among each elevation.
         </p>
 
         <div className="space-y-3">
