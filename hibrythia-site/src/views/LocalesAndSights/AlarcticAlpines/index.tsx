@@ -167,9 +167,9 @@ export default function AlarcticAlpines() {
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Creatures</h2>
 
         <div className="space-y-3">
-          <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Seapertent Dragons</h3>
+          <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Seapertant Dragons</h3>
           <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-            Seapertent Batragons are big dragons, since they&apos;re ocean creatures. They are the size of a megalodon and can live in oceans and on lands. They can&apos;t fly on land, but can in the ocean. The Seapertent&apos;s environmental home is near the Alarctic Alpines.
+            Seapertant Dragons are big dragons, since they&apos;re ocean creatures. They are the size of a megalodon and can live in oceans and on lands. They can&apos;t fly on land, but can in the ocean. The Seapertant&apos;s environmental home is near the Alarctic Alpines.
           </p>
         </div>
 

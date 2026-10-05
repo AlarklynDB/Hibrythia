@@ -73,9 +73,9 @@ export default function CreaturesOfTheWorld() {
           </div>
 
           <div className="border-l-2 border-[#2e2b26] pl-5">
-            <h4 className="font-display text-base text-[#f2ebeb] mb-2">Seapertent Dragons</h4>
+            <h4 className="font-display text-base text-[#f2ebeb] mb-2">Seapertant Dragons</h4>
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-              Seapertent Dragons are big dragons, since they're ocean creatures. With wings from a bat, two arms, and a body of a Sea Serpent, they roam the seas and are considered one of the gentle dragons. They don't attack unless provoked. They are the size of a megalodon and can live in oceans and on lands. They can't fly on land, but can in the ocean.
+              Seapertant Dragons are big dragons, since they're ocean creatures. With wings from a bat, two arms, and a body of a Sea Serpent, they roam the seas and are considered one of the gentle dragons. They don't attack unless provoked. They are the size of a megalodon and can live in oceans and on lands. They can't fly on land, but can in the ocean.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ export default function CreaturesOfTheWorld() {
             <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-3">
               Elemental Dragons, also known as Magidraxon, are dragons that are a magic-descent creature from{' '}
               <Link to="/404" className="text-[#c9a84c] hover:underline">Elemental Magic</Link>
-              , a type of magic that is common everywhere. These dragons have abilities that correspond to the environment they adapt to. Each of these Magidraxons have their own elemental power. There are at least 3,510 of these dragons. These dragons also live in the Draxian Sky Church. Magidraxons are entirely different from Nulergon, Seapertent, and Wyvernmux.
+              , a type of magic that is common everywhere. These dragons have abilities that correspond to the environment they adapt to. Each of these Magidraxons have their own elemental power. There are at least 3,510 of these dragons. These dragons also live in the Draxian Sky Church. Magidraxons are entirely different from Nulergon, Seapertant, and Wyvernmux.
             </p>
             <ul className="space-y-1">
               {[

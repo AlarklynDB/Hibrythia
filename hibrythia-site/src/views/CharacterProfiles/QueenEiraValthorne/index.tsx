@@ -155,7 +155,7 @@ export default function QueenEiraValthorne() {
           </div>
           <div>
             <p className="font-display text-sm text-[#f2ebeb] mb-2">Aurelia &mdash; Her Personal Escort Dragon</p>
-            <p>A <span className="text-[#f2ebeb]">Seapertent Dragon</span> named Aurelia was Queen Eira&apos;s personal escort and companion. After Eira&apos;s vanishing, Aurelia remained at the Ice Palace &mdash; alone &mdash; guarding it for centuries.</p>
+            <p>A <span className="text-[#f2ebeb]">Seapertant Dragon</span> named Aurelia was Queen Eira&apos;s personal escort and companion. After Eira&apos;s vanishing, Aurelia remained at the Ice Palace &mdash; alone &mdash; guarding it for centuries.</p>
             <p className="mt-3">As of the year 2245, Aurelia still guards the palace. She has not left. She has declared she will guard it <em>until her grave.</em></p>
             <blockquote className="border-l-2 border-[#c9a84c]/40 pl-4 mt-3 italic text-[#c9a84c]">
               &ldquo;I will keep guarding this place until my grave.&rdquo; &mdash; Aurelia
@@ -170,7 +170,7 @@ export default function QueenEiraValthorne() {
         <div className="space-y-4">
           {[
             { name: "The Alarctic Ice Palace", desc: "Eira's former seat of power. Now one of the Seven Wonders of the World. The Hall of Eternal Frost, Crystal Observatory, and her throne remain pristine and untouched within it. Guarded by Aurelia." },
-            { name: "The Alarctic Alpines",    desc: "The continent Eira's kingdom once ruled. Now a frozen wilderness of blizzards, hexicule storms, and Seapertent Dragons." },
+            { name: "The Alarctic Alpines",    desc: "The continent Eira's kingdom once ruled. Now a frozen wilderness of blizzards, hexicule storms, and Seapertant Dragons." },
             { name: "Rynel (Oakgnar Continent)", desc: "Site of the Oakgnar Grand Tree and the four Oakgnar Towns — founded in part by Valthorne immigrants. The Midwinter Festival is celebrated here every 55th of Mulumber." },
           ].map((loc, i) => (
             <div key={i} className="pl-4 border-l-2 border-[#c9a84c]/40">
