@@ -97,6 +97,141 @@ function ClockArt() {
   );
 }
 
+function TimesOfDayArt() {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      {/* Thumbnail — clickable */}
+      <div
+        onClick={() => setOpen(true)}
+        className="relative group cursor-pointer w-full overflow-hidden rounded-sm border border-[#2e2b26] mb-6"
+      >
+        <img
+          src="https://i.ibb.co/xtpH7d0r/Times-of-Day-And-Their-Names.png"
+          alt="Times of Day and Their Names on Planet Hetra"
+          className="w-full h-auto rounded-sm transition-transform duration-300 group-hover:scale-[1.01]"
+        />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+          <span className="opacity-0 group-hover:opacity-100 text-[#f2ebeb] text-xs tracking-widest uppercase border border-[#f2ebeb]/40 px-3 py-1 rounded-sm transition-opacity duration-300">
+            Click to expand
+          </span>
+        </div>
+      </div>
+
+      {/* Fullscreen overlay */}
+      {open && (
+        <div
+          style={{ zIndex: 9999 }}
+          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center pt-24 pb-12 px-10"
+        >
+          <button
+            aria-label="Close"
+            onClick={() => setOpen(false)}
+            className="absolute top-16 right-6 text-[#f2ebeb]/70 hover:text-[#f2ebeb] text-xl font-light transition-colors"
+          >
+            &#x2715;
+          </button>
+          <img
+            src="https://i.ibb.co/xtpH7d0r/Times-of-Day-And-Their-Names.png"
+            alt="Times of Day and Their Names on Planet Hetra — fullscreen"
+            className="max-w-[95vw] max-h-[95vh] h-auto rounded-sm object-contain"
+          />
+        </div>
+      )}
+    </>
+  );
+}
+
+function TimezonesArt() {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      {/* Thumbnail — clickable */}
+      <div
+        onClick={() => setOpen(true)}
+        className="relative group cursor-pointer w-full overflow-hidden rounded-sm border border-[#2e2b26] mb-6"
+      >
+        <img
+          src="https://i.ibb.co/PvxRQ9fm/Timezones-on-Hetra.png"
+          alt="Timezones on Hetra — the Universal Celestial Clock (UCC) zones"
+          className="w-full h-auto rounded-sm transition-transform duration-300 group-hover:scale-[1.01]"
+        />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+          <span className="opacity-0 group-hover:opacity-100 text-[#f2ebeb] text-xs tracking-widest uppercase border border-[#f2ebeb]/40 px-3 py-1 rounded-sm transition-opacity duration-300">
+            Click to expand
+          </span>
+        </div>
+      </div>
+
+      {/* Fullscreen overlay */}
+      {open && (
+        <div
+          style={{ zIndex: 9999 }}
+          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center pt-24 pb-12 px-10"
+        >
+          <button
+            aria-label="Close"
+            onClick={() => setOpen(false)}
+            className="absolute top-16 right-6 text-[#f2ebeb]/70 hover:text-[#f2ebeb] text-xl font-light transition-colors"
+          >
+            &#x2715;
+          </button>
+          <img
+            src="https://i.ibb.co/PvxRQ9fm/Timezones-on-Hetra.png"
+            alt="Timezones on Hetra — the Universal Celestial Clock (UCC) zones — fullscreen"
+            className="max-w-[95vw] max-h-[95vh] h-auto rounded-sm object-contain"
+          />
+        </div>
+      )}
+    </>
+  );
+}
+
+function TimezonesNightArt() {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      {/* Thumbnail — clickable */}
+      <div
+        onClick={() => setOpen(true)}
+        className="relative group cursor-pointer w-full overflow-hidden rounded-sm border border-[#2e2b26] mb-8"
+      >
+        <img
+          src="https://i.ibb.co/xqcLnMhV/UCC-Timezones-with-Night-Visual.png"
+          alt="UCC Timezones on Hetra with Night Visual"
+          className="w-full h-auto rounded-sm transition-transform duration-300 group-hover:scale-[1.01]"
+        />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+          <span className="opacity-0 group-hover:opacity-100 text-[#f2ebeb] text-xs tracking-widest uppercase border border-[#f2ebeb]/40 px-3 py-1 rounded-sm transition-opacity duration-300">
+            Click to expand
+          </span>
+        </div>
+      </div>
+
+      {/* Fullscreen overlay */}
+      {open && (
+        <div
+          style={{ zIndex: 9999 }}
+          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center pt-24 pb-12 px-10"
+        >
+          <button
+            aria-label="Close"
+            onClick={() => setOpen(false)}
+            className="absolute top-16 right-6 text-[#f2ebeb]/70 hover:text-[#f2ebeb] text-xl font-light transition-colors"
+          >
+            &#x2715;
+          </button>
+          <img
+            src="https://i.ibb.co/xqcLnMhV/UCC-Timezones-with-Night-Visual.png"
+            alt="UCC Timezones on Hetra with Night Visual — fullscreen"
+            className="max-w-[95vw] max-h-[95vh] h-auto rounded-sm object-contain"
+          />
+        </div>
+      )}
+    </>
+  );
+}
+
 export default function CalendarAndTime() {
   return (
     <div className="min-h-screen bg-[#100908] text-[#c8c2ba] px-6 py-12 max-w-[960px] mx-auto">
@@ -374,10 +509,8 @@ export default function CalendarAndTime() {
         <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c] mb-3">Day &amp; Night</p>
         <h2 className="font-display text-lg text-[#f2ebeb] mb-4" id="the-day-and-night">The Day and Night</h2>
 
-        {/* Image placeholder */}
-        <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center mb-6">
-          <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ Times of Day &amp; Their Names — Image Placeholder ]</p>
-        </div>
+        {/* Times of Day art */}
+        <TimesOfDayArt />
 
         <div className="grid grid-cols-2 gap-3 mb-6">
           <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-4 text-center">
@@ -417,10 +550,8 @@ export default function CalendarAndTime() {
           Local Time Zones on Hetra are represented by <span className="text-[#f2ebeb] font-semibold">UCC — The Universal Celestial Clock</span>. The world has a lot of sunlight, and within the zones, there is still light before night reaches.
         </p>
 
-        {/* Image placeholder */}
-        <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center mb-6">
-          <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ Timezones on Hetra — Image Placeholder ]</p>
-        </div>
+        {/* Timezones art */}
+        <TimezonesArt />
 
         <div className="space-y-3 mb-10">
           {timezones.map((tz, i) => (
@@ -434,10 +565,8 @@ export default function CalendarAndTime() {
           ))}
         </div>
 
-        {/* Image placeholder — Night visual */}
-        <div className="w-full aspect-video bg-[#1a1714] border border-[#2e2b26] rounded-sm flex items-center justify-center mb-8">
-          <p className="font-body text-[10px] tracking-widest uppercase text-[#2e2b26]">[ UCC Timezones with Night Visual — Image Placeholder ]</p>
-        </div>
+        {/* UCC Timezones with Night Visual art */}
+        <TimezonesNightArt />
 
         {/* Two Calendar Days at Once */}
         <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-6 mb-4">
