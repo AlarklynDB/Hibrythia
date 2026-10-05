@@ -37,7 +37,7 @@ New Rynels is the largest coastline city in the entire world, and it takes up th
 </p>
 <p className="font-body text-xs tracking-[0.4em] text-[#4a4844] select-none" aria-hidden="true">&#9472;&#9472;&#9472;&#9472;&#9472;&#8880;</p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-New Rynels was founded by <Link to="/characters/PhilstraRhys" className="text-[#c9a84c] hover:underline"><strong>Philstra Rhys</strong></Link>, the world&apos;s first <Link to="/world/databases/EconomyOfPlanetHetra" className="text-[#c9a84c] hover:underline">Multi-Sextillionaire</Link>, with a personal worth of 55 Sextillion Hetrix. Philstra is the founder of many major institutions and is the primary backer of HetraSEAP, the Hetranian Space Exploration and Aeronautics Program, which alone carries a worth of around 25 quintillion Hetrix.
+New Rynels was founded by <Link to="/characters/PhilstraRhys" className="text-[#c9a84c] hover:underline"><strong>Philstra Rhys</strong></Link>, the world&apos;s first <Link to="/characters/PhilstraRhys" className="text-[#c9a84c] hover:underline">Multi-Sextillionaire</Link>, with a personal worth of 55 Sextillion Hetrix. Philstra is the founder of many major institutions and is the primary backer of HetraSEAP, the Hetranian Space Exploration and Aeronautics Program, which alone carries a worth of around 25 quintillion Hetrix.
 </p>
 <ul className="space-y-2">
 <li className="flex gap-2 font-body text-base text-[#c8c2ba] leading-relaxed">
