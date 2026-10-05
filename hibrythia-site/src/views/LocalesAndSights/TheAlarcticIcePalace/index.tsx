@@ -26,7 +26,7 @@ export default function TheAlarcticIcePalace() {
           northern hemisphere and almost takes up most of the planet&apos;s oceanic space. Up here in the Alpines, there are many snow storms
           and blizzards. There are also recurring hailstorms with their ice balls being as massive as a basketball. Many Alarctic creatures
           live here, with there being Pangolin Polar Bears which can survive the recurring storms. It&apos;s also possible to live here.
-          The Alarctic Alpines is also a place where Seapertant Batragons call home.
+          The Alarctic Alpines is also a place where Seapertant Dragons call home.
         </p>
         <p className="font-body text-base text-[#c8c2ba] leading-relaxed mb-10">
           This Ice Palace is what was left from Queen Eira&apos;s Reign.
