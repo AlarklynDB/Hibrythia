@@ -88,7 +88,7 @@ export default function WeatherClimateSeasons() {
         </h2>
         <p className="font-body text-sm text-[#c8c2ba] mb-6">
           The seasons in this world closely resemble the counterpart of Earth, however, they are given their own unique names. It is also shown on our{" "}
-          <Link to="/32-16TimeSystem" className="text-[#c9a84c] hover:underline">calendar</Link>!
+          <Link to="/multimedia/32-16TimeSystem" className="text-[#c9a84c] hover:underline">calendar</Link>!
         </p>
 
         <div className="space-y-3">
