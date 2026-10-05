@@ -225,16 +225,18 @@ export default function EconomyOfPlanetHetra() {
             <span className="font-body text-[10px] tracking-widest uppercase text-[#7a746e]">— Rynel</span>
           </div>
           <p className="font-body text-base text-[#c8c2ba] mb-4">
-            The largest coastline city in the entire world, <span className="text-[#f2ebeb] font-semibold">New Rynels</span> is the economic powerhouse of Planet Hetra. Home to the richest individuals on the planet — with personal net worth reaching into the <span className="text-[#f2ebeb] font-semibold">quadrillions</span> — this city is a hub for entrepreneurs, social workers, and high-paying industries.
+            The largest coastline city in the entire world, <Link to="/world/locales/rynel" className="text-[#f2ebeb] font-semibold hover:text-[#c9a84c] hover:underline transition-colors">New Rynels</Link> is the economic powerhouse of Planet Hetra. Home to the richest individuals on the planet — with personal net worth reaching into the <span className="text-[#f2ebeb] font-semibold">quadrillions</span> — this city is a hub for entrepreneurs, social workers, and high-paying industries.
           </p>
           <div className="space-y-1 font-body text-base">
             <p><span className="text-[10px] tracking-widest uppercase text-[#7a746e] mr-2">Minimum Wage</span><span className="text-[#f2ebeb]">Ħ25.35 Hetrix (~$8.45 USD)</span></p>
             <p><span className="text-[10px] tracking-widest uppercase text-[#7a746e] mr-2">Key Industries</span><span className="text-[#c8c2ba]">Entrepreneurship, Space Exploration (HetraSEAP), High Finance</span></p>
-            <p><span className="text-[10px] tracking-widest uppercase text-[#7a746e] mr-2">Founded by</span><span className="text-[#c8c2ba]">Philstra Rhys</span></p>
+            <p><span className="text-[10px] tracking-widest uppercase text-[#7a746e] mr-2">Founded by</span><Link to="/characters/PhilstraRhys" className="text-[#c9a84c] hover:underline">Philstra Rhys</Link></p>
           </div>
           <div className="mt-3 pt-3 border-t border-[#2e2b26] space-y-1 font-body text-base text-[#c8c2ba]">
             <p>Philstra Rhys is the world&apos;s first Multi-Sextillionaire, with a worth 55 Sextillion. He is a founder of many things.</p>
             <p>HetraSEAP is backed by Philstra and has a worth around 25 quintillion Hetrix.</p>
+            <p>HetraSEAM is also backed by Philstra, just Ħ15.15 Quintillion Hetrix (10.10qt short of HetraSEAP)</p>
+            <p>HetraGDA is backed by Philstra, standing ovation at Ħ24.55 quintillion Hetrix.</p>
           </div>
         </div>
 
@@ -242,7 +244,7 @@ export default function EconomyOfPlanetHetra() {
         <div className="bg-[#0f0d0c] border border-[#2e2b26] rounded-sm p-6 mb-4 hover:border-[#c9a84c]/40 hover:bg-[#151210] transition-colors">
           <div className="flex items-center gap-2 mb-1">
             <h3 className="font-display text-sm text-[#f2ebeb]">Eulanis</h3>
-            <span className="font-body text-[10px] tracking-widest uppercase text-[#7a746e]">— Eulerich</span>
+            <Link to="/world/locales/eulerich" className="font-body text-[10px] tracking-widest uppercase text-[#7a746e] hover:text-[#c9a84c] transition-colors">— Eulerich</Link>
           </div>
           <p className="font-body text-base text-[#c8c2ba] mb-4">
             <span className="text-[#f2ebeb] font-semibold">Eulanis</span>, the major city of the Eulan Kingdom, sits within the Sandstone Mountains and operates as the center for all <span className="text-[#f2ebeb] font-semibold">trading posts, marketplaces, and fine goods</span> — many at very high prices. Eulanis is founded by the Briehale Monarchs.
@@ -646,6 +648,29 @@ export default function EconomyOfPlanetHetra() {
         <p className="font-body text-base text-[#c8c2ba]">
           Fake bills however, cannot do this.
         </p>
+      </section>
+
+      {/* ── See Also ── */}
+      <section className="mb-12">
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">See Also</h2>
+        <ul className="space-y-2">
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <Link to="/world/locales/rynel" className="text-[#c9a84c] hover:underline">The Continent of Rynel</Link>
+          </li>
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <Link to="/world/locales/eulerich" className="text-[#c9a84c] hover:underline">The Continent of Eulerich</Link>
+          </li>
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <Link to="/world/locales/skypeak-obelisk" className="text-[#c9a84c] hover:underline">The Skypeak Obelisk</Link>
+          </li>
+          <li className="flex gap-2 font-body text-base text-[#c8c2ba]">
+            <span className="text-[#c9a84c] shrink-0">—</span>
+            <Link to="/world/locales/erbgeroger-flower" className="text-[#c9a84c] hover:underline">The Erbgeroger Flower</Link>
+          </li>
+        </ul>
       </section>
 
       {/* ── Bottom Nav ── */}
