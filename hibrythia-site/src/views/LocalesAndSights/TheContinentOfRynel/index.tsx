@@ -101,7 +101,7 @@ The border of this region meets at the south-eastern most peninsula of the conti
 <div className="space-y-4 border border-[#2e2b26] rounded-sm px-5 py-5 bg-[#0f0d0c]">
 <h3 className="font-display text-sm text-[#f2ebeb] mb-3">New Eastward Rynels</h3>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-From the North-east that stretches to the Eastern South at the southern peninsula dip, this region is known as New Eastward Rynels (NERynels). And New Eastern Rynels is home to major competitors, brands, trades, entrepreneurs, e-commerce, physical commerce and more. NERynels&rsquo; infrastructure and population is really dense&mdash;which takes first place ahead of its Westward counterpart. This region of Rynels and the entirety of the planet is what makes the global economic status stand out so much.
+From the North-east that stretches to the Eastern South at the southern peninsula dip, this region is known as New Eastward Rynels (NERynels). And New Eastward Rynels is home to major competitors, brands, trades, entrepreneurs, e-commerce, physical commerce and more. NERynels&rsquo; infrastructure and population is really dense&mdash;which takes first place ahead of its Westward counterpart. This region of Rynels and the entirety of the planet is what makes the global economic status stand out so much.
 </p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
 <span className="text-[#f2ebeb] font-semibold">NERynels</span> is popular for a few things:
