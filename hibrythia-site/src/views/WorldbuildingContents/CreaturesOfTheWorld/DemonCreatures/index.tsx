@@ -21,7 +21,9 @@ export default function DemonCreatures() {
         {/* Intro */}
         <section>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-4">
-            This world only has a few selection of Demon Creatures that have been brought into this world by The Demon Grandfather, Khalfvyskov. He has bought a total of 10 types of creatures into this world each with their own unique identifier. These demons were created to life in the year of 55 AD, and they age at the same rate, with their age measured in days. The Demon Race in this world isn't really frowned upon. Other cultures view them with respectful autonomy because they're not demonic or fully evil.
+            This world only has a few selection of Demon Creatures that have been brought into this world by The Demon Grandfather, Khalfvyskov. He has bought a total of 10 types of creatures into this world each with their own unique identifier. These demons were created to life in the year of 55{' '}
+            <Link to="/world/databases/CalendarAndTime" className="text-[#c9a84c] hover:underline">OD</Link>
+            , and they age at the same rate, with their age measured in days. The Demon Race in this world isn't really frowned upon. Other cultures view them with respectful autonomy because they're not demonic or fully evil.
           </p>
           <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
             They're beautiful creatures that have the ability to understand others even past those surface-level rumors and stereotypes.
@@ -31,6 +33,7 @@ export default function DemonCreatures() {
             <ul className="list-disc list-inside font-body text-sm text-[#c8c2ba] leading-[1.85] space-y-1 mb-3">
               <li>Draconic-Demon Wizards (Dragon Demon)</li>
               <li>Merfolk Serpents (Merfolk Cross Serpents)</li>
+              <li>Elemental Dragon Demons.</li>
             </ul>
             <p className="font-body text-sm text-[#7a746e] leading-[1.85] italic">are not listed here because they are crossbreeds between two different species.</p>
           </div>
@@ -175,7 +178,7 @@ export default function DemonCreatures() {
             <div>
               <h3 className="font-display text-base text-[#f2ebeb] mb-3">The Chant of Beasts — A Cultural Anthem</h3>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
-                Perhaps the most iconic expression of demon culture is "Þa Hræven'þa Býest" — The Chant of Beasts. Originally sung by demons in the Varnæn dialect, the chant is not about dominance or war. It is about courage, self-esteem, and emotional resilience, refusing to let destruction breach the heart.
+                Perhaps the most iconic expression of demon culture is "Þa Hræven'þa Býest", The Chant of Beasts. Originally sung by demons in the Varnæn dialect, the chant is not about dominance or war. It is about courage, self-esteem, and emotional resilience, refusing to let destruction breach the heart.
               </p>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mb-3">
                 The chant spread far beyond the demon race because its message resonated across cultures universally. It is sung near mountains, played with heavy drums and raw vocals, and carries a tone described as primal and fierce, yet deeply protective of the inner self.
@@ -195,7 +198,10 @@ export default function DemonCreatures() {
                 Its entrance pillars are carved in Varnæn, not with prayers, but with declarations of welcome and belonging. Below ground, the church opens into a wide hall lit by deep red eternal flames, with a polished floor bearing an ancient Greungerian symbol of sanctuary at its center.
               </p>
               <p className="font-body text-sm text-[#c8c2ba] leading-[1.85]">
-                The church has served for millennia as a neutral territorial zone, a space where demon factions, often in conflict with one another, could gather for rites of passage, truces, and communal ceremony. Attacking within its walls is considered a serious violation of demon cultural law, a status that has held, imperfectly but consistently, since the Greungerian Era. Yhursa's work was so significant that the Five Giants named Yhursday (the fifth day of the Hetranian week) in her honor. Demon culture is, in that small way, written into the very calendar of the world.
+                The church has served for millennia as a neutral territorial zone, a space where demon factions, often in conflict with one another, could gather for rites of passage, truces, and communal ceremony. Attacking within its walls is considered a serious violation of demon cultural law, a status that has held, imperfectly but consistently, since the Greungerian Era.
+              </p>
+              <p className="font-body text-sm text-[#c8c2ba] leading-[1.85] mt-3">
+                Yhursa's work was so significant that the Five Giants named Yhursday (the fifth day of the Hetranian week) in her honor. Demon culture is, in that small way, written into the very calendar of the world.
               </p>
             </div>
 
