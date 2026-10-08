@@ -4,7 +4,6 @@
 // ──────────────────────────────────────────────────────────────────────────────
 
 import { Link } from 'react-router-dom';
-import FunFact from '../components/FunFact';
 
 export default function Home() {
   return (
@@ -93,8 +92,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* ── FACT OF THE MOMENT ─────────────────────────────────────────────── */}
-      <FunFact />
 
       <div className="h-px bg-gradient-to-r from-transparent via-[#2e2b26] to-transparent mb-16" aria-hidden="true" />
 
