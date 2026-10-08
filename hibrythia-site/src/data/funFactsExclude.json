@@ -1,0 +1,6 @@
+{
+  "_readme": "Add anything here that should never show up as a home page fact. 'pages' are route fragments (e.g. '/world/databases/SomePage'), 'phrases' are case-insensitive words/phrases that disqualify any sentence containing them, 'sentences' are exact sentences to drop.",
+  "pages": [],
+  "phrases": [],
+  "sentences": []
+}
