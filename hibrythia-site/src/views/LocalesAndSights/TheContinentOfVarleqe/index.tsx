@@ -292,9 +292,8 @@ As of 2245, Oldtree Cementery has 850 people.
 </ul>
 </div>
 </div>
-<div className="space-y-3">
-<p className="font-body text-base font-bold text-[#f2ebeb] pt-2">A Settlement In-Between Savageraught and Wolvenwind</p>
 <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
+<p className="font-body text-base font-bold text-[#f2ebeb] mb-3">A Settlement In-Between Savageraught and Wolvenwind</p>
 <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Greenside Hills Village</h3>
 <div className="space-y-4">
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
@@ -322,7 +321,6 @@ The denizens of this place are very extroverted, which is why they are friendly 
 <li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span><span className="text-[#f2ebeb] font-semibold">Settlement Affairs</span> remain between individuals. If a quarrel happens between two individuals, they will need to resolve it before it gets out of hand.</span></li>
 <li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span>The people of Greenside Hills will treat the GHDST as one of their own individuals. If the GHDST is to protect the settlement, then it is the settlement’s duty to return care and rest for them. Healthcare and accommodations for a highly advanced team should be a priority for both sides.</span></li>
 </ul>
-</div>
 </div>
 </div>
 </div>
