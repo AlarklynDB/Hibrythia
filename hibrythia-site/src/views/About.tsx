@@ -112,7 +112,7 @@ export default function About() {
             },
             {
               title: 'Hybrid Legacy',
-              body: 'Hibryds are not merely characters. They are symbols of spiritual transformationm identity found through trial, and evolution born from pain and blessing.',
+              body: 'Hibryds are not merely characters. They are symbols of spiritual transformation identity found through trial, and evolution born from pain and blessing.',
             },
             {
               title: 'Worldbuilding',
