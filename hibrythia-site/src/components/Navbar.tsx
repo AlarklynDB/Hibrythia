@@ -13,6 +13,7 @@ const navLinks = [
   { to: '/characters', label: 'Characters', end: false },
   { to: '/bookshelf',  label: 'Bookshelf',  end: false },
   { to: '/multimedia', label: 'Multimedia', end: false },
+  { to: '/about',      label: 'About',      end: false },
 ]
 
 // `currentPath` is supplied by BaseLayout.astro (the page's own path

@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import About from '../views/About'
+---
+
+<BaseLayout
+  title={'About | The Hibrythian Saga'}
+  description={'About The Hibrythian Saga: the manifesto, universal premise, pillars, themes, genres, and works in the series by Alarkius Elvya Jay.'}
+  path={'/about'}
+>
+  <About client:load />
+</BaseLayout>
