@@ -217,7 +217,7 @@ The Wildernaughts of Varleqe isn’t just dangerous, but there are many views th
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
 There aren&apos;t many districts here unlike Lynneria&apos;s districts. Varleqe is full of dangerous creatures, but also immaculate views of scenery. There are a total of four unique settlements, each with their own walled borders. There are three settlements that surround the Demon Wilderbaughts, and one far southeast of them.
 </p>
-<p className="font-body text-[10px] tracking-widest uppercase text-[#4a4844] mb-3">Circle Settlements around The Demon Wilderbaughts</p>
+<p className="font-body text-base font-bold text-[#f2ebeb] pt-2">Circle Settlements around The Demon Wilderbaughts</p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
 There are a total of three settlements that surround the Wilderbaught, one in the north, one in the west, and one in the south. Drevyl is super friendly with the settlement’s Mayors, specifically Greenlux and Ribbonfelt. Greenside Hills is also friendly with Drevyl, even though it is not a part of that region.
 </p>
@@ -292,7 +292,8 @@ As of 2245, Oldtree Cementery has 850 people.
 </ul>
 </div>
 </div>
-<h3 className="font-display text-sm text-[#f2ebeb] mb-3">A Settlement In-Between Savageraught and Wolvenwind</h3>
+<div className="space-y-3">
+<p className="font-body text-base font-bold text-[#f2ebeb] pt-2">A Settlement In-Between Savageraught and Wolvenwind</p>
 <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
 <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Greenside Hills Village</h3>
 <div className="space-y-4">
@@ -321,6 +322,7 @@ The denizens of this place are very extroverted, which is why they are friendly 
 <li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span><span className="text-[#f2ebeb] font-semibold">Settlement Affairs</span> remain between individuals. If a quarrel happens between two individuals, they will need to resolve it before it gets out of hand.</span></li>
 <li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span>The people of Greenside Hills will treat the GHDST as one of their own individuals. If the GHDST is to protect the settlement, then it is the settlement’s duty to return care and rest for them. Healthcare and accommodations for a highly advanced team should be a priority for both sides.</span></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
