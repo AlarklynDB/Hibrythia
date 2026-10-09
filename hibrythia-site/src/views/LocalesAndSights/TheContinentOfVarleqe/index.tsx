@@ -67,7 +67,7 @@ export default function TheContinentOfVarleqe() {
 
 <div className="space-y-4">
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-Varleqe is a massive supercontinent that is west of all the other continents and almost takes up 1/5th of the globe (if you look on the map). Varleqe is inhabited by beasts, mythological creatures, demons, and animals. Direwolves are considered beasts, and Kydel is one of them.
+Varleqe is a massive supercontinent that is west of all the other continents and almost takes up 1/5th of the globe. Varleqe is inhabited by beasts, mythological creatures, demons, and animals. Direwolves are considered beasts, and Kydel is one of them.
 </p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
 Despite the continent being big, there are many lakes and rivers, where each part of the area has a lush feel. Where there are less rivers, the areas look a bit drier. Some areas are scorched because there are demons living in ruins that often scorch the land due to territorial disputes.
