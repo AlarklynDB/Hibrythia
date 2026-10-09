@@ -128,10 +128,10 @@ export default function QueenRachnaea() {
         <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Before the Happening of Queen Rachnaea</h3>
         <div className="space-y-4 font-body text-base text-[#c8c2ba] leading-relaxed">
           <p>Before a life that was given full awakening, Rachnaea was once a beast creature, a demon witch, that lived by her own standards. In her prime days, she lived on the supercontinent of Varleqe, and she was a kind of a lesser demon that could evolve into a Demon Witch. She has a bewildering and stunning hourglass figure and wears gold-like bronze armor. She has two horns that stick out of her ears and pink-like horns as ears.</p>
-          <p className="text-[#6b6560] italic">(Around this time, Demons are classified as Rank 1. No. 2 within the Beast Hierarchy System, as the possess power like no other)</p>
+          <p className="text-[#6b6560] italic">(Around this time, Demons are classified as Rank 1. No. 2 within the <Link to="/world/databases/CreaturesOfTheWorld/BeastHierarchyKingdom" className="text-[#c9a84c] hover:underline">Beast Hierarchy System</Link>, as the possess power like no other)</p>
           <p>Even as a demon, they give a lot of attitude and sass, because all demons have some sort of similar trait. For Rachnaea though, she gives the most sassy and nasty behavior, long with a very short control of temper and anger. Even the little most things will make her become ill-tempered, and she does not like rules. Everything has to go into her exact order. She has a hunger for power and strives to stay among the sub-ranks of No.2 because demons themselves also compete for power and ranking.</p>
-          <p>She was created in the year of 0055 AD from the demon grandfather, Khalfvyskov, on the Fifth Month of Escael, on the 5th Day. Demons in this world like the number 5 in iteration and sequence. 05/05/0055 AD.</p>
-          <p>Her current age as of current year of 2245 is of 79,981 days old (2190 years).</p>
+          <p>She was created in the year of 55 <Link to="/world/databases/CalendarAndTime" className="text-[#c9a84c] hover:underline">OD</Link> from the demon grandfather, <Link to="/world/databases/CreaturesOfTheWorld/DemonCreatures" className="text-[#c9a84c] hover:underline">Khalfvyskov</Link>, on the Fifth Month of Escael, on the 5th Day. Demons in this world like the number 5 in iteration and sequence.</p>
+          <p>As of Escael 5, 2245 AD, Rachnaea is 2,300 years old&mdash;equivalent to 1,021,200 Hetranian days.</p>
         </div>
       </div>
 
@@ -149,7 +149,7 @@ export default function QueenRachnaea() {
 
         <div className="space-y-4 font-body text-base text-[#c8c2ba] leading-relaxed">
           <p>She laid siege on a town called Amberwick, which is said to house powerful mage books from the ancient past. Upon studying those books in an underground ruin, she taught herself the ability to use magic, and also, witchcraft. With more insane powers, she can negate magic attacks of any kind from any magic based opponent. During the studying of magic, she found herself a pink-gradient bone like crown and wore it on her head, which signifies her as &ldquo;Queen.&rdquo;</p>
-          <p>Amberwick is a name of a town on the Continent of Lynneria. She only seiged that town and nowhere else because of the ancient magic texts.</p>
+          <p>Amberwick is a name of a town on the <Link to="/world/locales/lynneria" className="text-[#c9a84c] hover:underline">Continent of Lynneria</Link>. She only seiged that town and nowhere else because of the ancient magic texts.</p>
           <p>After her success with magic and witchcraft, she later caused bloodshed, having the Amberieans do slave work for her. People inferior, or if they do bad stuff or rebel against her, will get slaughtered. She uses those blood to later evolve into a full Demon Witch</p>
           <p>Queen Rachnaea, now with her newfound powers, decided it was best to ramp up the siege in the continent of Lynneria. There were many waves of sieges throughout decades and eons. She summoned her minions and sieged the town, taking control. Every citizen there was made a slave, including the mayor of the town.</p>
           <p>Almost all the newborns and children had to acclimate to Rachnaea&apos;s order.</p>
@@ -179,7 +179,7 @@ export default function QueenRachnaea() {
           </div>
           <div>
             <p className="font-display text-sm text-[#f2ebeb] mb-1">Personal Self</p>
-            <p>She doesn&apos;t have friends and is alone, despite having minions doing work for her. She feels inadequate and a loser because of her hostile personality towards other demons, along with nhuemyns.</p>
+            <p>She doesn&apos;t have friends and is alone, despite having minions doing work for her. She feels inadequate and a loser because of her hostile personality towards other demons, along with <Link to="/world/databases/TheNhuemynDB" className="text-[#c9a84c] hover:underline">nhuemyns</Link>.</p>
           </div>
           <div>
             <p className="font-display text-sm text-[#f2ebeb] mb-1">Core Self</p>
