@@ -12,8 +12,8 @@ function RynelArt() {
         className="relative group cursor-pointer w-full overflow-hidden rounded-sm border border-[#2e2b26]"
       >
         <img
-          src="https://i.ibb.co/0pXF1GV1/Rynel-Interactive.png"
-          alt="The Continent of Rynel — interactive map"
+          src="https://i.ibb.co/Y799SRqx/Rynel-Map.png"
+          alt="The Continent of Rynel — map"
           className="w-full h-auto rounded-sm transition-transform duration-300 group-hover:scale-[1.01]"
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
@@ -37,8 +37,8 @@ function RynelArt() {
             &#x2715;
           </button>
           <img
-            src="https://i.ibb.co/0pXF1GV1/Rynel-Interactive.png"
-            alt="The Continent of Rynel — interactive map, fullscreen"
+            src="https://i.ibb.co/Y799SRqx/Rynel-Map.png"
+            alt="The Continent of Rynel — map, fullscreen"
             className="max-w-[95vw] max-h-[95vh] h-auto rounded-sm object-contain"
           />
         </div>
