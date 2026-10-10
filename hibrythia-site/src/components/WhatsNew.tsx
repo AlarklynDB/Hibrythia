@@ -64,16 +64,6 @@ function Row({ entry, line }: { entry: Entry; line: string }) {
         to={entry.route}
         className="group flex items-center gap-5 py-5 transition-colors duration-[180ms]"
       >
-        <div className="shrink-0 w-24 h-16 sm:w-32 sm:h-20 rounded-sm overflow-hidden border border-[#2e2b26] bg-[#0e0d0b] group-hover:border-[#c9a84c]/40 transition-colors duration-[180ms]">
-          {entry.art ? (
-            <img src={entry.art} alt="" loading="lazy" className="w-full h-full object-cover" />
-          ) : (
-            <div className="w-full h-full flex items-center justify-center font-display text-lg text-[#2e2b26]" aria-hidden="true">
-              {entry.title.replace(/^The\s+/i, '').charAt(0)}
-            </div>
-          )}
-        </div>
-
         <div className="flex-1 min-w-0">
           <p className="font-body text-[10px] tracking-widest uppercase text-[#c9a84c]/80 mb-1">{entry.category}</p>
           <p className="font-display text-base text-[#f2ebeb] leading-snug group-hover:text-[#c9a84c] transition-colors duration-[180ms]">
