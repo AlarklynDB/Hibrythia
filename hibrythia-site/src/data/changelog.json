@@ -1,0 +1,96 @@
+{
+  "new": [
+    {
+      "title": "The Lucid Sanctum’s Multiverse Function",
+      "route": "/world/meta/TheMultiverseOfMultitudes/lucid-sanctum-multiverse-function",
+      "category": "Beyond Hetra",
+      "art": null,
+      "date": "2026-10-10"
+    },
+    {
+      "title": "HetraGDA Headquarters",
+      "route": "/world/locales/HetraGDA-HQ",
+      "category": "Locales",
+      "art": null,
+      "date": "2026-09-13"
+    },
+    {
+      "title": "The Hetranian Global Defense Agency",
+      "route": "/world/databases/HetranianGlobalDefenseAgency",
+      "category": "World Database",
+      "art": null,
+      "date": "2026-09-13"
+    },
+    {
+      "title": "Technological Products of Hetra",
+      "route": "/world/databases/TechnologicalBrandsOfHetra",
+      "category": "World Database",
+      "art": null,
+      "date": "2026-09-13"
+    },
+    {
+      "title": "Temporal Inversion of Causality (TIoC)",
+      "route": "/world/databases/CalendarAndTime/TemporalInversionOfCausality",
+      "category": "World Database",
+      "art": null,
+      "date": "2026-09-08"
+    },
+    {
+      "title": "The Daily Hetranian Life",
+      "route": "/world/databases/TheDailyHetranianLife",
+      "category": "World Database",
+      "art": null,
+      "date": "2026-07-27"
+    }
+  ],
+  "updated": [
+    {
+      "title": "The Continent Of Varleqe",
+      "route": "/world/locales/varleqe",
+      "category": "Locales",
+      "art": "https://i.ibb.co/Ndz4mPJ5/Varleqe-Map.png",
+      "date": "2026-10-10",
+      "kind": "art"
+    },
+    {
+      "title": "The Continent Of Norrane",
+      "route": "/world/locales/norrane",
+      "category": "Locales",
+      "art": "https://i.ibb.co/k6ByfyKH/Norrane-Map.png",
+      "date": "2026-10-10",
+      "kind": "art"
+    },
+    {
+      "title": "The Multiverse Of Multitudes",
+      "route": "/world/meta/TheMultiverseOfMultitudes",
+      "category": "Beyond Hetra",
+      "art": null,
+      "date": "2026-10-10",
+      "kind": "link"
+    },
+    {
+      "title": "The Continent Of Rynel",
+      "route": "/world/locales/rynel",
+      "category": "Locales",
+      "art": "https://i.ibb.co/Y799SRqx/Rynel-Map.png",
+      "date": "2026-10-10",
+      "kind": "art"
+    },
+    {
+      "title": "Queen Rachnaea",
+      "route": "/characters/QueenRachnaea",
+      "category": "Characters",
+      "art": null,
+      "date": "2026-10-09",
+      "kind": "edit"
+    },
+    {
+      "title": "Demon Creatures",
+      "route": "/world/databases/CreaturesOfTheWorld/DemonCreatures",
+      "category": "World Database",
+      "art": null,
+      "date": "2026-10-08",
+      "kind": "edit"
+    }
+  ]
+}

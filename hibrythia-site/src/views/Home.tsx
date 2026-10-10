@@ -4,6 +4,7 @@
 // ──────────────────────────────────────────────────────────────────────────────
 
 import { Link } from 'react-router-dom';
+import WhatsNew from '../components/WhatsNew';
 
 export default function Home() {
   return (
@@ -92,6 +93,10 @@ export default function Home() {
         </p>
       </section>
 
+      <div className="h-px bg-gradient-to-r from-transparent via-[#2e2b26] to-transparent" aria-hidden="true" />
+
+      {/* ── WHAT'S NEW / WHAT'S UPDATED ───────────────────────────────────── */}
+      <WhatsNew />
 
       <div className="h-px bg-gradient-to-r from-transparent via-[#2e2b26] to-transparent mb-16" aria-hidden="true" />
 
