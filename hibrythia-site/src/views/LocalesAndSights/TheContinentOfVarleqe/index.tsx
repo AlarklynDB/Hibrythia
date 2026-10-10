@@ -215,7 +215,7 @@ The Wildernaughts of Varleqe isn’t just dangerous, but there are many views th
 <div className="space-y-6">
 <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Village Settlements of Varleqe</h2>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-There aren&apos;t many districts here unlike Lynneria&apos;s districts. Varleqe is full of dangerous creatures, but also immaculate views of scenery. There are a total of four unique settlements, each with their own walled borders. There are three settlements that surround the Demon Wilderbaughts, and one far southeast of them.
+There aren&apos;t many districts here unlike Lynneria&apos;s districts. Varleqe is full of dangerous creatures, but also immaculate views of scenery. There are a total of four unique settlements, each with their own walled borders. There are three settlements that surround the Demon Wilderbaughts, and one far southeast of them. These settlements are also walled for protection against the wilds. 
 </p>
 <p className="font-body text-base font-bold text-[#f2ebeb] pt-2">Circle Settlements around The Demon Wilderbaughts</p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
