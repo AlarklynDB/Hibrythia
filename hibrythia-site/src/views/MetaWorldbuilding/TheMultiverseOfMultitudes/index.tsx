@@ -263,6 +263,21 @@ export default function TheMultiverseOfMultitudes() {
         </div>
       </div>
 
+      {/* Sub Pages */}
+      <div>
+        <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Sub Pages</h2>
+        <Link
+          to="/world/meta/TheMultiverseOfMultitudes/lucid-sanctum-multiverse-function"
+          className="group flex items-center justify-between gap-4 max-w-[420px] px-5 py-4 rounded-xl border border-[#2e2b26] bg-[#1a1714] hover:border-[#c9a84c]/40 hover:bg-[#1f1c18] transition-all duration-200"
+        >
+          <div>
+            <p className="font-display text-xs text-[#4a4844] uppercase tracking-wider mb-0.5">Sub Page</p>
+            <p className="font-display text-sm text-[#f2ebeb]">The Lucid Sanctum&rsquo;s Multiverse Function</p>
+          </div>
+          <span className="text-[#c9a84c] text-lg">&#8594;</span>
+        </Link>
+      </div>
+
       {/* Bottom Nav */}
       <div className="flex items-start justify-between pt-8 border-t border-[#2e2b26] mt-16">
         <Link
