@@ -12,7 +12,7 @@ function VarleqeArt() {
         className="relative group cursor-pointer w-full overflow-hidden rounded-sm border border-[#2e2b26]"
       >
         <img
-          src="https://i.ibb.co/ZRrjYLPH/Varleqe-Map.png"
+          src="https://i.ibb.co/Ndz4mPJ5/Varleqe-Map.png"
           alt="The Super-Continent of Varleqe map"
           className="w-full h-auto rounded-sm transition-transform duration-300 group-hover:scale-[1.01]"
         />
@@ -37,7 +37,7 @@ function VarleqeArt() {
             &#x2715;
           </button>
           <img
-            src="https://i.ibb.co/ZRrjYLPH/Varleqe-Map.png"
+            src="https://i.ibb.co/Ndz4mPJ5/Varleqe-Map.png"
             alt="The Super-Continent of Varleqe map, fullscreen"
             className="max-w-[95vw] max-h-[95vh] h-auto rounded-sm object-contain"
           />
