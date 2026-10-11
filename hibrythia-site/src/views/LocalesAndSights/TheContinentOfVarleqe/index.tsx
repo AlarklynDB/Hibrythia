@@ -378,7 +378,7 @@ The denizens of this place are very extroverted, which is why they are friendly 
 <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Mountainbearer Gate Ruins</h3>
 <div className="space-y-4">
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-Mountainbearer Ruins resides in the Savageraught Mountains in the region near the eastern peninsula, close to the oceans. Down on the east coast, a huge cavern opening opens up where the oceans’ water flows downward into the Lush Caves. The salt water is filtered out into fresh because of the rocks and pebbles it goes through. They act as filter channels.
+Mountainbearer Ruins resides in the Savageraught Mountains in the region near the eastern peninsula, close to the oceans. Down on the east coast, a huge cavern opening opens up where the oceans’ water flows downward into the Lush Caves. The salt water is filtered out into fresh because of the rocks and pebbles it goes through. They act as filter channels. Although the actual ruins live on the top of the Savageraught Mountains, some of the historical residue went underneath too.
 </p>
 <ul className="space-y-2 pl-4">
 <li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span><span className="text-[#f2ebeb] font-semibold">Mountainbearer Lush Caves -</span> Not much to it, but it&apos;s a prominent location. The area underneath the Gate Ruins is filled with lush caves, so there&apos;s plenty of animals there that have a unique biology.</span></li>
