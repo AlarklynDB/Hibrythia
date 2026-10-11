@@ -110,6 +110,12 @@ This piece of region sits as a huge land up in the north, that is directly next 
 Drevylkhar is the reason why this region has a slight rename of Wildernaughts to Wilderbaughts. He is currently one of the most powerful Demon Dragons of the entire region. Drevylkhar’s name can be shortened to Drevyl.
 </p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+Both the NDW, CDW, and SDW’s landscapes aren’t as messy because most of the lands have been shaped by demons themselves for easy land travel. There are mountain ranges that live near some of the coastal borders but they aren’t too high and elevated. Demon Culture within these lands never boast about raw power or strength, but rather almost all settlements offer hospitality and affordable prices.
+</p>
+<ul className="space-y-2 pl-4">
+<li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span>In small hindsight, there are some demons that can talk like Drevyl while some others can’t despite their intelligence. Of course, one can naturally learn to speak Hetranian English since it is a workaround, but learning Speech Magic is a better way to go.</span></li>
+</ul>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
 Drevyl will never interrupt or meddle with inner interspecies affairs because he believes it can be resolved without higher-ups or actual authority and power. If a quarrel happens within interspecies, that said party will have to try and solve it, even through means of violence.
 </p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
@@ -121,14 +127,20 @@ Drevyl is 15% Demon, and 85% Dragon—crossbred with an Elemental Ground Dragon,
 <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Eastenwharf Wildernaughts</h3>
 <div className="space-y-4">
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-A region that is northeast of the Demon Wildernaughts. This place lives close to a lot of water and is the home to the <Link to="/world/locales/varleqian-waterfall" className="text-[#c9a84c] hover:underline">Varleqian Waterfall</Link>, which lives on the most eastern-north peninsula. This waterfall is currently the highest natural formation known to mankind. It stands a whopping height of 3,833 meters tall, and it is considered one of the Seven Wonders of the World.
-</p>
-<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-During the Modern Past of Hetra, Eastenwharf had a lot of docks and piers in the north that led out to Lynneria for transport, goods, and imports. This is particularly because this region has one famous ingredient that almost all specialty dishes have from around the world (for different recipes).
+A region that is northeast of the Demon Wildernaughts. During the Modern Past of Hetra, Eastenwharf had a lot of docks and piers in the north that led out to Lynneria for transport, goods, and imports. This is particularly because this region has one famous ingredient that almost all specialty dishes have from around the world (for different recipes).
 </p>
 <ul className="space-y-2 pl-4">
 <li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span>Eastenwharf Milk - It comes from Eastenwharf Cows that contain high traces of natural probiotics and prebiotics because of the grass these species consume. Eastenwharf Grass is dead grass—but it looks healthy because there are worms that occasionally salivate it so that it stays preserved. The salivation on these grass later dries out due to the sun, which is why this type of ingredient is highly favored in high-class dishes. A dish made from Eastenwharf Milk like Eastenwharf Spaghetti and Calamari is usually sold for around Ħ52.55 Hetrix.</span></li>
 </ul>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+Although the docks and piers rotted, most of it remains as a historical landmark that is worth sightseeing. There is one gulf inlet that shares with the Savageraught Mountains’ coastal area, and two inner lakes.
+</p>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+<span className="text-[#f2ebeb] font-semibold">Pleasant Sceneries and Lands</span>
+</p>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+The landscape here in Eastenwharf are considered not ferocious like other wild zones. Most are plains of green and dry grass, while in other places there are steep hills. On the most north-eastern peninsula is where the <Link to="/world/locales/varleqian-waterfall" className="text-[#c9a84c] hover:underline">Varleqian Waterfall</Link> lives, and it is on the highest mountain that goes up to sky length. This waterfall is currently the highest natural formation known to mankind. It stands a whopping height of 3,833 meters tall, and it is considered one of the Seven Wonders of the World.
+</p>
 </div>
 </div>
 <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
@@ -138,7 +150,17 @@ During the Modern Past of Hetra, Eastenwharf had a lot of docks and piers in the
 This region of the Wildernaughts is ridden with <Link to="/world/databases/CreaturesOfTheWorld/KillerRabbits" className="text-[#c9a84c] hover:underline">Killer Rabbits</Link>. They are highly dangerous, lethal creatures that kill without restraint. Often known as Werebels, these creatures fight <Link to="/world/databases/CreaturesOfTheWorld/HetraDirectWolves" className="text-[#c9a84c] hover:underline">Direwolves</Link> for territory near the border because they want to expand their region—a neighboring Wildernaughts called Wolvenwind Wildernaughts.
 </p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-But it’s not just Killer Rabbits that live in the Savageraughts. There are Grayhounds, Werewolves, Werecats, Catwolfs, Pyroleos (Fire Lions), and Stygian Batragons (more can be <Link to="/world/databases/CreaturesOfTheWorld" className="text-[#c9a84c] hover:underline">read here</Link>).
+But it’s not just Killer Rabbits that live in the Savageraughts. There are Grayhounds, Werewolves, Werecats, Catwolfs, Pyroleos (Fire Lions), and Stygian Batragons (more can be <Link to="/world/databases/CreaturesOfTheWorld" className="text-[#c9a84c] hover:underline">read here</Link>). However, this place isn’t just teeming with strange creatures. These creatures constantly fight against the Killer Rabbits because this place is also their home, despite being weaker than them. Killer Rabbits and Direwolves are long term rivals, and no side will ever give up easily. Even the lesser creatures consider that these Werebels are dangerous and that they deserve no place within Varleqe’s history, despite it already sealed by fate from the past and up to now.
+</p>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+<span className="text-[#f2ebeb] font-semibold">Notable Creatures of Varleqe</span>
+</p>
+<ul className="space-y-2 pl-4">
+<li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span>Most of the Pyroleos live within the Savageraught Mountains since it gets really cold during the winter due to the high elevation.</span></li>
+<li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span>Grayhounds have an appearance of a lizard snout, wolf eyes, and a lion&apos;s body with wings. They almost look like griffins but their lion body are textured like lizards. Grayhounds like to perch at high elevations.</span></li>
+</ul>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+<span className="text-[#f2ebeb] font-semibold">A Savageraught Backstory</span>
 </p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
 The history within the Savageraught stems from inconsistent hierarchy between the Animal kingdom and the Beast Kingdom. Before this place was swarmed with Killer Rabbits, they were merely cute albino red-eyed rabbits. These innocent rabbits at the time were hunted down by Hetranian Direwolves for food until only two remained. Then a shift happened. In 15 AD, a vampire by the name of Dhivlaine took those two albino rabbits. He technically <em>saved</em> them but no—oh no he didn’t.
@@ -151,7 +173,20 @@ And thus was the start of the Killer Rabbit Era.
 </p>
 <ul className="space-y-2 pl-4">
 <li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span>Drevyl never took notice of this until 30 AD, since that was the peak of mass destruction.</span></li>
+<li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span>25 AD was when the first Alpha Werebel rose and decided to cause chaos throughout the region of Savageraught. More Alpha Werebels came to be after before the peak of mass destruction really came down on.</span></li>
 </ul>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+<span className="text-[#f2ebeb] font-semibold">A History of Scarred Landscapes</span>
+</p>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+The lands of Savageraughts have survived countless battles against their rivals and enemies throughout centuries. There are a lot of scattered mountains and hills left behind from brute force aside from broken terrain and large craters.
+</p>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+Around the middle of the wilds of this place has a lot of flat plains and hills that curve around each other and they served as leaping points for the rabbits because the particular angle these landscapes were created by are from jumping force. It is almost like a launch pad that the Rabbits use to get into the Wolvenorth Wildernaughts.
+</p>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+But the most beautiful sight here is within the Savageraught Mountains that are located up north-east in the northern peninsula. Mountainbearer Ruins<sup><a href="#ruins-of-varleqe" className="text-[#c9a84c] hover:underline">[1]</a></sup> is located on the top of Savageraught Mountains’ flat range along the peak. Some say the Mountainbearer Ruins was home to an ancient civlization that specialized herbal remedies that are said to cure incurable diseases. Though it was never confirmed if such events happened.
+</p>
 </div>
 </div>
 <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
@@ -167,10 +202,19 @@ There are often territorial disputes, quarrels for food, land, markings, or recl
 If something really gets out of hand or becomes too hard to contain, killing would be the only way for Direwolves to stop disputes that might become too much. It’s a weird loophole that most Direwolves use to take advantage.
 </p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-Both the species in Savageraught and Wolvenwind know to avoid human settlements—because if even an accidental kill or manslaughter happens among the inhabitants, Drevyl will step in. The consequences are dire (pun intended).
+Both the species in Savageraught and Wolvenwind know to avoid human settlements—because if even an accidental kill or manslaughter happens among the inhabitants, Drevyl will step in. The consequences are dire (pun intended). Fights tend to steer clear distances away from settlement of Greenside Hills.
 </p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
 The first time Drevyl encountered a Direwolf, he knew exactly why they are gentle creatures. This is because Hetranian Direwolves are very intelligent. Although they cannot speak, they can sense intuition because of the discernment trait that they carry—a hereditary ability that all Direwolves have. The whiteness of their fur from their head to their neck symbolizes this trait they have.
+</p>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+<span className="text-[#f2ebeb] font-semibold">A Scarred History of Beautiful Landscapes</span>
+</p>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+The landscapes here are not just a battlefield, but they serve as history deep within Direwolf culture. A single force or impact is known to shape the land it is now, either from clashes against the Rabbits or just pure flex. There are multiple steep and long cliffs that have been shaped by the force of a powerful swing from the tail. Most of the lands created by these creatures are mostly cliffs. There are a lot of scattered mountains that are created from centuries of battles near the subregions’ borders.
+</p>
+<p className="font-body text-base text-[#c8c2ba] leading-relaxed">
+Most of these landscapes that were created from the wolves are also known as habitats—places that are hidden from plain sight that serve as homes for these direwolves. They’re tucked in caves and dens that are often found as remnants of older geological cavities that aren’t caused by battles.
 </p>
 </div>
 </div>
@@ -184,7 +228,7 @@ A region that is southwest of Savageraught, Wolvenwind, and west of Kharven Wild
 In 1475 Aftendaye (AD), Drevyl recorded at least 500 Flimpies that killed a single Killer Rabbit because of the sheer pressure, volume, and fright. A single Flimpie when startled will let out a small taser that will only tickle, but if a huge volume of them are present and combined (like 500), that taser becomes a lightning bolt that can paralyze any foe.
 </p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-West Coastal Wildernaughts is quite a beautiful place—there are hills that roll around and beautiful scenery that you can see the ocean from. There are also a lot of whale sightings here.
+West Coastal Wildernaughts is quite a beautiful place—there are hills that roll around and beautiful scenery that you can see the ocean from. There are also a lot of whale sightings here. There are cliffs that extend out over the west coast that creates a perfect vantage point to fish from.
 </p>
 </div>
 </div>
@@ -194,6 +238,9 @@ West Coastal Wildernaughts is quite a beautiful place—there are hills that rol
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
 A Wildernaught that is southeast of everything. The grassy lands here are carved (not literally) by a huge windstorm in the past which now takes shape as huge rolling hills that span up to at least a four-story building’s length. They aren’t tall. They are long. It takes at least an hour to scale one hill. But once you reach the top, the lands are very flat, and the grass here is very warm and soft. Going down is simple: just slide and let gravity do the work.
 </p>
+<ul className="space-y-2 pl-4">
+<li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span>There are cliffs that over look hills and flat plains that curve around and ascend up. There aren’t many mountain ranges but lots of elevated hills and cliffs</span></li>
+</ul>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
 The Kharven Wildernaughts is also known for some pretty cool mountain formations—most particularly the Kharven Mountains that almost look like three elephant tusks combined, but massive. The underside of these mountains is filled with inner caves and dripstones, which make a home for night dwellers like nocturnal animals. There are a lot of species that live in these mountains—but the most specific ones are <Link to="/world/databases/CreaturesOfTheWorld" className="text-[#c9a84c] hover:underline">Buffalosaurus Ants</Link>—huge ant-like buffalos that can walk on cavern walls.
 </p>
@@ -215,7 +262,7 @@ The Wildernaughts of Varleqe isn’t just dangerous, but there are many views th
 <div className="space-y-6">
 <h2 className="font-display text-lg text-[#f2ebeb] mb-4">Village Settlements of Varleqe</h2>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-There aren&apos;t many districts here unlike Lynneria&apos;s districts. Varleqe is full of dangerous creatures, but also immaculate views of scenery. There are a total of four unique settlements, each with their own walled borders. There are three settlements that surround the Demon Wilderbaughts, and one far southeast of them. These settlements are also walled for protection against the wilds. 
+There aren&apos;t many districts here unlike Lynneria&apos;s districts. Varleqe is full of dangerous creatures, but also immaculate views of scenery. There are a total of four unique settlements, each with their own walled borders. There are three settlements that surround the Demon Wilderbaughts, and one far southeast of them. These settlements are also walled for protection against the wilds.
 </p>
 <p className="font-body text-base font-bold text-[#f2ebeb] pt-2">Circle Settlements around The Demon Wilderbaughts</p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
@@ -326,7 +373,7 @@ The denizens of this place are very extroverted, which is why they are friendly 
 </div>
 
 <div className="space-y-6">
-<h2 className="font-display text-lg text-[#f2ebeb] mb-4">Ruins of Varleqe</h2>
+<h2 id="ruins-of-varleqe" className="font-display text-lg text-[#f2ebeb] mb-4">Ruins of Varleqe</h2>
 <div className="border border-[#2e2b26] rounded-sm bg-[#0f0d0c] px-5 py-5">
 <h3 className="font-display text-sm text-[#f2ebeb] mb-3">Mountainbearer Gate Ruins</h3>
 <div className="space-y-4">
