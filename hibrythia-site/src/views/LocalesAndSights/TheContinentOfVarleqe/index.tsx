@@ -228,7 +228,7 @@ A region that is southwest of Savageraught, Wolvenwind, and west of Kharven Wild
 In 1475 Aftendaye (AD), Drevyl recorded at least 500 Flimpies that killed a single Killer Rabbit because of the sheer pressure, volume, and fright. A single Flimpie when startled will let out a small taser that will only tickle, but if a huge volume of them are present and combined (like 500), that taser becomes a lightning bolt that can paralyze any foe.
 </p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-West Coastal Wildernaughts is quite a beautiful place—there are hills that roll around and beautiful scenery that you can see the ocean from. There are also a lot of whale sightings here. There are cliffs that extend out over the west coast that creates a perfect vantage point to fish from.
+West Coastal Wildernaughts is quite a beautiful place—there are hills that roll around and beautiful scenery that you can see the ocean from. There are also a lot of whale sightings here as they like to breach from the gulf of Varleqe along with the coastal shores. Near the south of the coast, there are cliffs that extend out over the west coast that creates a perfect vantage point to fish from. More inland, there aren’t much mountains aside from small scattered cliffsides.
 </p>
 </div>
 </div>
