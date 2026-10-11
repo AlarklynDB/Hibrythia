@@ -185,7 +185,7 @@ The lands of Savageraughts have survived countless battles against their rivals 
 Around the middle of the wilds of this place has a lot of flat plains and hills that curve around each other and they served as leaping points for the rabbits because the particular angle these landscapes were created by are from jumping force. It is almost like a launch pad that the Rabbits use to get into the Wolvenorth Wildernaughts.
 </p>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
-But the most beautiful sight here is within the Savageraught Mountains that are located up north-east in the northern peninsula. Mountainbearer Ruins<sup><a href="#ruins-of-varleqe" className="text-[#c9a84c] hover:underline">[1]</a></sup> is located on the top of Savageraught Mountains’ flat range along the peak. Some say the Mountainbearer Ruins was home to an ancient civlization that specialized herbal remedies that are said to cure incurable diseases. Though it was never confirmed if such events happened.
+But the most beautiful sight here is within the Savageraught Mountains that are located up north-east in the northern peninsula. Mountainbearer Ruins<sup><a href="#ruins-of-varleqe" className="text-[#c9a84c] hover:underline">[1]</a></sup> is located on the top of Savageraught Mountains’ flat range along the peak. Some say the Mountainbearer Ruins was home to an ancient civilization that specialized herbal remedies that are said to cure incurable diseases. Though it was never confirmed if such events happened.
 </p>
 </div>
 </div>
@@ -239,7 +239,7 @@ West Coastal Wildernaughts is quite a beautiful place—there are hills that rol
 A Wildernaught that is southeast of everything. The grassy lands here are carved (not literally) by a huge windstorm in the past which now takes shape as huge rolling hills that span up to at least a four-story building’s length. They aren’t tall. They are long. It takes at least an hour to scale one hill. But once you reach the top, the lands are very flat, and the grass here is very warm and soft. Going down is simple: just slide and let gravity do the work.
 </p>
 <ul className="space-y-2 pl-4">
-<li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span>There are cliffs that over look hills and flat plains that curve around and ascend up. There aren’t many mountain ranges but lots of elevated hills and cliffs</span></li>
+<li className="font-body text-base text-[#c8c2ba] leading-relaxed flex gap-2"><span className="text-[#c9a84c] shrink-0">&ndash;</span><span>There are cliffs that overlook hills and flat plains that curve around and ascend up. There aren’t many mountain ranges but lots of elevated hills and cliffs</span></li>
 </ul>
 <p className="font-body text-base text-[#c8c2ba] leading-relaxed">
 The Kharven Wildernaughts is also known for some pretty cool mountain formations—most particularly the Kharven Mountains that almost look like three elephant tusks combined, but massive. The underside of these mountains is filled with inner caves and dripstones, which make a home for night dwellers like nocturnal animals. There are a lot of species that live in these mountains—but the most specific ones are <Link to="/world/databases/CreaturesOfTheWorld" className="text-[#c9a84c] hover:underline">Buffalosaurus Ants</Link>—huge ant-like buffalos that can walk on cavern walls.
